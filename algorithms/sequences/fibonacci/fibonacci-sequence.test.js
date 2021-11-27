@@ -1,5 +1,6 @@
 const testSubjects = [
-  require('./fibonacci-sequence')
+  require('./fibonacci-sequence'),
+  require('./fibonacci-sequence-rmemo')
 ]
 
 testSubjects.forEach(({ id, fun }) => {
