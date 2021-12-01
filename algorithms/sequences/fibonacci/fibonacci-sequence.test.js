@@ -4,7 +4,7 @@ const testSubjects = [
 ]
 
 // Test for lengths 0 and 1
-testSubjects.forEach(({ id, fun }) => {
+testSubjects.forEach(({ fun, id }) => {
   const testLengthZero = () => expect(fun(0)).toEqual([])
   const testLengthOne = () => expect(fun(1)).toEqual([0n])
 
