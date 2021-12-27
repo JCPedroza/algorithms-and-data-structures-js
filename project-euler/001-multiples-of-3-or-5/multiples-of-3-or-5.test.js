@@ -4,9 +4,9 @@ const testSubjects = [
   require('./multiples-of-3-or-5-analytic')
 ]
 
-testSubjects.forEach(({ fun, id }) => {
+testSubjects.forEach(({ solution, id }) => {
   test(`${id} calculates sum of multiples of 3 or 5`, () => {
-    expect(fun(50)).toBe(543)
-    expect(fun(1000)).toBe(233_168)
+    expect(solution(50)).toBe(543)
+    expect(solution(1000)).toBe(233_168)
   })
 })

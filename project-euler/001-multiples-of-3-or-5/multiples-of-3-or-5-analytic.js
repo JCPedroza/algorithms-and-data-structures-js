@@ -28,6 +28,6 @@ const multiplesOf3or5 = (limit) =>
   sumDivisibleBy(limit, 15)
 
 module.exports = {
-  fun: multiplesOf3or5,
+  solution: multiplesOf3or5,
   id: 'analytic'
 }
