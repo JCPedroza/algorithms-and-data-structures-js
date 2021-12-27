@@ -10,6 +10,6 @@ const isPalindrome = (str) => {
 }
 
 module.exports = {
-  fun: isPalindrome,
+  algorithm: isPalindrome,
   id: 'string spread'
 }

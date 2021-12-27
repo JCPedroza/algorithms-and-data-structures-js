@@ -22,6 +22,6 @@ const fibonacciSequence = (length) => {
 }
 
 module.exports = {
-  fun: fibonacciSequence,
+  algorithm: fibonacciSequence,
   id: 'recursive memoization'
 }

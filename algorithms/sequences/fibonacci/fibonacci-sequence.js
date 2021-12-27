@@ -19,6 +19,6 @@ const fibonacciSequence = (length) => {
 }
 
 module.exports = {
-  fun: fibonacciSequence,
+  algorithm: fibonacciSequence,
   id: 'for-loop accumulator'
 }
