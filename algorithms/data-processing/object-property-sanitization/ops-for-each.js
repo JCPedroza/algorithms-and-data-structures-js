@@ -1,10 +1,8 @@
 /**
- * Creates a new object with the specified properties of the
- * input object, if they are present.
+ * Creates a copy of an object, but that only contains specific properties.
  * @param {object} object Object to sanitize.
- * @param {string[]} properties Properties to copy.
- * @returns Object with the specified properties if present in
- * original object.
+ * @param {string[]} properties Properties to include.
+ * @returns Copy of object that only contains the specified properties.
  */
 const sanitizeObjectProperties = (object, properties) => {
   const accumulator = {}
@@ -17,6 +15,6 @@ const sanitizeObjectProperties = (object, properties) => {
 }
 
 module.exports = {
-  fun: sanitizeObjectProperties,
+  algorithm: sanitizeObjectProperties,
   id: 'for each'
 }
