@@ -1,2 +1,5 @@
+# Ignore these files for line count
+
+LICENSE
 *.json
 *.md
