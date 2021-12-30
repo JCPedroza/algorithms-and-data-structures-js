@@ -10,3 +10,5 @@
   <img src="https://img.shields.io/github/languages/code-size/jcpedroza/algorithms-and-data-structures-js">
   <img src="https://img.shields.io/github/repo-size/jcpedroza/algorithms-and-data-structures-js">
 </p>
+
+<p>This repository is dedicated to the study of algorithms, data structures, and JavaScript!</p>
