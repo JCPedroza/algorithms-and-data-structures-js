@@ -1,1 +1,0 @@
-<h1>Algorithms - Sequences</h1>
