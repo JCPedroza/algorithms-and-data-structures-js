@@ -1,4 +1,4 @@
-# Ignore these files for line count
+# Ignore these files for badge line count
 
 LICENSE
 *.json
