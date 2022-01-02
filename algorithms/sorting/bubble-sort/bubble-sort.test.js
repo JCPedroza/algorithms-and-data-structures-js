@@ -1,6 +1,7 @@
 const testSubjects = [
   require('./bubble-sort-optimized'),
-  require('./bubble-sort')
+  require('./bubble-sort'),
+  require('./bubble-sort-optimized-whileloop')
 ]
 
 const testCases = {
@@ -26,7 +27,7 @@ const testCases = {
 }
 
 testSubjects.forEach(({ algorithm, id }) => {
-  test(`"${id}" sorts arrays`, () => {
+  test(`"${id}" sorts numeric arrays`, () => {
     Object.values(testCases).forEach(scenario => {
       expect(algorithm(scenario.in)).toEqual(scenario.out)
     })
