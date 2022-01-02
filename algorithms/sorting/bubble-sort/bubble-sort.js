@@ -1,7 +1,7 @@
 /**
  * Sorts a numeric array in-place using the Bubble Sort method.
- * Time complexity: O(n^2)
- * Space complexity: O(1)
+ * Time complexity: O(n^2) for best, worst, and average
+ * Space complexity: total O(n) auxiliary O(1)
  * @param {number[]} array Array to be sorted.
  * @returns {number[]} Sorted array.
  */
@@ -19,5 +19,5 @@ const bubbleSort = (array) => {
 
 module.exports = {
   algorithm: bubbleSort,
-  id: 'simple bubble sort'
+  id: 'simple'
 }
