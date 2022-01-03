@@ -1,5 +1,5 @@
 /**
- * Sorts a numeric array in-place using the Bubble Sort method.
+ * Sorts a numeric array in-place using the Bubble Sort approach.
  * Time complexity: O(n^2) for best, worst, and average
  * Space complexity: total O(n) auxiliary O(1)
  * @param {number[]} array Array to be sorted.
