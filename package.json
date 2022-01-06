@@ -1,40 +1,36 @@
 {
   "name": "algorithms-and-data-structures-js",
-
   "version": "0.0.1",
-
   "description": "Algorithms and data structures implemented in JavaScript",
-
   "main": "index.js",
-
   "scripts": {
-    "test": "npx standard && npx jest"
+    "test": "npx standard && npx jest",
+    "prepare": "husky install"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JCPedroza/algorithms-and-data-structures-js.git"
   },
-
-  "keywords": ["algorithms", "data-structures", "project-euler"],
-
+  "keywords": [
+    "algorithms",
+    "data-structures",
+    "project-euler"
+  ],
   "author": "JCPedroza",
-
   "license": "MIT",
-
   "bugs": {
     "url": "https://github.com/JCPedroza/algorithms-and-data-structures-js/issues"
   },
-
   "homepage": "https://github.com/JCPedroza/algorithms-and-data-structures-js#readme",
-
   "devDependencies": {
+    "husky": "^7.0.4",
     "jest": "^27.3.1",
     "jsdoc": "^3.6.7",
     "standard": "^16.0.4"
   },
-
   "standard": {
-    "envs": ["jest"]
+    "envs": [
+      "jest"
+    ]
   }
 }
