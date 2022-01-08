@@ -1,6 +1,10 @@
 {
   "name": "algorithms-and-data-structures-js",
   "version": "0.0.1",
+  "engines": {
+    "node": ">=17.0.0",
+    "npm": ">=8.0.0"
+  },
   "description": "Algorithms and data structures implemented in JavaScript",
   "main": "index.js",
   "scripts": {
