@@ -4,7 +4,7 @@
 
 <h2>Terminology</h2>
 
-<h3>Stable<h3>
+<h3>Stable</h3>
 
 <p>When the relative order between equal values present in the input collection is preserved in the output, ordered, collection, the sorting algorithm is said to be stable.</p>
 
