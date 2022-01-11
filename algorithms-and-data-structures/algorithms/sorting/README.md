@@ -2,6 +2,12 @@
 
 <p>A sorting algorithm is an algorithm that puts elements of a list into an order.</p>
 
+<h2>Terminology</h2>
+
+<h3>Stable<h3>
+
+<p>When the relative order between equal values present in the input collection is preserved in the output, ordered, collection, the sorting algorithm is said to be stable.</p>
+
 <h2>Resources</h2>
 
 <ul>
