@@ -1,5 +1,6 @@
 const testSubjects = [
-  require('./selection-sort')
+  require('./selection-sort'),
+  require('./selection-sort-kindof-optimized')
 ]
 
 const { runSharedUnitTests } = require('../sorting-unit-tests')
