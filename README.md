@@ -6,12 +6,12 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/contributors/JCPedroza/algorithms-and-data-structures-py">
-  <img src="https://img.shields.io/github/commit-activity/m/JCPedroza/algorithms-and-data-structures-py">
-  <img src="https://img.shields.io/github/issues-raw/JCPedroza/algorithms-and-data-structures-py">
-  <img src="https://img.shields.io/github/issues-closed-raw/JCPedroza/algorithms-and-data-structures-py">
-  <img src="https://img.shields.io/github/issues-pr-raw/JCPedroza/algorithms-and-data-structures-py">
-  <img src="https://img.shields.io/github/issues-pr-closed-raw/JCPedroza/algorithms-and-data-structures-py">
+  <img src="https://img.shields.io/github/contributors/JCPedroza/algorithms-and-data-structures-js">
+  <img src="https://img.shields.io/github/commit-activity/m/JCPedroza/algorithms-and-data-structures-js">
+  <img src="https://img.shields.io/github/issues-raw/JCPedroza/algorithms-and-data-structures-js">
+  <img src="https://img.shields.io/github/issues-closed-raw/JCPedroza/algorithms-and-data-structures-js">
+  <img src="https://img.shields.io/github/issues-pr-raw/JCPedroza/algorithms-and-data-structures-js">
+  <img src="https://img.shields.io/github/issues-pr-closed-raw/JCPedroza/algorithms-and-data-structures-js">
 </p>
 
 <p align="center">
