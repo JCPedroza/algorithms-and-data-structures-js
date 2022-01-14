@@ -23,3 +23,7 @@
 <hr>
 
 <p>This repository is dedicated to the study of algorithms, data structures, and JavaScript!</p>
+
+<h2>Similar Resources</h2>
+
+You can find the Python version of this reposotiry <a href="https://github.com/JCPedroza/algorithms-and-data-structures-py">here</a>.
