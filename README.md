@@ -6,6 +6,15 @@
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/github/contributors/JCPedroza/algorithms-and-data-structures-py">
+  <img src="https://img.shields.io/github/commit-activity/m/JCPedroza/algorithms-and-data-structures-py">
+  <img src="https://img.shields.io/github/issues-raw/JCPedroza/algorithms-and-data-structures-py">
+  <img src="https://img.shields.io/github/issues-closed-raw/JCPedroza/algorithms-and-data-structures-py">
+  <img src="https://img.shields.io/github/issues-pr-raw/JCPedroza/algorithms-and-data-structures-py">
+  <img src="https://img.shields.io/github/issues-pr-closed-raw/JCPedroza/algorithms-and-data-structures-py">
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/tokei/lines/github/jcpedroza/algorithms-and-data-structures-js">
   <img src="https://img.shields.io/github/languages/code-size/jcpedroza/algorithms-and-data-structures-js">
   <img src="https://img.shields.io/github/repo-size/jcpedroza/algorithms-and-data-structures-js">
