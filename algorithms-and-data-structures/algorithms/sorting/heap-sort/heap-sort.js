@@ -1,6 +1,7 @@
 /**
- * Heapifies an array starting from a specified node.
- * @param {number[]} array Array to heapify.
+ * Converts subtree into max heap, and recursively operates on
+ * affected subtrees.
+ * @param {number[]} array Array of numbers.
  * @param {number} size Size of heap.
  * @param {number} root Index of root node.
  */
@@ -36,7 +37,7 @@ const heapSort = (array) => {
     heapify(array, array.length, index)
   }
 
-  // Extract root node (min value) from heap, until heap is empty
+  // Extract root node (max value) from heap, until heap is empty
   for (let index = array.length - 1; index >= 0; index--) {
     [array[0], array[index]] = [array[index], array[0]]
     heapify(array, index, 0)
