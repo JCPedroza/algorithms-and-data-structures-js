@@ -4,18 +4,18 @@
  * time complexity.
  * Time complexity: best O(n log n) worst O(n^2) Average O(n log n)
  * Space complexity: total O(n) auxiliary O(n).
- * @param {number[]} array Array to be sorted.
+ * @param {number[]} nums Array to be sorted.
  * @returns {number[]} Sorted array.
  */
-const quickSort = (array) => {
-  if (array.length < 2) return array
+const quickSort = (nums) => {
+  if (nums.length < 2) return nums
 
-  const pivot = array[0]
+  const pivot = nums[0]
   const left = []
   const right = []
 
-  for (let index = 1; index < array.length; index++) {
-    array[index] < pivot ? left.push(array[index]) : right.push(array[index])
+  for (let index = 1; index < nums.length; index++) {
+    nums[index] < pivot ? left.push(nums[index]) : right.push(nums[index])
   }
 
   return [...quickSort(left), pivot, ...quickSort(right)]

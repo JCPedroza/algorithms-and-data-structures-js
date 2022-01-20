@@ -1,26 +1,26 @@
 /**
  * Converts subtree into max heap, and recursively operates on
  * affected subtrees.
- * @param {number[]} array Array of numbers.
+ * @param {number[]} nums Array of numbers.
  * @param {number} size Size of heap.
  * @param {number} root Index of root node.
  */
-const heapify = (array, size, root) => {
+const heapify = (nums, size, root) => {
   const leftChild = 2 * root + 1
   const rightChild = leftChild + 1
   let maxValue = root
 
-  if (leftChild < size && array[leftChild] > array[maxValue]) {
+  if (leftChild < size && nums[leftChild] > nums[maxValue]) {
     maxValue = leftChild
   }
 
-  if (rightChild < size && array[rightChild] > array[maxValue]) {
+  if (rightChild < size && nums[rightChild] > nums[maxValue]) {
     maxValue = rightChild
   }
 
   if (maxValue !== root) {
-    [array[maxValue], array[root]] = [array[root], array[maxValue]]
-    heapify(array, size, maxValue)
+    [nums[maxValue], nums[root]] = [nums[root], nums[maxValue]]
+    heapify(nums, size, maxValue)
   }
 }
 
@@ -28,22 +28,22 @@ const heapify = (array, size, root) => {
  * Sorts a numeric array in-place using the Heap Sort approach.
  * Time complexity: O(n log n) for best, worst, and average
  * Space complexity: total O(n) auxiliary O(1)
- * @param {number[]} array Array to be sorted.
+ * @param {number[]} nums Array to be sorted.
  * @returns Sorted array.
  */
-const heapSort = (array) => {
+const heapSort = (nums) => {
   // Create heap
-  for (let index = Math.floor(array.length / 2 - 1); index >= 0; index--) {
-    heapify(array, array.length, index)
+  for (let index = Math.floor(nums.length / 2 - 1); index >= 0; index--) {
+    heapify(nums, nums.length, index)
   }
 
   // Extract root node (max value) from heap, until heap is empty
-  for (let index = array.length - 1; index >= 0; index--) {
-    [array[0], array[index]] = [array[index], array[0]]
-    heapify(array, index, 0)
+  for (let index = nums.length - 1; index >= 0; index--) {
+    [nums[0], nums[index]] = [nums[index], nums[0]]
+    heapify(nums, index, 0)
   }
 
-  return array
+  return nums
 }
 
 module.exports = {

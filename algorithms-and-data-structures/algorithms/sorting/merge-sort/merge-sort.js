@@ -18,15 +18,15 @@ const merge = (left, right) => {
  * Sorts a numeric array using the merge sort approach.
  * Time complexity: O(n log n) for best, worst, and average.
  * Space complexity: total O(n) auxiliary O(n).
- * @param {number[]} array Array to be sorted.
+ * @param {number[]} nums Array to be sorted.
  * @returns {number[]} Sorted array.
  */
-const mergeSort = (array) => {
-  if (array.length < 2) return array
+const mergeSort = (nums) => {
+  if (nums.length < 2) return nums
 
-  const midIndex = array.length / 2
-  const left = array.slice(0, midIndex)
-  const right = array.slice(midIndex, array.length)
+  const midIndex = nums.length / 2
+  const left = nums.slice(0, midIndex)
+  const right = nums.slice(midIndex, nums.length)
 
   return merge(mergeSort(left), mergeSort(right))
 }

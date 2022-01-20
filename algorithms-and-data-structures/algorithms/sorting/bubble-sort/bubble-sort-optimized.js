@@ -2,16 +2,16 @@
  * Sorts a numeric array in-place using the Bubble Sort approach.
  * Time complexity: best O(n) average O(n^2) worst O(n^2)
  * Space complexity: total O(n) auxiliary O(1)
- * @param {number[]} array Array to be sorted.
+ * @param {number[]} nums Array to be sorted.
  * @returns {number[]} Sorted array.
  */
-const bubbleSort = (array) => {
-  for (let round = 0; round < array.length - 1; round++) {
+const bubbleSort = (nums) => {
+  for (let round = 0; round < nums.length - 1; round++) {
     let ordered = true
 
-    for (let index = 0; index < array.length - round - 1; index++) {
-      if (array[index] > array[index + 1]) {
-        [array[index], array[index + 1]] = [array[index + 1], array[index]]
+    for (let index = 0; index < nums.length - round - 1; index++) {
+      if (nums[index] > nums[index + 1]) {
+        [nums[index], nums[index + 1]] = [nums[index + 1], nums[index]]
         ordered = false
       }
     }
@@ -19,7 +19,7 @@ const bubbleSort = (array) => {
     if (ordered) break
   }
 
-  return array
+  return nums
 }
 
 module.exports = {
