@@ -9,7 +9,7 @@ const reverse = (str) => [...str].reverse().join('')
  * Time complexity: O(n) for best, worst, average.
  * Space complexity: O(n)
  * @param {string} str String to be checked.
- * @returns {boolean} True if the string is a palindrome, False otherwise.
+ * @returns {boolean} True if the string is a palindrome, false otherwise.
  */
 const isPalindrome = (str) => {
   const normalStr = normalize(str)
