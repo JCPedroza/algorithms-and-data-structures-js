@@ -15,22 +15,22 @@
 
  <tbody>
   <tr>
-    <td><code>enqueue(num: number): None</code></td>
+    <td><code>enqueue(num: number): void</code></td>
     <td>Add number to queue</td>
   </tr>
 
   <tr>
-    <td><code>dequeue(): Number</code></td>
+    <td><code>dequeue(): number</code></td>
     <td>Get lowest value and remove it from the queue. Dequeueing from an empty queue must rise an exception.</td>
   </tr>
 
   <tr>
-    <td><code>peek(): Number</code></td>
+    <td><code>peek(): number</code></td>
     <td>Get lowest value, without removing it from the queue. Peeking from an empty queue must rise an exception.</td>
   </tr>
 
   <tr>
-    <td><code>isEmpty(): Boolean</code></td>
+    <td><code>isEmpty(): boolean</code></td>
     <td>Return true if the queue is empty, otherwise return false.</td>
   </tr>
 
