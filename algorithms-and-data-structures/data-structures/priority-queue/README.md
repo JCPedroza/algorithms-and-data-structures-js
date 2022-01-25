@@ -48,4 +48,5 @@
   <li><a href="https://en.wikipedia.org/wiki/Priority_queue">Priority Queue at Wikipedia</a></li>
   <li><a href="https://www.freecodecamp.org/learn/coding-interview-prep/data-structures/create-a-priority-queue-class">Priority Queue at freeCodeCamp</a></li>
   <li><a href="https://www.geeksforgeeks.org/priority-queue-set-1-introduction/">Priority Queue at GeeksforGeeks</a></li>
+ <li><a href="https://brilliant.org/wiki/priority-queues/">Priority Queue at Brilliant</a></li>
 </ul>
