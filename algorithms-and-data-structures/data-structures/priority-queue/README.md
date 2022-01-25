@@ -21,12 +21,12 @@
 
   <tr>
     <td><code>dequeue(): Number</code></td>
-    <td>Get lowest value and remove it from the queue.</td>
+    <td>Get lowest value and remove it from the queue. Dequeueing from an empty queue must rise an exception.</td>
   </tr>
 
   <tr>
     <td><code>peek(): Number</code></td>
-    <td>Get lowest value, without removing it from the queue.</td>
+    <td>Get lowest value, without removing it from the queue. Peeking from an empty queue must rise an exception.</td>
   </tr>
 
   <tr>
