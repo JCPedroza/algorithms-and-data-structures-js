@@ -2,7 +2,7 @@
 
 <p>A priority queue is an abstract data-type similar to a queue in which each element has a "priority" associated with it. In a priority queue, an element with high priority is served before an element with low priority. In some implementations, if two elements have the same priority, they are served according to the order in which they were enqueued; in other implementations ordering of elements with the same priority remains undefined.</p>
 
-<p>Implement a Priority Queue with the following interface</p>
+<p>Implement a Priority Queue with the following interface.</p>
 
 <h2>Interface</h2>
 
@@ -42,10 +42,11 @@
 
 </table>
 
-<h2>References</h2>
+<h2>Resources</h2>
 
 <ul>
   <li><a href="https://en.wikipedia.org/wiki/Priority_queue">Priority Queue at Wikipedia</a></li>
+  <li><a href="https://rosettacode.org/wiki/Priority_queue">Priority Queue at Rosetta Code</a></li>
   <li><a href="https://www.freecodecamp.org/learn/coding-interview-prep/data-structures/create-a-priority-queue-class">Priority Queue at freeCodeCamp</a></li>
   <li><a href="https://www.geeksforgeeks.org/priority-queue-set-1-introduction/">Priority Queue at GeeksforGeeks</a></li>
  <li><a href="https://brilliant.org/wiki/priority-queues/">Priority Queue at Brilliant</a></li>
