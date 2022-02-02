@@ -1,18 +1,17 @@
 const List = require('./List')
 
 /**
- * Node that links to both the previous Node and the next Node.
+ * Node that links to the next node only.
  */
 class Node {
-  constructor (data, prev = null, next = null) {
+  constructor (data, next) {
     this.data = data
-    this.prev = prev
     this.next = next
   }
 }
 
 /**
- * Implementation of a doubly linked list.
+ * Implementation of a singly linked list.
  * Space complexity: O(n).
  */
 class LinkedList extends List {
@@ -56,17 +55,9 @@ class LinkedList extends List {
    * @returns {Node} Inserted node.
    */
   insertAtHead (data) {
-    let newHeadNode
+    this._head = new Node(data, this._head)
+    if (this.isEmpty()) this._tail = this._head
 
-    if (this.isEmpty()) {
-      newHeadNode = new Node(data, null, null)
-      this._tail = newHeadNode
-    } else {
-      newHeadNode = new Node(data, null, this.head)
-      this.head.prev = newHeadNode
-    }
-
-    this._head = newHeadNode
     this._length++
     return this.head
   }
@@ -78,14 +69,11 @@ class LinkedList extends List {
    * @returns {Node} Inserted node.
    */
   insertAtTail (data) {
-    let newTailNode
-
-    if (this.isEmpty()) {
-      newTailNode = new Node(data, null, null)
-      this._head = newTailNode
-    } else {
-      newTailNode = new Node(data, this.tail, null)
+    const newTailNode = new Node(data, null)
+    if (!this.isEmpty()) {
       this.tail.next = newTailNode
+    } else {
+      this._head = newTailNode
     }
 
     this._tail = newTailNode
@@ -103,19 +91,16 @@ class LinkedList extends List {
   insertAfterNode (afterNode, data) {
     if (afterNode === this.tail) return this.insertAtTail(data)
 
-    const prev = afterNode
-    const next = afterNode.next
-    const insertedNode = new Node(data, prev, next)
-    if (prev) prev.next = insertedNode
-    if (next) next.prev = insertedNode
+    const node = new Node(data, afterNode.next)
+    afterNode.next = node
 
     this._length++
-    return insertedNode
+    return afterNode.next
   }
 
   /**
    * Insert data before the specified Node.
-   * Time complexity: O(1) for best, worst, and average.
+   * Time complexity: O(1) best, O(n) worst, O(n) average.
    * @param {Node} beforeNode Node before which the data will be inserted.
    * @param {*} data Data to be inserted.
    * @returns {Node} Inserted node.
@@ -123,14 +108,11 @@ class LinkedList extends List {
   insertBeforeNode (beforeNode, data) {
     if (beforeNode === this.head) return this.insertAtHead(data)
 
-    const prev = beforeNode.prev
-    const next = beforeNode
-    const insertedNode = new Node(data, prev, next)
-    if (prev) prev.next = insertedNode
-    if (next) next.prev = insertedNode
+    const prevNode = this._getPrevNode(beforeNode) // O(n)
+    prevNode.next = new Node(data, beforeNode)
 
     this._length++
-    return insertedNode
+    return prevNode.next
   }
 
   /**
@@ -145,28 +127,22 @@ class LinkedList extends List {
     this._positiveRangeCheck(index)
 
     if (index === 0) return this.insertAtHead(data)
-    return this.insertBeforeNode(this.getNodeAtIndex(index), data)
+    return this.insertAfterNode(this.getNodeAtIndex(index - 1), data)
   }
 
   /**
    * Remove node from list.
-   * Time complexity: O(1) for best, worst, and average.
+   * Time complexity: O(1) best, O(n) worst, O(n) average.
    * @param {Node} node Node to be removed.
    * @returns {Node} Removed node.
    */
   deleteNode (node) {
-    if (node.prev) node.prev.next = node.next
-    if (node.next) node.next.prev = node.prev
+    const prevNode = this._getPrevNode(node) // O(n)
+    if (prevNode) prevNode.next = node.next
+    if (node === this.head) this._head = node.next
+    if (node === this.tail) this._tail = prevNode
 
-    if (this.isSingleton()) {
-      this._head = null
-      this._tail = null
-    } else if (node === this.head) {
-      this._head = node.next
-    } else if (node === this.tail) {
-      this._tail = node.prev
-    }
-
+    node.next = null
     this._length--
     return node
   }
@@ -218,9 +194,20 @@ class LinkedList extends List {
 
     return array
   }
+
+  _getPrevNode (node) {
+    if (node === this.head) return null
+
+    let currentNode = this.head
+    while (currentNode.next !== node) {
+      currentNode = currentNode.next
+    }
+
+    return currentNode
+  }
 }
 
 module.exports = {
   Structure: LinkedList,
-  id: 'doubly linked list'
+  id: 'singly linked list'
 }

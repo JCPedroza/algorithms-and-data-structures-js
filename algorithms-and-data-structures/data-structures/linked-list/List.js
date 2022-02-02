@@ -6,7 +6,6 @@ class List {
     this._head = null
     this._tail = null
     this._length = 0
-    List.activeLists.add(this)
   }
 
   /**
@@ -109,7 +108,5 @@ class List {
     else return parsedIndex
   }
 }
-
-List.activeLists = new Set()
 
 module.exports = List
