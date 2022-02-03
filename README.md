@@ -7,12 +7,6 @@
   <a href="https://www.codefactor.io/repository/github/jcpedroza/algorithms-and-data-structures-js"><img src="https://www.codefactor.io/repository/github/jcpedroza/algorithms-and-data-structures-js/badge" alt="CodeFactor" /></a>
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/tokei/lines/github/jcpedroza/algorithms-and-data-structures-js">
-  <img src="https://img.shields.io/github/languages/code-size/jcpedroza/algorithms-and-data-structures-js">
-  <img src="https://img.shields.io/github/repo-size/jcpedroza/algorithms-and-data-structures-js">
-</p>
-
 <p>This repository is dedicated to the study of algorithms, data structures, and JavaScript.</p>
 
 <h1 align="center">Contributing</h1>
@@ -31,3 +25,11 @@
 <h1 align="center">Similar Resources</h1>
 
 <p>You can find the Python version of this reposotiry <a href="https://github.com/JCPedroza/algorithms-and-data-structures-py">here</a>.</p>
+
+<hr>
+
+<p align="center">
+  <img src="https://img.shields.io/tokei/lines/github/jcpedroza/algorithms-and-data-structures-js">
+  <img src="https://img.shields.io/github/languages/code-size/jcpedroza/algorithms-and-data-structures-js">
+  <img src="https://img.shields.io/github/repo-size/jcpedroza/algorithms-and-data-structures-js">
+</p>
