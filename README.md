@@ -3,6 +3,7 @@
 <p align="center">
   <a href="https://github.com/JCPedroza/algorithms-and-data-structures-js/blob/master/LICENSE"><img src="https://img.shields.io/github/license/jcpedroza/algorithms-and-data-structures-js"></a>
   <a href="https://standardjs.com"><img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg"></a>
+  <a href="https://www.codefactor.io/repository/github/jcpedroza/algorithms-and-data-structures-js"><img src="https://www.codefactor.io/repository/github/jcpedroza/algorithms-and-data-structures-js/badge" alt="CodeFactor" /></a>
 </p>
 
 <p align="center">
