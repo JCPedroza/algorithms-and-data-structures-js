@@ -1,22 +1,52 @@
 # JavaScript Algorithms & Data Structures
 
-<a href="https://en.wikipedia.org/wiki/MIT_License"><img src="https://img.shields.io/github/license/jcpedroza/algorithms-and-data-structures-js"></a>
-<a href="https://standardjs.com"><img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg"></a>
-<a href="https://www.codacy.com/gh/JCPedroza/algorithms-and-data-structures-js/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JCPedroza/algorithms-and-data-structures-js&amp;utm_campaign=Badge_Grade"><img src="https://app.codacy.com/project/badge/Grade/bfbdad3f96c94ce793e9453745d95fd7"/></a>
-<a href="https://www.codefactor.io/repository/github/jcpedroza/algorithms-and-data-structures-js"><img src="https://www.codefactor.io/repository/github/jcpedroza/algorithms-and-data-structures-js/badge" alt="CodeFactor" /></a>
+[![license MIT][1]][2] [![code stile: standard][3]][4]
+[![codacy code quality][5]][6] [![codefactor code quality][7]][8]
 
 This repository is dedicated to the study of algorithms, data structures, and JavaScript.
 
-# Contributing
+## Contributing
 
-<img src="https://img.shields.io/github/contributors/JCPedroza/algorithms-and-data-structures-js"> <img src="https://img.shields.io/github/commit-activity/m/JCPedroza/algorithms-and-data-structures-js"> <img src="https://img.shields.io/github/issues-raw/JCPedroza/algorithms-and-data-structures-js"> <img src="https://img.shields.io/github/issues-closed-raw/JCPedroza/algorithms-and-data-structures-js"> <img src="https://img.shields.io/github/issues-pr-raw/JCPedroza/algorithms-and-data-structures-js"> <img src="https://img.shields.io/github/issues-pr-closed-raw/JCPedroza/algorithms-and-data-structures-js">
+[![contributors][25]][26] [![commit activity][27]][28] [![issues][29]][30]
+[![issues closed][31]][32] [![issues pr][33]][34] [![issues pr closed][35]][36]
 
 Code reviews and pull requests are always welcome!
 
-# Similar Resources
+## Similar Resources
 
-You can find the Python version of this reposotiry <a href="https://github.com/JCPedroza/algorithms-and-data-structures-py">here</a>.
+You can find the Python version of this reposotiry [here][101].
 
 ---
 
-<img src="https://img.shields.io/tokei/lines/github/jcpedroza/algorithms-and-data-structures-js"> <img src="https://img.shields.io/github/languages/code-size/jcpedroza/algorithms-and-data-structures-js"> <img src="https://img.shields.io/github/repo-size/jcpedroza/algorithms-and-data-structures-js">
+[![total lines][51]][52] [![code size][53]][54] [![repo size][55]][56]
+
+[1]: https://img.shields.io/github/license/jcpedroza/algorithms-and-data-structures-js
+[2]: https://en.wikipedia.org/wiki/MIT_License
+[3]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
+[4]: https://standardjs.com
+[5]: https://app.codacy.com/project/badge/Grade/bfbdad3f96c94ce793e9453745d95fd7
+[6]: https://www.codacy.com/gh/JCPedroza/algorithms-and-data-structures-js/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JCPedroza/algorithms-and-data-structures-js&amp;utm_campaign=Badge_Grade
+[7]: https://www.codefactor.io/repository/github/jcpedroza/algorithms-and-data-structures-js/badge
+[8]: https://www.codefactor.io/repository/github/jcpedroza/algorithms-and-data-structures-js
+
+[25]: https://img.shields.io/github/contributors/JCPedroza/algorithms-and-data-structures-js
+[26]: https://img.shields.io/github/contributors/JCPedroza/algorithms-and-data-structures-js
+[27]: https://img.shields.io/github/commit-activity/m/JCPedroza/algorithms-and-data-structures-js
+[28]: https://img.shields.io/github/commit-activity/m/JCPedroza/algorithms-and-data-structures-js
+[29]: https://img.shields.io/github/issues-raw/JCPedroza/algorithms-and-data-structures-js
+[30]: https://img.shields.io/github/issues-raw/JCPedroza/algorithms-and-data-structures-js
+[31]: https://img.shields.io/github/issues-closed-raw/JCPedroza/algorithms-and-data-structures-js
+[32]: https://img.shields.io/github/issues-closed-raw/JCPedroza/algorithms-and-data-structures-js
+[33]: https://img.shields.io/github/issues-pr-raw/JCPedroza/algorithms-and-data-structures-js
+[34]: https://img.shields.io/github/issues-pr-raw/JCPedroza/algorithms-and-data-structures-js
+[35]: https://img.shields.io/github/issues-pr-closed-raw/JCPedroza/algorithms-and-data-structures-js
+[36]: https://img.shields.io/github/issues-pr-closed-raw/JCPedroza/algorithms-and-data-structures-js
+
+[51]: https://img.shields.io/tokei/lines/github/jcpedroza/algorithms-and-data-structures-js
+[52]: https://img.shields.io/tokei/lines/github/jcpedroza/algorithms-and-data-structures-js
+[53]: https://img.shields.io/github/languages/code-size/jcpedroza/algorithms-and-data-structures-js
+[54]: https://img.shields.io/github/languages/code-size/jcpedroza/algorithms-and-data-structures-js
+[55]: https://img.shields.io/github/repo-size/jcpedroza/algorithms-and-data-structures-js
+[56]: https://img.shields.io/github/repo-size/jcpedroza/algorithms-and-data-structures-js
+
+[101]: https://github.com/JCPedroza/algorithms-and-data-structures-py
