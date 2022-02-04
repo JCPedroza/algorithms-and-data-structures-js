@@ -7,7 +7,7 @@
  * @returns {number} Sum of natural numbers divisible by n and
  * below the limit.
  */
-const multiplesOf3or5 = (limit) => {
+const multiplesOf3Or5 = (limit) => {
   let sum = 0
 
   for (let num = 1; num < limit; num++) {
@@ -20,6 +20,6 @@ const multiplesOf3or5 = (limit) => {
 }
 
 module.exports = {
-  solution: multiplesOf3or5,
+  solution: multiplesOf3Or5,
   id: 'for-loop accumulator'
 }

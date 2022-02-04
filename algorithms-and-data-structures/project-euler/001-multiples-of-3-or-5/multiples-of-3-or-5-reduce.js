@@ -7,12 +7,12 @@
  * @returns {number} Sum of natural numbers divisible by n and
  * below the limit.
  */
-const multiplesOf3or5 = (limit) =>
+const multiplesOf3Or5 = (limit) =>
   [...Array(limit).keys()] // Generate range [0, limit)
     .filter(num => num % 3 === 0 || num % 5 === 0)
     .reduce((sum, num) => sum + num)
 
 module.exports = {
-  solution: multiplesOf3or5,
+  solution: multiplesOf3Or5,
   id: 'filter reduce'
 }

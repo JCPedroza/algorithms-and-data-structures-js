@@ -22,12 +22,12 @@ const sumDivisibleBy = (limit, n) => {
  * @returns {number} Sum of natural numnbers multiples of 3 or 5 and
  * below the limit.
  */
-const multiplesOf3or5 = (limit) =>
+const multiplesOf3Or5 = (limit) =>
   sumDivisibleBy(limit, 3) +
   sumDivisibleBy(limit, 5) -
   sumDivisibleBy(limit, 15)
 
 module.exports = {
-  solution: multiplesOf3or5,
+  solution: multiplesOf3Or5,
   id: 'analytic'
 }
