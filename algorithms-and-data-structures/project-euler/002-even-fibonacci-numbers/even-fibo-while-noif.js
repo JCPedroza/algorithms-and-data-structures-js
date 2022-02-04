@@ -5,7 +5,8 @@
  * Time complexity: O(n)
  * Space complexity: O(1)
  * @param {number} limit Max value of the fibonacci numbers (inclusive).
- * @returns Sum of the even fibonacci numbers that do not exceed the limit.
+ * @returns {number} Sum of the even fibonacci numbers that do not exceed the
+ * limit.
  */
 const fiboEvenSum = (limit) => {
   let first = 1
