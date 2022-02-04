@@ -1,1 +1,7 @@
-<h1>Project Euler</h1>
+# Project Euler
+
+## Resources
+
+- [Project Euler][1]
+
+[1]: https://projecteuler.net/

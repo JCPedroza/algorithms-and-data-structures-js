@@ -1,9 +1,9 @@
-<h1>Algorithms & Data Structures</h1>
+# Algorithms & Data Structures
 
-<h2>Resources</h2>
+## Resources
 
-<ul>
-  <li><a href="https://www.bigocheatsheet.com/">Big-O Cheat Sheet</a></li>
-  <li><a href="https://projecteuler.net/">Project Euler</a></li>
-  <li><a href="https://projecteuler.net/">Algorithms & Data Structures at freeCodeCamp's Coding Interview Prep</a></li>
-</ul>
+- [Big-O Cheat Sheet][1]
+- [Project Euler][2]
+
+[1]: https://www.bigocheatsheet.com/
+[2]: https://projecteuler.net/
