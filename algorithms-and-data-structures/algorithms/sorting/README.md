@@ -1,17 +1,21 @@
-<h1>Sorting Algorithms</h1>
+# Sorting Algorithms
 
-<p>A sorting algorithm is an algorithm that puts elements of a list into an order.</p>
+A sorting algorithm is an algorithm that puts elements of a list into an order.
 
-<h2>Terminology</h2>
+## Terminology
 
-<h3>Stable</h3>
+### Stable
 
-<p>When the relative order between equal values present in the input list is preserved in the output, ordered, list, the sorting algorithm is said to be stable.</p>
+When the relative order between equal values present in the input list is
+preserved in the output, ordered, list, the sorting algorithm is said to be
+stable.
 
-<h2>Resources</h2>
+## Resources
 
-<ul>
-  <li><a href="https://en.wikipedia.org/wiki/Sorting_algorithm">Sorting Algorithms at Wikipedia</a></li>
-  <li><a href="https://rosettacode.org/wiki/Category:Sorting_Algorithms">Sorting Algorithms at Rosetta Code</a></li>
-  <li><a href="https://www.geeksforgeeks.org/sorting-algorithms/">Sorting Algorithms at GeeksforGeeks</a></li>
-</ul>
+- [Sorting Algorithms at Wikipedia][1]
+- [Sorting Algorithms at Rosetta Code][2]
+- [Sorting Algorithms at GeeksforGeeks][3]
+
+[1]: https://en.wikipedia.org/wiki/Sorting_algorithm
+[2]: https://rosettacode.org/wiki/Category:Sorting_Algorithms
+[3]: https://www.geeksforgeeks.org/sorting-algorithms/

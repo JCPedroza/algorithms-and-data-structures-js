@@ -1,10 +1,13 @@
-<h1>Quick Sort</h1>
+# Quick Sort
 
-<h2>Resources</h2>
+## Resources
 
-<ul>
-  <li><a href="https://en.wikipedia.org/wiki/Quicksort">Quick Sort at Wikipedia</a></li>
-  <li><a href="https://rosettacode.org/wiki/Sorting_algorithms/Quicksort">Quick Sort at Rosetta Code</a></li>
-  <li><a href="https://www.geeksforgeeks.org/quick-sort/">Quick Sort at GeeksforGeeks</a></li>
-  <li><a href="https://stackoverflow.com/q/5185864/1690799">Quick Sort at StackOverflow</a></li>
-</ul>
+- [Quick Sort at Wikipedia][1]
+- [Quick Sort at Rosetta Code][2]
+- [Quick Sort at GeeksforGeeks][3]
+- [Quick Sort at StackOverflow][4]
+
+[1]: https://en.wikipedia.org/wiki/Quicksort
+[2]: https://rosettacode.org/wiki/Sorting_algorithms/Quicksort
+[3]: https://www.geeksforgeeks.org/quick-sort/
+[4]: https://stackoverflow.com/q/5185864/1690799

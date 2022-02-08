@@ -1,13 +1,18 @@
-<h1>Word Count</h1>
+# Word Count
 
-<p>Create a function that counts the number the words contained inside a string.</p>
+Create a function that counts the number the words contained inside a string.
 
-<p>Consider only strings that are in English, and only consider the following punctuation signs: <code>[.:,;?!]</code></p>
+Consider only strings that are in English, and only consider the following
+punctuation signs: `[.:,;?!]`.
 
-<p>The function signature is <code>countWords(str: string): number</code>.</p>
+The function signature is
 
-<h2>References</h2>
+```typescript
+countWords(str: string): number
+```
 
-<ul>
-  <li><a href="https://stackoverflow.com/q/18679576/1690799">JS word count at StackOverflow</a></li>
-</ul>
+# References
+
+[JS word count at StackOverflow][1]
+
+[1]: https://stackoverflow.com/q/18679576/1690799
