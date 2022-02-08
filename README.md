@@ -32,17 +32,17 @@ You can find the Python version of this reposotiry [here][101].
 [10]: https://actions-badge.atrox.dev/jcpedroza/algorithms-and-data-structures-js/goto?ref=main
 
 [25]: https://img.shields.io/github/contributors/JCPedroza/algorithms-and-data-structures-js
-[26]: https://img.shields.io/github/contributors/JCPedroza/algorithms-and-data-structures-js
+[26]: https://github.com/JCPedroza/algorithms-and-data-structures-js/graphs/contributors
 [27]: https://img.shields.io/github/commit-activity/m/JCPedroza/algorithms-and-data-structures-js
-[28]: https://img.shields.io/github/commit-activity/m/JCPedroza/algorithms-and-data-structures-js
+[28]: https://github.com/JCPedroza/algorithms-and-data-structures-js/graphs/commit-activity
 [29]: https://img.shields.io/github/issues-raw/JCPedroza/algorithms-and-data-structures-js
-[30]: https://img.shields.io/github/issues-raw/JCPedroza/algorithms-and-data-structures-js
+[30]: https://github.com/JCPedroza/algorithms-and-data-structures-js/issues
 [31]: https://img.shields.io/github/issues-closed-raw/JCPedroza/algorithms-and-data-structures-js
-[32]: https://img.shields.io/github/issues-closed-raw/JCPedroza/algorithms-and-data-structures-js
+[32]: https://github.com/JCPedroza/algorithms-and-data-structures-js/issues
 [33]: https://img.shields.io/github/issues-pr-raw/JCPedroza/algorithms-and-data-structures-js
-[34]: https://img.shields.io/github/issues-pr-raw/JCPedroza/algorithms-and-data-structures-js
+[34]: https://github.com/JCPedroza/algorithms-and-data-structures-js/pulls
 [35]: https://img.shields.io/github/issues-pr-closed-raw/JCPedroza/algorithms-and-data-structures-js
-[36]: https://img.shields.io/github/issues-pr-closed-raw/JCPedroza/algorithms-and-data-structures-js
+[36]: https://github.com/JCPedroza/algorithms-and-data-structures-js/pulls
 
 [51]: https://img.shields.io/tokei/lines/github/jcpedroza/algorithms-and-data-structures-js
 [52]: https://img.shields.io/tokei/lines/github/jcpedroza/algorithms-and-data-structures-js
