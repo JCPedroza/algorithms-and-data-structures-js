@@ -8,8 +8,10 @@
   "description": "Algorithms and data structures implemented in JavaScript",
   "main": "index.js",
   "scripts": {
+    "test": "jest --onlyChanged",
     "pre-commit-test": "standard --fix && jest --onlyChanged",
     "pre-push-test": "standard && jest",
+    "node-workflow-test": "standard && jest",
     "prepare": "husky install"
   },
   "repository": {
