@@ -19,7 +19,7 @@ class List {
    * The head property cannot be directly set.
    */
   set head (_) {
-    throw new Error('Cannot set head property')
+    throw new Error(`Cannot set head property, input was ${_}`)
   }
 
   /**
@@ -33,7 +33,7 @@ class List {
    * The tail property cannot be directly set.
    */
   set tail (_) {
-    throw new Error('Cannot set tail property')
+    throw new Error(`Cannot set tail property, input was ${_}`)
   }
 
   /**
@@ -47,7 +47,7 @@ class List {
    * The length property cannot be directly set.
    */
   set length (_) {
-    throw new Error('Cannot set length property')
+    throw new Error(`Cannot set tail property, input was ${_}`)
   }
 
   /**
@@ -104,8 +104,11 @@ class List {
    */
   _parseIndex (index) {
     const parsedIndex = parseInt(index)
-    if (isNaN(index)) throw new Error(`Index must be a number, input was: ${index}`)
-    else return parsedIndex
+    if (isNaN(index)) {
+      throw new Error(`Index must be a number, input was: ${index}`)
+    } else {
+      return parsedIndex
+    }
   }
 }
 
