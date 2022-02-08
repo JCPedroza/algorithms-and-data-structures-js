@@ -10,7 +10,7 @@ This repository is dedicated to the study of algorithms, data structures, and Ja
 [![contributors][25]][26] [![commit activity][27]][28] [![issues][29]][30]
 [![issues closed][31]][32] [![issues pr][33]][34] [![issues pr closed][35]][36]
 
-Code reviews and pull requests are always welcome!
+Code reviews, pull requests, issues, and discussions are always welcome!
 
 ## Similar Resources
 
