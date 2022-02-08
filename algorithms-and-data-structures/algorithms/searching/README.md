@@ -19,6 +19,7 @@ found or the search is exhausted at the `log n` iteration.
 ## Space Complexity
 
 - O(1) best, worst, average
+- Recursive solutions have O(log n) because of recursion stack.
 
 ## Resources
 

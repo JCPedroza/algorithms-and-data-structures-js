@@ -1,5 +1,6 @@
 const testSubjects = [
-  require('./binary-search')
+  require('./binary-search'),
+  require('./binary-search-recursive')
 ]
 
 for (const { algorithm, id } of testSubjects) {
