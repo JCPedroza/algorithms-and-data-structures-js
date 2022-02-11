@@ -1,3 +1,3 @@
-<h1>Algorithms - Sequences</h1>
+# Algorithms - Sequences
 
-<p>Algorithms that output sequences, ranges, or collections.</p>
+Algorithms that output sequences, ranges, or collections.

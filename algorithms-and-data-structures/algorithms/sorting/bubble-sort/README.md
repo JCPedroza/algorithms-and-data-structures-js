@@ -1,39 +1,37 @@
-<h1>Bubble Sort</h1>
+# Bubble Sort
 
-<h2>Categories</h2>
-<ul>
-  <li>Polynomial (cuadratic) growth</li>
-  <li>Comparison sort</li>
-  <li>Stable</li>
-  <li>In-Place</li>
-</ul>
+## Categories
 
-<h2>Time Complexity</h2>
+- Polynomial (cuadratic) growth
+- Comparison sort
+- Stable
+- In-Place
 
-<h3>Comparisons</h3>
-<ul>
-  <li>Worst: <code>O(n<sup>2</sup>)</code></li>
-  <li>Best: <code>O(n)</code></li>
-  <li>Average: <code>O(n<sup>2</sup>)</code></li>
-</ul>
+## Time Complexity
 
-<h3>Swaps</h3>
-<ul>
-  <li>Worst: <code>O(n<sup>2</sup>)</code></li>
-  <li>Best: <code>O(1)</code></li>
-  <li>Average: <code>O(n<sup>2</sup>)</code></li>
-</ul>
+### Comparisons
 
-<h2>Space Complexity</h2>
+- Worst: `O(n<sup>2</sup>)`
+- Best: `O(n)`
+- Average: `O(n<sup>2</sup>)`
 
-<p>Total: <code>O(n)</code></p>
+### Swaps
 
-<p>Auxiliary: <code>O(1)</code></p>
+- Worst: `O(n<sup>2</sup>)`
+- Best: `O(1)`
+- Average: `O(n<sup>2</sup>)`
 
-<h2>Resources</h2>
+## Space Complexity
 
-<ul>
-  <li><a href="https://en.wikipedia.org/wiki/Bubble_sort">Bubble Sort at Wikipedia</a></li>
-  <li><a href="https://stackoverflow.com/q/13721890/1690799">Space complexity of bubble sort algorithm at StackOverflow</a></li>
-  <li><a href="https://www.geeksforgeexks.org/bubble-sort/">Bubble Sort at Geeks for Geeks</a></li>
-</ul>
+- Total: `O(n)`
+- Auxiliary: `O(1)`
+
+## Resources
+
+- [Bubble Sort at Wikipedia][1]
+- [Space complexity of bubble sort algorithm at StackOverflow][2]
+- [Bubble Sort at Geeks for Geeks][3]
+
+[1]: https://en.wikipedia.org/wiki/Bubble_sort
+[2]: https://stackoverflow.com/q/13721890/1690799
+[3]: https://www.geeksforgeexks.org/bubble-sort/

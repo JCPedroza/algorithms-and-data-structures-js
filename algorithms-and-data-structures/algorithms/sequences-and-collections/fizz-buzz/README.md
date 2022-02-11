@@ -1,20 +1,25 @@
-<h1>Fizz Buzz</h1>
+# Fizz Buzz
 
-<p>Write a program that generates an array of integers from <code>n</code> to <code>m</code>, but:</p>
+Write a program that generates an array of integers from `n` to `m`, but:
 
-<ul>
-  <li>for multiples of 3, add "fizz" to the array instead of the number</li>
-  <li>for multiples of 5, add "buzz" to the array instead of the number</li>
-  <li>for multiples of both 3 and 5, add "fizzbuzz" to the array instead of the number</li>
-</ul>
+- For multiples of 3, add "fizz" to the array instead of the number
+- For multiples of 5, add "buzz" to the array instead of the number
+- For multiples of both 3 and 5, add "fizzbuzz" to the array intead of the number
 
-<p>The signature of the function is <code>fizzBuzzRange(from: number, to: number): string[].</code></p>
+The signature of the function is
 
-<h2>Resources</h2>
+```typescript
+fizzBuzzRange(from: number, to: number): string[].
+```
 
-<ul>
-  <li><a href="https://rosettacode.org/wiki/FizzBuzz">Fizz Buzz at Rosetta Code</a></li>
-  <li><a href="https://www.freecodecamp.org/learn/coding-interview-prep/rosetta-code/fizzbuzz">Fizz Buzz at freeCodeCamp</a></li>
-  <li><a href="https://github.com/EnterpriseQualityCoding/FizzBuzzEnterpriseEdition">Fizz Buzz EE at GitHub</a></li>
-  <li><a href="https://www.tomdalling.com/blog/software-design/fizzbuzz-in-too-much-detail/">Fizz Buzz in too much detail, by Tom Dalling</a></li>
-</ul>
+## Resources
+
+- [FizzBuzz at Rosetta Code][1]
+- [FizzBuzz at freeCodeCamp][2]
+- [FizzBuzz EE at Github][3]
+- [FizzBuzz in too much detail, by Tom Dalling][4]
+
+[1]: https://rosettacode.org/wiki/FizzBuzz
+[2]: https://www.freecodecamp.org/learn/coding-interview-prep/rosetta-code/fizzbuzz
+[3]: https://github.com/EnterpriseQualityCoding/FizzBuzzEnterpriseEdition
+[4]: https://www.tomdalling.com/blog/software-design/fizzbuzz-in-too-much-detail/
