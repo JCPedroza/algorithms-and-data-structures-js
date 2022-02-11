@@ -3,7 +3,7 @@ const testSubjects = [
   require('./largest-prime-factor')
 ]
 
-const runSuiteForSubject = ({ solution, id }) => {
+testSubjects.forEach(({ solution, id }) => {
   describe(`Largest prime factor algorithm "${id}"`, () => {
     it('finds the largest prime factor of a number', () => {
       expect(solution(2)).toBe(2)
@@ -11,6 +11,4 @@ const runSuiteForSubject = ({ solution, id }) => {
       expect(solution(154)).toBe(11)
     })
   })
-}
-
-testSubjects.forEach(runSuiteForSubject)
+})

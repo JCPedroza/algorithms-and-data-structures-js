@@ -4,7 +4,7 @@ const testSubjects = [
   require('./even-fibo-while')
 ]
 
-const runSuiteForSubject = ({ solution, id }) => {
+testSubjects.forEach(({ solution, id }) => {
   describe(`Even fibonacci algorithm "${id}"`, () => {
     it('sums even fibo numbers up to the given limit', () => {
       expect(solution(-1)).toBe(0)
@@ -14,6 +14,4 @@ const runSuiteForSubject = ({ solution, id }) => {
       expect(solution(60)).toBe(44)
     })
   })
-}
-
-testSubjects.forEach(runSuiteForSubject)
+})
