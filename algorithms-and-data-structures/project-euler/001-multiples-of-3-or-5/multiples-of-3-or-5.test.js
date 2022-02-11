@@ -4,9 +4,13 @@ const testSubjects = [
   require('./multiples-of-3-or-5-analytic')
 ]
 
-testSubjects.forEach(({ solution, id }) => {
-  test(`${id} calculates sum of multiples of 3 or 5`, () => {
-    expect(solution(50)).toBe(543)
-    expect(solution(1000)).toBe(233_168)
+const runSuiteOnSubject = ({ solution, id }) => {
+  describe(`Multiples of 3 or 5 algorithm "${id}"`, () => {
+    it('sums the multiples of 3 or 5 below the input', () => {
+      expect(solution(50)).toBe(543)
+      expect(solution(100)).toBe(2_318)
+    })
   })
-})
+}
+
+testSubjects.forEach(runSuiteOnSubject)
