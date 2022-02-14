@@ -22,6 +22,7 @@ const largestPalindromeProduct = (digits) => {
   for (let factorA = start; factorA <= end; factorA++) {
     for (let factorB = factorA; factorB <= end; factorB++) {
       const product = factorA * factorB
+
       if (isPalindrome(product) && product > largestPalindrome) {
         largestPalindrome = product
       }
