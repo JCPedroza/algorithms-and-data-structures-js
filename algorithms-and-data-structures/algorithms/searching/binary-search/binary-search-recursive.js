@@ -12,7 +12,7 @@ const binarySearch = (array, target) => {
     const mid = Math.trunc((start + end) / 2)
 
     if (array[mid] === target) return mid
-    else if (start > end) return -1
+    if (start > end) return -1
 
     if (array[mid] < target) return search(mid + 1, end)
     else return search(start, mid - 1)
