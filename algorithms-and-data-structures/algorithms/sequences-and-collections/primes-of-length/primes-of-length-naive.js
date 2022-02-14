@@ -9,7 +9,7 @@ const isPrime = (num) => {
   if (num % 2 === 0) return false
 
   const limit = Math.floor(Math.sqrt(num))
-  for (let div = 3; div <= limit; div++) {
+  for (let div = 3; div <= limit; div += 2) {
     if (num % div === 0) return false
   }
 
