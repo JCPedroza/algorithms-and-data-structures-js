@@ -16,7 +16,9 @@ const binarySearch = (array, searchValue) => {
 
     if (array[midIndex] === searchValue) {
       return midIndex
-    } else if (array[midIndex] < searchValue) {
+    }
+
+    if (array[midIndex] < searchValue) {
       leftLimit = midIndex + 1
     } else {
       rightLimit = midIndex - 1
