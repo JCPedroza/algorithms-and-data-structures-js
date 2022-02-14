@@ -10,10 +10,10 @@ const largestPrimeFactor = (num) => {
   while (num > 1) {
     if (num % factor === 0) {
       lastFactor = factor
-      num = num / factor
+      num /= factor
 
       while (num % factor === 0) {
-        num = num / factor
+        num /= factor
       }
     }
 
