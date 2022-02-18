@@ -103,7 +103,7 @@ class List {
    * @returns {number} Parsed index.
    */
   _parseIndex (index) {
-    const parsedIndex = parseInt(index)
+    const parsedIndex = parseInt(index, 10)
     if (isNaN(index)) {
       throw new Error(`Index must be a number, input was: ${index}`)
     } else {
