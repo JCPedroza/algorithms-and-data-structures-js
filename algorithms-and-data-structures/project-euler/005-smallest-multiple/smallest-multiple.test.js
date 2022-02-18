@@ -1,5 +1,6 @@
 const testSubjects = [
-  require('./smallest-multiple-naive')
+  require('./smallest-multiple-naive'),
+  require('./smallest-multiple-optimized')
 ]
 
 testSubjects.forEach(({ solution, id }) => {
