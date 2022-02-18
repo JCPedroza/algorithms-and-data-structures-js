@@ -205,7 +205,7 @@ class LinkedList extends List {
   /**
    * Convert this list into an array.
    * Time complexity: O(n).
-   * @returns {*[]} Array representation of this list.
+   * @returns {array} Array representation of this list.
    */
   toArray () {
     const array = []

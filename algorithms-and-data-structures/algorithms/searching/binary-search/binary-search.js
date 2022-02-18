@@ -2,7 +2,7 @@
  * Find the index of a value inside an array.
  * Time complexity: O(1) best O(log n) worst O(log n).
  * Space complexity: O(1).
- * @param {*[]} array Sorted array containing the value to be found.
+ * @param {array} array Sorted array containing the value to be found.
  * @param {*} searchValue Value to find inside the array.
  * @returns {number} Index of the value in the array, or -1 if value is
  * not found.
