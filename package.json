@@ -11,7 +11,7 @@
     "test": "jest --onlyChanged",
     "pre-commit-test": "standard --fix && jest --onlyChanged",
     "pre-push-test": "standard && jest",
-    "node-workflow-test": "standard && jest",
+    "node-workflow-test": "standard && jest --ci",
     "jsdoc": "./node_modules/.bin/jsdoc --readme ./README.md --configure ./jsdoc.json --destination ./docs --recurse .",
     "prepare": "husky install"
   },
