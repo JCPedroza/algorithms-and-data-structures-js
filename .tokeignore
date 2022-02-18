@@ -4,6 +4,7 @@
 .git/
 .github/
 .husky/
+.docs/
 
 # Ignore these files
 LICENSE
