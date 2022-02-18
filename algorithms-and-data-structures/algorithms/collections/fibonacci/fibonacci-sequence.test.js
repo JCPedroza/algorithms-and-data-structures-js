@@ -1,25 +1,18 @@
 const testSubjects = [
-  require('./fibonacci-sequence'),
-  require('./fibonacci-sequence-rmemo')
+  require('./fibonacci-sequence-floop'),
+  require('./fibonacci-sequence-rmemo'),
+  require('./fibonacci-sequence-reduce')
 ]
 
-// Test for lengths 0 and 1
 testSubjects.forEach(({ algorithm, id }) => {
-  const testLengthZero = () => expect(algorithm(0)).toEqual([])
-  const testLengthOne = () => expect(algorithm(1)).toEqual([0n])
+  describe(`Fibonacci sequence algorithm "${id}"`, () => {
+    it('builds the Fibonacci sequence of the given length', () => {
+      expect(algorithm(0)).toEqual([])
+      expect(algorithm(1)).toEqual([0n])
+      expect(algorithm(2)).toEqual([0n, 1n])
 
-  test(`${id} builds Fibonacci sequence of length 0`, testLengthZero)
-  test(`${id} builds Fibonacci sequence of length 1`, testLengthOne)
+      expect(algorithm(10))
+        .toEqual([0n, 1n, 1n, 2n, 3n, 5n, 8n, 13n, 21n, 34n])
+    })
+  })
 })
-
-// Test for length 10
-testSubjects.forEach(({ id, algorithm }) => {
-  const length = 10
-  const expectedOutput = [0n, 1n, 1n, 2n, 3n, 5n, 8n, 13n, 21n, 34n]
-
-  const testLengthTen = () => expect(algorithm(length)).toEqual(expectedOutput)
-
-  test(`${id} builds Fibonacci sequence of length ${length}`, testLengthTen)
-})
-
-// TODO: deal with inputs: negative, undefined, float, no numeric
