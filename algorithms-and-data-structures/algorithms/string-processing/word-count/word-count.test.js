@@ -8,32 +8,16 @@ const complexStr = `One two.three : four
 five! six? seven,  eight  ;
 nine ten!?? ,.! . `
 
-const testCases = {
-  emptyStr: {
-    in: '',
-    out: 0
-  },
-
-  oneWord: {
-    in: 'one',
-    out: 1
-  },
-
-  complex: {
-    in: complexStr,
-    out: 10
-  },
-
-  punctuationAndSpaces: {
-    in: '?! .. ;:  ? ,  ',
-    out: 0
-  }
-}
+const weirdStr = '?! .. ;:  ? ,  '
 
 testSubjects.forEach(({ algorithm, id }) => {
-  test(`"${id}" counts total words in a string`, () => {
-    Object.values(testCases).forEach(scenario => {
-      expect(algorithm(scenario.in)).toEqual(scenario.out)
+  describe(`Word count algorithm "${id}"`, () => {
+    it('counts the words of a string', () => {
+      expect(algorithm('')).toBe(0)
+      expect(algorithm(weirdStr)).toBe(0)
+
+      expect(algorithm('one')).toBe(1)
+      expect(algorithm(complexStr)).toBe(10)
     })
   })
 })
