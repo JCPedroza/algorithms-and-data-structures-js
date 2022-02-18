@@ -1,4 +1,4 @@
-const { Structure: LinkedList } = require('../linked-list/linked-list-double')
+const { LinkedList } = require('../exports')
 
 /**
  * Implements a queue using a doubly linked list as underlying data structure.
