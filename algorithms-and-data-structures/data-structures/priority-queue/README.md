@@ -12,24 +12,27 @@ Implement a Priority Queue with the following interface.
 ## Interface
 
 ```enqueue(num: number): void```
+
 - Add number to queue
 
-
 ```dequeue(): number```
+
 - Get lowest value and remove it from the queue.
 - Dequeueing from an empty queue must rise an exception.
 
 ```peek(): number```
+
 - Get lowest value, without removing it from the queue.
 - Peeking from an empty queue must rise an exception.
 
 ```isEmpty(): boolean```
+
 - Return true if the queue is empty, otherwise return false.
 
 ```PriorityQueue.prototype.length```
+
 - Returns the total number of items inside the queue.
 - Trying to set it must rise an exception.
-
 
 ## Resources
 
