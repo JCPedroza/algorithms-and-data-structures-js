@@ -19,7 +19,7 @@ class Queue {
    * The length property cannot be directly set.
    */
   set length (_) {
-    throw new Error('Cannot set length property')
+    throw new Error(`Cannot set length property, input was ${_}`)
   }
 
   /**
