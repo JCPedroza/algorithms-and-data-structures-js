@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: data-structures/linked-list/List.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: data-structures/linked-list/List.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * Basic functionality for a list based on head and tail items.
+ */
+class List {
+  constructor () {
+    this._head = null
+    this._tail = null
+    this._length = 0
+  }
+
+  /**
+   * Get the first (head) item from the list.
+   */
+  get head () {
+    return this._head
+  }
+
+  /**
+   * The head property cannot be directly set.
+   */
+  set head (_) {
+    throw new Error(`Cannot set head property, input was ${_}`)
+  }
+
+  /**
+   * Get the last (tail) item from the list.
+   */
+  get tail () {
+    return this._tail
+  }
+
+  /**
+   * The tail property cannot be directly set.
+   */
+  set tail (_) {
+    throw new Error(`Cannot set tail property, input was ${_}`)
+  }
+
+  /**
+   * Get the number of items in the list.
+   */
+  get length () {
+    return this._length
+  }
+
+  /**
+   * The length property cannot be directly set.
+   */
+  set length (_) {
+    throw new Error(`Cannot set tail property, input was ${_}`)
+  }
+
+  /**
+   * Check if the list has no items.
+   * @returns {boolean} True if the list has no items, false otherwise.
+   */
+  isEmpty () {
+    return this.length === 0
+  }
+
+  /**
+   * Check if the list is a singleton.
+   * @returns {boolean} True if the list has exactly one item, false otherwise.
+   */
+  isSingleton () {
+    return this.length === 1
+  }
+
+  /**
+   * Validate index for methods that accept non-negative indexes.
+   * @param {number} index Index to be validated.
+   */
+  _positiveRangeCheck (index) {
+    if (index &lt; 0 || index >= this.length) {
+      this._throwRangeErr(index, 0, this.length)
+    }
+  }
+
+  /**
+   * Validate index for methods that accept negative indexes.
+   * @param {number} index Index to be validated.
+   */
+  _wholeRangeCheck (index) {
+    if (index &lt; -this.length || index >= this.length) {
+      this._throwRangeErr(index, -this.length, this.length)
+    }
+  }
+
+  /**
+   * Throw an error when an index is out of range.
+   * @param {number} badIndex The invalid index used by the caller.
+   * @param {number} minInc Start of the valid range, inclusive.
+   * @param {number} maxExc End of the valid range, exclusive.
+   */
+  _throwRangeErr (badIndex, minInc, maxExc) {
+    const errMsg = `Index ${badIndex} out of range [${minInc}, ${maxExc})`
+    throw new Error(errMsg)
+  }
+
+  /**
+   * Validate that the index is a number, and parse it as integer.
+   * @param {number} index Index to be parsed.
+   * @returns {number} Parsed index.
+   */
+  _parseIndex (index) {
+    const parsedIndex = parseInt(index)
+    if (isNaN(index)) {
+      throw new Error(`Index must be a number, input was: ${index}`)
+    } else {
+      return parsedIndex
+    }
+  }
+}
+
+module.exports = List
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="LinkedList.html">LinkedList</a></li><li><a href="List.html">List</a></li><li><a href="Node.html">Node</a></li><li><a href="Queue.html">Queue</a></li></ul><h3>Global</h3><ul><li><a href="global.html#binarySearch">binarySearch</a></li><li><a href="global.html#bubbleSort">bubbleSort</a></li><li><a href="global.html#countWords">countWords</a></li><li><a href="global.html#fiboEvenSum">fiboEvenSum</a></li><li><a href="global.html#fizzBuzzRange">fizzBuzzRange</a></li><li><a href="global.html#heapify">heapify</a></li><li><a href="global.html#heapSort">heapSort</a></li><li><a href="global.html#insertionSort">insertionSort</a></li><li><a href="global.html#isDivisibleByRange">isDivisibleByRange</a></li><li><a href="global.html#isPalindrome">isPalindrome</a></li><li><a href="global.html#isPrime">isPrime</a></li><li><a href="global.html#largestPalindromeProduct">largestPalindromeProduct</a></li><li><a href="global.html#largestPrimeFactor">largestPrimeFactor</a></li><li><a href="global.html#merge">merge</a></li><li><a href="global.html#mergeSort">mergeSort</a></li><li><a href="global.html#multiplesOf3Or5">multiplesOf3Or5</a></li><li><a href="global.html#numToFizzBuzz">numToFizzBuzz</a></li><li><a href="global.html#primesOfLength">primesOfLength</a></li><li><a href="global.html#primesUpTo">primesUpTo</a></li><li><a href="global.html#quickSort">quickSort</a></li><li><a href="global.html#sanitizeObjectProperties">sanitizeObjectProperties</a></li><li><a href="global.html#selectionSort">selectionSort</a></li><li><a href="global.html#smallestMult">smallestMult</a></li><li><a href="global.html#sumDivisibleBy">sumDivisibleBy</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.10</a> on Fri Feb 18 2022 00:39:32 GMT-0600 (Central Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
