@@ -19,8 +19,8 @@ so, check if it is the largest one so far.
 
 A small optimization was implemented. The inner loop starts counting from
 the current outer loop value, instead of starting from the first n-digit
-number. This avoids checking the same value twice, like 3 * 2 = 6 and
-2 * 3 = 6.
+number. This avoids checking the same value twice, like 3 x 2 = 6 and
+2 x 3 = 6.
 
 ## Optimized Approach
 
