@@ -7,34 +7,17 @@ const testSubjects = [
 ]
 
 testSubjects.forEach(({ algorithm, id }) => {
-  test(`${id} sanitizes a three-property object`, () => {
-    const object = { title: 'One', year: 2021, hack: true }
-    const properties = ['title', 'year']
-    const sanitizedCopy = algorithm(object, properties)
+  describe(`Object sanitization algorithm "${id}"`, () => {
+    it('sanitizes object properties according to a whitelist', () => {
+      const movie = { title: 'One', year: 1954, director: 'Tom' }
+      const movieWhitelist = ['title', 'year']
 
-    // Must not have the 'hack' property
-    expect(sanitizedCopy).toEqual({ title: 'One', year: 2021 })
-  })
-})
+      expect(algorithm(movie, movieWhitelist)).toEqual({ title: 'One', year: 1954 })
+      expect(algorithm({}, movieWhitelist)).toEqual({})
+      expect(algorithm(movie, [])).toEqual({})
 
-testSubjects.forEach(({ algorithm, id }) => {
-  test(`${id} sanitizes an empty object`, () => {
-    const object = {}
-    const properties = ['title', 'year']
-    const sanitizedCopy = algorithm(object, properties)
-
-    // Sanitizing an empty object must return an empty object
-    expect(sanitizedCopy).toEqual({})
-  })
-})
-
-testSubjects.forEach(({ algorithm, id }) => {
-  test(`${id} sanitizes using empty properties array`, () => {
-    const object = { title: 'One', year: 2021, hack: true }
-    const properties = []
-    const sanitizedCopy = algorithm(object, properties)
-
-    // Sanitizing using an empty properties array must return an empty object
-    expect(sanitizedCopy).toEqual({})
+      // Original object must not be modified
+      expect(movie).toEqual({ title: 'One', year: 1954, director: 'Tom' })
+    })
   })
 })
