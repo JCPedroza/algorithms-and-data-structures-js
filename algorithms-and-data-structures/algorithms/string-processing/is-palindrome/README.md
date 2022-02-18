@@ -10,3 +10,5 @@ Ignore the following characters
 - ,
 - :
 - ;
+- ?
+- !
