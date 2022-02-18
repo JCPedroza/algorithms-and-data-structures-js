@@ -11,7 +11,7 @@ The function signature is
 countWords(str: string): number
 ```
 
-# References
+## References
 
 [JS word count at StackOverflow][1]
 
