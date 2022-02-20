@@ -11,15 +11,15 @@
 
 ### Comparisons
 
-- Worst: `O(n<sup>2</sup>)`
+- Worst: `O(n²)`
 - Best: `O(n)`
-- Average: `O(n<sup>2</sup>)`
+- Average: `O(n²)`
 
 ### Swaps
 
-- Worst: `O(n<sup>2</sup>)`
+- Worst: `O(n²)`
 - Best: `O(1)`
-- Average: `O(n<sup>2</sup>)`
+- Average: `O(n²)`
 
 ## Space Complexity
 
@@ -30,8 +30,6 @@
 
 - [Bubble Sort at Wikipedia][1]
 - [Space complexity of bubble sort algorithm at StackOverflow][2]
-- [Bubble Sort at Geeks for Geeks][3]
 
 [1]: https://en.wikipedia.org/wiki/Bubble_sort
 [2]: https://stackoverflow.com/q/13721890/1690799
-[3]: https://www.geeksforgeexks.org/bubble-sort/
