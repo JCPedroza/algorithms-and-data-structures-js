@@ -6,4 +6,4 @@ const testSubjects = [
 
 const { runSharedUnitTests } = require('../sorting-unit-tests')
 
-runSharedUnitTests(testSubjects, test, expect, 'bubble sort')
+runSharedUnitTests(testSubjects, test, expect, 'Bubble sort')

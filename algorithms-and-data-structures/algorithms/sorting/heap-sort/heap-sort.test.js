@@ -4,4 +4,4 @@ const testSubjects = [
 
 const { runSharedUnitTests } = require('../sorting-unit-tests')
 
-runSharedUnitTests(testSubjects, test, expect, 'heap sort')
+runSharedUnitTests(testSubjects, test, expect, 'Heap sort')
