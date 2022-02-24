@@ -5,6 +5,26 @@
 
 This repository is dedicated to the study of algorithms, data structures, and JavaScript.
 
+## Scripts
+
+To run all tests:
+
+```bash
+npm run test-all
+```
+
+To run tests only on files with changes:
+
+```bash
+npm test
+```
+
+To render jsdoc into html:
+
+```bash
+npm run jsdoc
+```
+
 ## Documentation
 
 You can find the documentation in the Github Pages of this repository over [here][102].
