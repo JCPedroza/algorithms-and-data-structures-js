@@ -9,6 +9,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --onlyChanged",
+    "test-all": "standard && jest",
     "pre-commit-test": "standard --fix && jest --onlyChanged",
     "pre-push-test": "standard && jest",
     "node-workflow-test": "standard && jest --ci",
