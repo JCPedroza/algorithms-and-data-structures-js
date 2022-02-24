@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: algorithms/sorting/selection-sort/selection-sort-kindof-optimized.js</title>
+    <title>JSDoc: Source: algorithms/collections/fizz-buzz/fizz-buzz-range-floop.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: algorithms/sorting/selection-sort/selection-sort-kindof-optimized.js</h1>
+    <h1 class="page-title">Source: algorithms/collections/fizz-buzz/fizz-buzz-range-floop.js</h1>
 
     
 
@@ -27,39 +27,40 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * Sorts a numeric array in-place using the Selection Sort approach.
- * Doubles the number of comparisons to achieve best O(n) time complexity.
- * Time complexity: best O(n) worst O(n^2) average O(n^2).
- * Space complexity: total O(n) auxiliary O(1).
- * @param {number[]} nums Array to be sorted.
- * @returns {number[]} Sorted array.
+ * Converts a number into its equivalent fizz-buzz string.
+ * Time complexity: O(1)?
+ * Space complexity: O(1)?
+ * @param {number} num Number to convert.
+ * @returns {string} Fizz-buzz string equivalent to input number.
  */
-const selectionSort = (nums) => {
-  for (let pivot = 0; pivot &lt; nums.length - 1; pivot++) {
-    let min = pivot
-    let sorted = true
+const numToFizzBuzz = (num) => {
+  let fizzBuzz = ''
+  if (num % 3 === 0) fizzBuzz += 'fizz'
+  if (num % 5 === 0) fizzBuzz += 'buzz'
+  return fizzBuzz || String(num)
+}
 
-    // Find min value and check if nums is already sorted to end loop early
-    for (let target = pivot + 1; target &lt; nums.length; target++) {
-      if (nums[target] &lt; nums[min]) {
-        min = target
-      }
+/**
+ * Generates a sequence of fizz-buzz strings.
+ * Time complexity: O(n).
+ * Space complexity: O(n).
+ * @param {number} from Start of the sequence.
+ * @param {number} to End of the sequence (inclusive).
+ * @returns {string[]} Sequence of fizz-buzz strings.
+ */
+const fizzBuzzRange = (from, to) => {
+  const sequence = []
 
-      if (nums[target - 1] > nums[target]) {
-        sorted = false
-      }
-    }
-
-    [nums[pivot], nums[min]] = [nums[min], nums[pivot]]
-    if (sorted) break
+  for (let num = from; num &lt;= to; num++) {
+    sequence.push(numToFizzBuzz(num))
   }
 
-  return nums
+  return sequence
 }
 
 module.exports = {
-  algorithm: selectionSort,
-  id: 'kind of optimized'
+  algorithm: fizzBuzzRange,
+  id: 'for-loop accumulator'
 }
 </code></pre>
         </article>

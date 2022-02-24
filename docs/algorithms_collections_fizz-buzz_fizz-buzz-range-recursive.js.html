@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: algorithms/sorting/selection-sort/selection-sort-kindof-optimized.js</title>
+    <title>JSDoc: Source: algorithms/collections/fizz-buzz/fizz-buzz-range-recursive.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: algorithms/sorting/selection-sort/selection-sort-kindof-optimized.js</h1>
+    <h1 class="page-title">Source: algorithms/collections/fizz-buzz/fizz-buzz-range-recursive.js</h1>
 
     
 
@@ -27,39 +27,31 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * Sorts a numeric array in-place using the Selection Sort approach.
- * Doubles the number of comparisons to achieve best O(n) time complexity.
- * Time complexity: best O(n) worst O(n^2) average O(n^2).
- * Space complexity: total O(n) auxiliary O(1).
- * @param {number[]} nums Array to be sorted.
- * @returns {number[]} Sorted array.
+ * Generates a sequence of fizz-buzz strings.
+ * Time complexity: O(n).
+ * Space complexity: O(n).
+ * @param {number} from Start of the sequence.
+ * @param {number} to End of the sequence (inclusive).
+ * @returns {string[]} Sequence of fizz-buzz strings.
  */
-const selectionSort = (nums) => {
-  for (let pivot = 0; pivot &lt; nums.length - 1; pivot++) {
-    let min = pivot
-    let sorted = true
+const fizzBuzzRange = (from, to) => {
+  const fbrange = (current, range) => {
+    if (current > to) return range
 
-    // Find min value and check if nums is already sorted to end loop early
-    for (let target = pivot + 1; target &lt; nums.length; target++) {
-      if (nums[target] &lt; nums[min]) {
-        min = target
-      }
+    let fb = ''
+    if (current % 3 === 0) fb += 'fizz'
+    if (current % 5 === 0) fb += 'buzz'
+    range.push(fb || String(current))
 
-      if (nums[target - 1] > nums[target]) {
-        sorted = false
-      }
-    }
-
-    [nums[pivot], nums[min]] = [nums[min], nums[pivot]]
-    if (sorted) break
+    return fbrange(current + 1, range)
   }
 
-  return nums
+  return fbrange(from, [])
 }
 
 module.exports = {
-  algorithm: selectionSort,
-  id: 'kind of optimized'
+  algorithm: fizzBuzzRange,
+  id: 'recursive'
 }
 </code></pre>
         </article>

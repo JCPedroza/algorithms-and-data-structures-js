@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: algorithms/sorting/selection-sort/selection-sort-kindof-optimized.js</title>
+    <title>JSDoc: Source: project-euler/006-sum-square-difference/sum-sqr-dif-analytic.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: algorithms/sorting/selection-sort/selection-sort-kindof-optimized.js</h1>
+    <h1 class="page-title">Source: project-euler/006-sum-square-difference/sum-sqr-dif-analytic.js</h1>
 
     
 
@@ -27,39 +27,23 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * Sorts a numeric array in-place using the Selection Sort approach.
- * Doubles the number of comparisons to achieve best O(n) time complexity.
- * Time complexity: best O(n) worst O(n^2) average O(n^2).
- * Space complexity: total O(n) auxiliary O(1).
- * @param {number[]} nums Array to be sorted.
- * @returns {number[]} Sorted array.
+ * Calculates the difference of the square of the sum, and the sum of the
+ * squares, of the first n natural numbers, using an analytic approach.
+ * Time complexity: O(1).
+ * @param {number} limit Last natural number to sum.
+ * @returns {number} Difference of the square of the sum, and the sum of
+ * the squares, of the first n natural numbers.
  */
-const selectionSort = (nums) => {
-  for (let pivot = 0; pivot &lt; nums.length - 1; pivot++) {
-    let min = pivot
-    let sorted = true
+const sumSquareDifference = (limit) => {
+  const sumOfNums = limit * (limit + 1) / 2
+  const sumOfSquares = (2 * limit + 1) * (limit + 1) * limit / 6
 
-    // Find min value and check if nums is already sorted to end loop early
-    for (let target = pivot + 1; target &lt; nums.length; target++) {
-      if (nums[target] &lt; nums[min]) {
-        min = target
-      }
-
-      if (nums[target - 1] > nums[target]) {
-        sorted = false
-      }
-    }
-
-    [nums[pivot], nums[min]] = [nums[min], nums[pivot]]
-    if (sorted) break
-  }
-
-  return nums
+  return sumOfNums * sumOfNums - sumOfSquares
 }
 
 module.exports = {
-  algorithm: selectionSort,
-  id: 'kind of optimized'
+  solution: sumSquareDifference,
+  id: 'analytic'
 }
 </code></pre>
         </article>
