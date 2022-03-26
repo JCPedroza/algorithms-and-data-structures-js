@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: algorithms/sorting/quick-sort/quick-sort-stable.js</title>
+    <title>JSDoc: Source: algorithms/data-processing/reverse-array/reverse-array-native.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: algorithms/sorting/quick-sort/quick-sort-stable.js</h1>
+    <h1 class="page-title">Source: algorithms/data-processing/reverse-array/reverse-array-native.js</h1>
 
     
 
@@ -27,31 +27,17 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * Sorts a numeric array using the Quick Sort approach.
- * Stable, but at the price of O(n) space complexity and O(n log n) best
- * time complexity.
- * Time complexity: best O(n log n) worst O(n^2) average O(n log n)
- * Space complexity: total O(n) auxiliary O(n).
- * @param {number[]} nums Array to be sorted.
- * @returns {number[]} Sorted array.
+ * Reverses the order of the input array.
+ * Time complexity: Depends on implementation.
+ * Space complexity: Depends on implementation.
+ * @param {any[]} array Array to be reversed.
+ * @returns Reversed array (in-place).
  */
-const quickSort = (nums) => {
-  if (nums.length &lt; 2) return nums
-
-  const pivot = nums[0]
-  const left = []
-  const right = []
-
-  for (let index = 1; index &lt; nums.length; index++) {
-    nums[index] &lt; pivot ? left.push(nums[index]) : right.push(nums[index])
-  }
-
-  return [...quickSort(left), pivot, ...quickSort(right)]
-}
+const reverseArray = (array) => array.reverse()
 
 module.exports = {
-  algorithm: quickSort,
-  id: 'stable, not-in-place, recursive'
+  algorithm: reverseArray,
+  id: 'native'
 }
 </code></pre>
         </article>
