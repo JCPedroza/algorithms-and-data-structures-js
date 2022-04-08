@@ -16,7 +16,7 @@ const primesUpTo = (num) => {
     if (sieve[index]) {
       const indexSq = index * index
 
-      for (let loop = 0; loop <= num; loop++) {
+      for (let loop = 0; indexSq + loop * index <= num; loop++) {
         sieve[indexSq + loop * index] = false
       }
     }
