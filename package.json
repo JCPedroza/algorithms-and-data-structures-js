@@ -38,7 +38,7 @@
   "devDependencies": {
     "cloc": "2.9.0",
     "husky": "7.0.4",
-    "jest": "27.5.1",
+    "jest": "28.0.3",
     "jsdoc": "3.6.10",
     "license-checker": "25.0.1",
     "standard": "17.0.0"
