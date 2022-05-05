@@ -14,7 +14,11 @@
     "pre-push-test": "standard && jest",
     "node-workflow-test": "standard && jest --ci",
     "jsdoc": "./node_modules/.bin/jsdoc --readme ./README.md --configure ./jsdoc.json --destination ./docs --recurse .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "license-summary": "license-checker --summary",
+    "license-direct": "license-checker --direct",
+    "stats": "cloc . --vcs='git' --exclude-lang='SVG','JSON','HTML'",
+    "stats-all": "cloc ."
   },
   "repository": {
     "type": "git",
@@ -32,9 +36,11 @@
   },
   "homepage": "https://github.com/JCPedroza/algorithms-and-data-structures-js#readme",
   "devDependencies": {
+    "cloc": "2.9.0",
     "husky": "7.0.4",
     "jest": "27.5.1",
     "jsdoc": "3.6.10",
+    "license-checker": "25.0.1",
     "standard": "17.0.0"
   },
   "standard": {
