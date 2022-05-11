@@ -38,7 +38,8 @@ Code reviews, pull requests, issues, and discussions are always welcome!
 
 ## Similar Resources
 
-You can find the Python version of this reposotiry [here][101].
+- Python version of this reposotiry [here][101].
+- OCaml version of this repository [here][103].
 
 ---
 
@@ -76,4 +77,5 @@ You can find the Python version of this reposotiry [here][101].
 [56]: https://img.shields.io/github/repo-size/jcpedroza/algorithms-and-data-structures-js
 
 [101]: https://github.com/JCPedroza/algorithms-and-data-structures-py
-[102]: https://jcpedroza.github.io/algorithms-and-data-structures-js/
+[102]: https://jcpedroza.github.io/algorithms-and-data-structures-js
+[103]: https://github.com/JCPedroza/algorithms-and-data-structures-ocaml
