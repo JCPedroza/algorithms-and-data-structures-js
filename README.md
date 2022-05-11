@@ -44,8 +44,10 @@ Code reviews, pull requests, issues, and discussions are always welcome!
 
 ## Similar Resources
 
-- Python version of this reposotiry [here][101].
-- OCaml version of this repository [here][103].
+You can find similar repositories for other languages in the following links:
+
+- [Python][101]
+- [OCaml][103]
 
 ---
 
