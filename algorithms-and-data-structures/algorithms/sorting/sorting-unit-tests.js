@@ -1,4 +1,4 @@
-const runSharedUnitTests = (testSubjects, test, expect, sortName) => {
+const runSharedUnitTests = (testSubjects, expect, sortName) => {
   testSubjects.forEach(({ algorithm, id }) => {
     describe(`${sortName} algorithm "${id}"`, () => {
       it('sorts numeric arrays', () => {
