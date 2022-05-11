@@ -11,7 +11,7 @@ n, find the sum of the even-valued terms.
 The function signature is
 
 ```typescript
-fiboEvenSum(limit: number): number
+function fiboEvenSum(limit: number): number
 ```
 
 ## Resources

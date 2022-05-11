@@ -15,7 +15,7 @@ natural numbers and the square of the sum.
 The function signature is
 
 ```typescript
-sumSquareDifference(limit: number): number
+function sumSquareDifference(limit: number): number
 ```
 
 ## Naive - Brute Force Approach

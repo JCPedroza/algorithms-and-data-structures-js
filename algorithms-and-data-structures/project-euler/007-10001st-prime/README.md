@@ -8,7 +8,7 @@ What is the `n`th prime number?
 The function signature is:
 
 ```typescript
-prime(index: number): number
+function prime(index: number): number
 ```
 
 Example in / out:

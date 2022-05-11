@@ -9,7 +9,7 @@ numbers from 1 to `limit`?
 The function signature is:
 
 ```typescript
-smallestMult(limit: number): number
+function smallestMult(limit: number): number
 ```
 
 ## Resources

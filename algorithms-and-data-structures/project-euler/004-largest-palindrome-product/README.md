@@ -8,7 +8,7 @@ Find the largest palindrome made from the product of two `n`-digit numbers.
 The function signature is
 
 ```typescript
-largestPalindromeProduct(digits: number): number
+function largestPalindromeProduct(digits: number): number
 ```
 
 ## Naive Approach

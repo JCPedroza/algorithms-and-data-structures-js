@@ -7,7 +7,7 @@ Write a function that finds the largest prime factor of the given number.
 The function signature is
 
 ```typescript
-largestPrimeFactor(num: number): number
+function largestPrimeFactor(num: number): number
 ```
 
 ## References
