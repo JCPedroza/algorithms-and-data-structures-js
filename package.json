@@ -19,7 +19,7 @@
     "build-jsdoc": "./node_modules/.bin/jsdoc --readme ./README.md --configure ./jsdoc.json --destination ./docs --recurse .",
     "license-info-summary": "license-checker --summary",
     "license-info-all": "license-checker --direct",
-    "loc-stats-sumarry": "cloc . --vcs='git' --exclude-lang='SVG','JSON','HTML'",
+    "loc-stats-summary": "cloc . --vcs='git' --exclude-lang='SVG','JSON','HTML'",
     "loc-stats-all": "cloc .",
     "prepare": "husky install"
   },
