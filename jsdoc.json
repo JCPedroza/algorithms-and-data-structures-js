@@ -3,7 +3,7 @@
       "include": ["./algorithms-and-data-structures"],
       "exclude": [
         "./node_modules",
-        "./algorithms-and-data-structures/algorithms/collections/fibonacci"
+        "./algorithms-and-data-structures/algorithms/math/fibonacci"
       ]
   }
 }
