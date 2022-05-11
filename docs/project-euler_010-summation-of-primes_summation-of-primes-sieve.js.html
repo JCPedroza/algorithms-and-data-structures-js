@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: project-euler/006-sum-square-difference/sum-sqr-dif-floop.js</title>
+    <title>JSDoc: Source: project-euler/010-summation-of-primes/summation-of-primes-sieve.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: project-euler/006-sum-square-difference/sum-sqr-dif-floop.js</h1>
+    <h1 class="page-title">Source: project-euler/010-summation-of-primes/summation-of-primes-sieve.js</h1>
 
     
 
@@ -27,28 +27,45 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * Calculates the difference of the square of the sum, and the sum of the
- * squares, of the first n natural numbers, using the accumulator pattern.
- * Time complexity: O(n).
- * @param {number} limit Last natural number to sum.
- * @returns {number} Difference of the square of the sum, and the sum of
- * the squares, of the first n natural numbers.
+ * Computes the sum of the primes below a given number using the sieve of
+ * eratosthenes.
+ * @param {number} num Primes below this number will be summed.
+ * @throws {Error} Argument must be a number.
+ * @returns {number} Sum of the primes below the given number.
  */
-const sumSquareDifference = (limit) => {
-  let sumOfSquares = 0
-  let sumOfNums = 0
-
-  for (let num = 1; num &lt;= limit; num++) {
-    sumOfNums += num
-    sumOfSquares += num * num
+const sumOfPrimesBelow = (num) => {
+  if (typeof num !== 'number') {
+    throw new Error(`Argument must be a number: ${num}`)
   }
 
-  return sumOfNums * sumOfNums - sumOfSquares
+  const primes = []
+  const limit = num &lt; 0 ? 0 : num
+
+  const sieve = Array(limit).fill(true)
+  sieve[0] = false
+  sieve[1] = false
+
+  for (let index = 2; index &lt; limit; index++) {
+    if (sieve[index]) {
+      primes.push(index)
+      const indexSq = index * index
+
+      let coefficient = 0
+      let indexFalse = indexSq + coefficient * index
+      while (indexFalse &lt; limit) {
+        sieve[indexFalse] = false
+        coefficient += 1
+        indexFalse = indexSq + coefficient * index
+      }
+    }
+  }
+
+  return primes.reduce((x, y) => x + y, 0)
 }
 
 module.exports = {
-  solution: sumSquareDifference,
-  id: 'for-loop accumulator'
+  solution: sumOfPrimesBelow,
+  id: 'sieve of eratosthenes'
 }
 </code></pre>
         </article>

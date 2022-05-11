@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: project-euler/006-sum-square-difference/sum-sqr-dif-floop.js</title>
+    <title>JSDoc: Source: algorithms/math/operations/vector/sum/vectorsum-tail.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: project-euler/006-sum-square-difference/sum-sqr-dif-floop.js</h1>
+    <h1 class="page-title">Source: algorithms/math/operations/vector/sum/vectorsum-tail.js</h1>
 
     
 
@@ -27,28 +27,25 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * Calculates the difference of the square of the sum, and the sum of the
- * squares, of the first n natural numbers, using the accumulator pattern.
- * Time complexity: O(n).
- * @param {number} limit Last natural number to sum.
- * @returns {number} Difference of the square of the sum, and the sum of
- * the squares, of the first n natural numbers.
+ * Sum the numbers in an array using tail recursion.
+ * @param {number[]} nums Array of numbers.
+ * @returns {number} Sum of the numbers in the array.
  */
-const sumSquareDifference = (limit) => {
-  let sumOfSquares = 0
-  let sumOfNums = 0
-
-  for (let num = 1; num &lt;= limit; num++) {
-    sumOfNums += num
-    sumOfSquares += num * num
+const vsum = (nums) => {
+  const loop = (nums, sum = 0) => {
+    if (nums.length) {
+      const [head, ...tail] = nums
+      return loop(tail, head + sum)
+    }
+    return sum
   }
 
-  return sumOfNums * sumOfNums - sumOfSquares
+  return loop(nums)
 }
 
 module.exports = {
-  solution: sumSquareDifference,
-  id: 'for-loop accumulator'
+  algorithm: vsum,
+  id: 'tail recursion'
 }
 </code></pre>
         </article>
