@@ -46,25 +46,40 @@
         <article><h1>JavaScript Algorithms &amp; Data Structures</h1>
 <p><a href="https://en.wikipedia.org/wiki/MIT_License"><img src="https://img.shields.io/github/license/jcpedroza/algorithms-and-data-structures-js" alt="license MIT"></a> <a href="https://standardjs.com"><img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg" alt="code stile: standard"></a> <a href="https://actions-badge.atrox.dev/jcpedroza/algorithms-and-data-structures-js/goto?ref=main"><img src="https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fjcpedroza%2Falgorithms-and-data-structures-js%2Fbadge%3Fref%3Dmain&amp;style=flat" alt="build status"></a>
 <a href="https://www.codacy.com/gh/JCPedroza/algorithms-and-data-structures-js/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JCPedroza/algorithms-and-data-structures-js&amp;utm_campaign=Badge_Grade"><img src="https://app.codacy.com/project/badge/Grade/bfbdad3f96c94ce793e9453745d95fd7" alt="codacy code quality"></a> <a href="https://www.codefactor.io/repository/github/jcpedroza/algorithms-and-data-structures-js"><img src="https://www.codefactor.io/repository/github/jcpedroza/algorithms-and-data-structures-js/badge" alt="codefactor code quality"></a></p>
-<p>This repository is dedicated to the study of algorithms, data structures, and JavaScript.</p>
+<p>This repository is dedicated to the study of algorithms, data structures,
+JavaScript, and to our love for programming and software engineering!</p>
 <h2>Scripts</h2>
-<p>To run all tests:</p>
-<pre class="prettyprint source lang-bash"><code>npm run test-all
+<p>The following scripts are provided through npm:</p>
+<pre class="prettyprint source lang-bash"><code>npm test                   # Run unit tests only for changed files
+npm run test-unit          # Run all unit tests
+npm run test-unit-changed  # Run unit tests only for changed files
+npm run test-style         # Run style tests
+npm run test-all           # Run style tests and all unit tests
+npm run test-pre-commit    # Run tests that are ran before git commit
+npm run test-pre-push      # Run tests that are ran before git push
+npm run test-node-workflow # Run tests that are ran during ci
+
+npm run license-info-summary  # Show summary of used licenses
+npm run license-info-complete # Show complete info of used licenses
+
+npm run loc-stats-summary  # Show summary of line of code stats
+npm run loc-stats-complete # Show complete lines of code stats
+
+npm run build-jsdoc # Build the jsdoc documentation (docs directory)
 </code></pre>
-<p>To run tests only on files with changes:</p>
-<pre class="prettyprint source lang-bash"><code>npm test
-</code></pre>
-<p>To render jsdoc into html:</p>
-<pre class="prettyprint source lang-bash"><code>npm run jsdoc
-</code></pre>
+<p>You can see a list of all available npm scripts by running <code>npm run</code>.</p>
 <h2>Documentation</h2>
-<p>You can find the documentation in the Github Pages of this repository over <a href="https://jcpedroza.github.io/algorithms-and-data-structures-js/">here</a>.</p>
+<p>You can find the documentation in the Github Pages of this repository over <a href="https://jcpedroza.github.io/algorithms-and-data-structures-js">here</a>.</p>
 <h2>Contributing</h2>
 <p><a href="https://github.com/JCPedroza/algorithms-and-data-structures-js/graphs/contributors"><img src="https://img.shields.io/github/contributors/JCPedroza/algorithms-and-data-structures-js" alt="contributors"></a> <a href="https://github.com/JCPedroza/algorithms-and-data-structures-js/graphs/commit-activity"><img src="https://img.shields.io/github/commit-activity/m/JCPedroza/algorithms-and-data-structures-js" alt="commit activity"></a> <a href="https://github.com/JCPedroza/algorithms-and-data-structures-js/issues"><img src="https://img.shields.io/github/issues-raw/JCPedroza/algorithms-and-data-structures-js" alt="issues"></a>
 <a href="https://github.com/JCPedroza/algorithms-and-data-structures-js/issues"><img src="https://img.shields.io/github/issues-closed-raw/JCPedroza/algorithms-and-data-structures-js" alt="issues closed"></a> <a href="https://github.com/JCPedroza/algorithms-and-data-structures-js/pulls"><img src="https://img.shields.io/github/issues-pr-raw/JCPedroza/algorithms-and-data-structures-js" alt="issues pr"></a> <a href="https://github.com/JCPedroza/algorithms-and-data-structures-js/pulls"><img src="https://img.shields.io/github/issues-pr-closed-raw/JCPedroza/algorithms-and-data-structures-js" alt="issues pr closed"></a></p>
 <p>Code reviews, pull requests, issues, and discussions are always welcome!</p>
 <h2>Similar Resources</h2>
-<p>You can find the Python version of this reposotiry <a href="https://github.com/JCPedroza/algorithms-and-data-structures-py">here</a>.</p>
+<p>You can find similar repositories for other languages in the following links:</p>
+<ul>
+<li><a href="https://github.com/JCPedroza/algorithms-and-data-structures-py">Python</a></li>
+<li><a href="https://github.com/JCPedroza/algorithms-and-data-structures-ocaml">OCaml</a></li>
+</ul>
 <hr>
 <p><a href="https://img.shields.io/tokei/lines/github/jcpedroza/algorithms-and-data-structures-js"><img src="https://img.shields.io/tokei/lines/github/jcpedroza/algorithms-and-data-structures-js" alt="total lines"></a> <a href="https://img.shields.io/github/languages/code-size/jcpedroza/algorithms-and-data-structures-js"><img src="https://img.shields.io/github/languages/code-size/jcpedroza/algorithms-and-data-structures-js" alt="code size"></a> <a href="https://img.shields.io/github/repo-size/jcpedroza/algorithms-and-data-structures-js"><img src="https://img.shields.io/github/repo-size/jcpedroza/algorithms-and-data-structures-js" alt="repo size"></a></p></article>
     </section>
@@ -83,7 +98,7 @@
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.10</a> on Tue May 10 2022 22:13:02 GMT-0500 (Central Daylight Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.10</a> on Wed May 11 2022 00:23:33 GMT-0500 (Central Daylight Time)
 </footer>
 
 <script> prettyPrint(); </script>

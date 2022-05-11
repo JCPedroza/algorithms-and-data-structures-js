@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: data-structures/queue/queue-array.js</title>
+    <title>JSDoc: Source: algorithms/math/primes-up-to/primes-up-to-naive.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: data-structures/queue/queue-array.js</h1>
+    <h1 class="page-title">Source: algorithms/math/primes-up-to/primes-up-to-naive.js</h1>
 
     
 
@@ -27,75 +27,43 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * Imlements a queue using an array as underlying data structure.
+ * Check if a number is prime.
+ * Time complexity: O(1) best O(sqrt n) worst? O(sqrt n) avarage?
+ * @param {number} num Number to check.
+ * @returns True if the number is prime, false otherwise.
  */
-class Queue {
-  constructor () {
-    this._dataArray = []
+const isPrime = (num) => {
+  if (num &lt; 3) return num === 2
+  if (num % 2 === 0) return false
+
+  const limit = Math.floor(Math.sqrt(num))
+  for (let div = 3; div &lt;= limit; div += 2) {
+    if (num % div === 0) return false
   }
 
-  /**
-   * Get the number of items in the queue.
-   */
-  get length () {
-    return this._dataArray.length
+  return true
+}
+
+/**
+ * Calculate all prime numbers up to the given number using a naive
+ * brute-force approach.
+ * Time complexity: O(n^2)? = O(n sqrt n)?
+ * @param {number} num Inclusive limit of the prime sequence.
+ * @returns {number[]} Prime numbers up to the given number.
+ */
+const primesUpTo = (num) => {
+  const primes = []
+
+  for (let candidate = 2; candidate &lt;= num; candidate++) {
+    if (isPrime(candidate)) primes.push(candidate)
   }
 
-  /**
-   * The length property cannot be directly set.
-   */
-  set length (_) {
-    throw new Error(`Cannot set the length property, input was ${_}`)
-  }
-
-  /**
-   * Check if the queue is empty.
-   * Time complexity: O(1).
-   * @returns {boolean} True if queue is empty, false otherwise.
-   */
-  isEmpty () {
-    return this.length === 0
-  }
-
-  /**
-   * Access the data at the front of the queue.
-   * Time complexity: O(1) from array access.
-   * @returns {*} Data at the front of the queue.
-   */
-  peek () {
-    if (this.isEmpty()) {
-      throw new Error('Cannot peek from empty queue')
-    }
-    return this._dataArray[0]
-  }
-
-  /**
-   * Add data to the back of the queue.
-   * Time complexity: O(1) from push().
-   * @param {*} data Data to be added.
-   * @returns {Object} This queue.
-   */
-  enqueue (data) {
-    this._dataArray.push(data)
-    return this
-  }
-
-  /**
-   * Remove and retrieve the front of the queue.
-   * Time complexity: O(n) from shift().
-   * @returns {*} Data at the front of the queue.
-   */
-  dequeue () {
-    if (this.isEmpty()) {
-      throw new Error('Cannot dequeue from empty queue')
-    }
-    return this._dataArray.shift()
-  }
+  return primes
 }
 
 module.exports = {
-  Structure: Queue,
-  id: 'array-based'
+  algorithm: primesUpTo,
+  id: 'naive brute force'
 }
 </code></pre>
         </article>
