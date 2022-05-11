@@ -34,6 +34,7 @@ You can see a list of all available npm scripts by running `npm run`.
 ## Documentation
 
 You can find the documentation in the Github Pages of this repository over [here][102].
+You can also generate the documentation locally by running `npm run build-jsdoc`.
 
 ## Contributing
 
