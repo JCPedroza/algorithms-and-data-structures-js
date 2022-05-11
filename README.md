@@ -4,7 +4,7 @@
 [![codacy code quality][5]][6] [![codefactor code quality][7]][8]
 
 This repository is dedicated to the study of algorithms, data structures,
-JavaScript, and our love for programming and software engineering!
+JavaScript, and to our love for programming and software engineering!
 
 ## Scripts
 
