@@ -3,27 +3,33 @@
 [![license MIT][1]][2] [![code stile: standard][3]][4] [![build status][9]][10]
 [![codacy code quality][5]][6] [![codefactor code quality][7]][8]
 
-This repository is dedicated to the study of algorithms, data structures, and JavaScript.
+This repository is dedicated to the study of algorithms, data structures,
+JavaScript, and our love for programming and software engineering!
 
 ## Scripts
 
-To run all tests:
+The following scripts are provided through npm:
 
 ```bash
-npm run test-all
+npm test                   # Run unit tests only for changed files
+npm run test-unit          # Run all unit tests
+npm run test-unit-changed  # Run unit tests only for changed files
+npm run test-style         # Run style tests
+npm run test-all           # Run style tests and all unit tests
+npm run test-pre-commit    # Run tests that are ran before git commit
+npm run test-pre-push      # Run tests that are ran before git push
+npm run test-node-workflow # Run tests that are ran during ci
+
+npm run license-info-summary  # Show summary of used licenses
+npm run license-info-complete # Show complete info of used licenses
+
+npm run loc-stats-summary  # Show summary of line of code stats
+npm run loc-stats-complete # Show complete lines of code stats
+
+npm run build-jsdoc # Build the jsdoc documentation (docs directory)
 ```
 
-To run tests only on files with changes:
-
-```bash
-npm test
-```
-
-To render jsdoc into html:
-
-```bash
-npm run jsdoc
-```
+You can see a list of all available npm scripts by running `npm run`.
 
 ## Documentation
 
