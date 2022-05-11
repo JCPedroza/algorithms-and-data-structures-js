@@ -1,8 +1,8 @@
 const { algorithm: primesUpTo } =
-  require('./collections/primes-up-to/primes-up-to-sieve')
+  require('./math/primes-up-to/primes-up-to-sieve')
 
 const { algorithm: primesOfLength } =
-  require('./collections/primes-of-length/primes-of-length-naive')
+  require('./math/primes-of-length/primes-of-length-naive')
 
 module.exports = {
   primesUpTo,

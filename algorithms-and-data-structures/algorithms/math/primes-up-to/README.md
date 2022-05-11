@@ -6,7 +6,7 @@ given number.
 The function signature is:
 
 ```typescript
-primesUpTo(num: number): number[]
+function primesUpTo(num: number): number[]
 ```
 
 ## Resources

@@ -6,5 +6,5 @@ prime numbers.
 The function signature is:
 
 ```typescript
-primesOfLength(length: number): number[]
+function primesOfLength(length: number): number[]
 ```

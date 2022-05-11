@@ -1,3 +1,3 @@
 # Algorithms - Sequences
 
-Algorithms that output sequences, ranges, or collections.
+Algorithms that generate a collection of results.
