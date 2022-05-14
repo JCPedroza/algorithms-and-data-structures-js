@@ -1,5 +1,24 @@
 # Merge Sort
 
+## Categories
+
+- Quasilinear (log-linear) growth
+- Stable
+- In-Place
+
+## Time Complexity
+
+- Worst: `O(n log n)`
+- Best:
+  - Typical: `O(n log n)`
+  - Natural variant: `O(n)`
+- Average: `O(n log n)`
+
+## Space Complexity
+
+- Total: `O(n)`
+- Auxiliary: `O(n)`
+
 ## Resources
 
 - [Merge Sort at Wikipedia][1]
