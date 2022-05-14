@@ -40,6 +40,7 @@
   "homepage": "https://github.com/JCPedroza/algorithms-and-data-structures-js#readme",
   "devDependencies": {
     "cloc": "2.9.0",
+    "concurrently": "7.1.0",
     "husky": "8.0.0",
     "jest": "28.1.0",
     "jest-extended": "2.0.0",
@@ -56,6 +57,8 @@
     ]
   },
   "jest": {
-    "setupFilesAfterEnv": ["jest-extended/all"]
+    "setupFilesAfterEnv": [
+      "jest-extended/all"
+    ]
   }
 }
