@@ -47,6 +47,7 @@ Code reviews, pull requests, issues, and discussions are always welcome!
 
 You can find similar repositories for other languages in the following links:
 
+- [Haskell][104]
 - [Python][101]
 - [OCaml][103]
 
@@ -88,3 +89,4 @@ You can find similar repositories for other languages in the following links:
 [101]: https://github.com/JCPedroza/algorithms-and-data-structures-py
 [102]: https://jcpedroza.github.io/algorithms-and-data-structures-js
 [103]: https://github.com/JCPedroza/algorithms-and-data-structures-ocaml
+[104]: https://github.com/JCPedroza/algorithms-and-data-structures-hs
