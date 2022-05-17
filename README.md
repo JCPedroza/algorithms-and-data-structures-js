@@ -43,6 +43,15 @@ You can also generate the documentation locally by running `npm run build-jsdoc`
 
 Code reviews, pull requests, issues, and discussions are always welcome!
 
+## Main Toolchain
+
+- Package manager
+  - [npm][80]
+- Unit testing
+  - [jest][81]
+- Linting
+  - [standard][82]
+
 ## Similar Resources
 
 You can find similar repositories for other languages in the following links:
@@ -85,6 +94,10 @@ You can find similar repositories for other languages in the following links:
 [54]: https://img.shields.io/github/languages/code-size/jcpedroza/algorithms-and-data-structures-js
 [55]: https://img.shields.io/github/repo-size/jcpedroza/algorithms-and-data-structures-js
 [56]: https://img.shields.io/github/repo-size/jcpedroza/algorithms-and-data-structures-js
+
+[80]: https://www.npmjs.com/
+[81]: https://jestjs.io/
+[82]: https://standardjs.com/
 
 [101]: https://github.com/JCPedroza/algorithms-and-data-structures-py
 [102]: https://jcpedroza.github.io/algorithms-and-data-structures-js
