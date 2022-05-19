@@ -49,8 +49,21 @@ Code reviews, pull requests, issues, and discussions are always welcome!
   - [npm][80]
 - Unit testing
   - [jest][81]
-- Linting
+- Style and linting
   - [standard][82]
+
+## Node Version Manager
+
+We prefer the latest idioms, syntax, and API, as this effort is first and
+foremost a practice tool. Because of this, you'll most likely need the latest
+node version to be able to run everything.
+
+For version managing node, try:
+
+- [nvm][83]
+
+So you can easily install the latest node versions and/or easily switch between
+node versions if you need to.
 
 ## Similar Resources
 
@@ -98,6 +111,7 @@ You can find similar repositories for other languages in the following links:
 [80]: https://www.npmjs.com/
 [81]: https://jestjs.io/
 [82]: https://standardjs.com/
+[83]: https://github.com/nvm-sh/nvm
 
 [101]: https://github.com/JCPedroza/algorithms-and-data-structures-py
 [102]: https://jcpedroza.github.io/algorithms-and-data-structures-js
