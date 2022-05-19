@@ -18,8 +18,6 @@ function fiboEvenSum(limit: number): number
 
 - [Project Euler Problem 002][1]
 - [Project Euler Problem 002 at freeCodeCamp][2]
-- [Even Fibonacci Numbers at Geeks for Geeks][3]
 
 [1]: https://projecteuler.net/problem=2
 [2]: https://www.freecodecamp.org/learn/coding-interview-prep/project-euler/problem-2-even-fibonacci-numbers
-[3]: https://www.geeksforgeeks.org/even-fibonacci-numbers-sum/
