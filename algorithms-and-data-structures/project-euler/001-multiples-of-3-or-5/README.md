@@ -8,7 +8,7 @@ Find the sum of all the multiples of 3 or 5 below `n`.
 The function signature is
 
 ```typescript
-function function multiplesOf3Or5(limit: number): number
+function multiplesOf3Or5(limit: number): number
 ```
 
 ## References
