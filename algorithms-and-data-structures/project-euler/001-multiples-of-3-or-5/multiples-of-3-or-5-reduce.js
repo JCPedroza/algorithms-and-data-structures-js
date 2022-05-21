@@ -8,9 +8,9 @@
  * below the limit.
  */
 const multiplesOf3Or5 = (limit) =>
-  [...Array(limit).keys()] // Generate range [0, limit)
+  [...Array(limit < 0 ? 0 : limit).keys()] // Generate range [0, limit)
     .filter(num => num % 3 === 0 || num % 5 === 0)
-    .reduce((sum, num) => sum + num)
+    .reduce((sum, num) => sum + num, 0)
 
 module.exports = {
   solution: multiplesOf3Or5,
