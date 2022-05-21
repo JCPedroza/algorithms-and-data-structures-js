@@ -1,5 +1,5 @@
 const testSubjects = [
-  require('./even-fibo-while-noif-evenonly'),
+  require('./even-fibo-tail'),
   require('./even-fibo-while-noif'),
   require('./even-fibo-while'),
   require('./even-fibo-generator')
