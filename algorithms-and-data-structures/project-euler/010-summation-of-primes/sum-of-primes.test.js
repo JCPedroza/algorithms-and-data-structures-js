@@ -1,5 +1,5 @@
 const testSubjects = [
-  require('./summation-of-primes-sieve')
+  require('./sum-of-primes-sieve')
 ]
 
 testSubjects.forEach(({ solution, id }) => {
@@ -9,6 +9,7 @@ testSubjects.forEach(({ solution, id }) => {
       expect(solution(0)).toBe(0)
       expect(solution(10)).toBe(17)
       expect(solution(17)).toBe(41)
+      expect(solution(29)).toBe(100)
     })
 
     it('throws an error when called with non-numeric argument', () => {
