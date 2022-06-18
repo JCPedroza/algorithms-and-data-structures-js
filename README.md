@@ -72,6 +72,7 @@ You can find similar repositories for other languages in the following links:
 - [Haskell][104]
 - [Python][101]
 - [OCaml][103]
+- [List of all languages][100]
 
 ---
 
@@ -113,6 +114,7 @@ You can find similar repositories for other languages in the following links:
 [82]: https://standardjs.com/
 [83]: https://github.com/nvm-sh/nvm
 
+[100]: https://github.com/JCPedroza/algorithms-and-data-structures
 [101]: https://github.com/JCPedroza/algorithms-and-data-structures-py
 [102]: https://jcpedroza.github.io/algorithms-and-data-structures-js
 [103]: https://github.com/JCPedroza/algorithms-and-data-structures-ocaml
