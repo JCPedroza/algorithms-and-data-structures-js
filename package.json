@@ -43,7 +43,7 @@
     "cloc": "2.9.0",
     "concurrently": "7.1.0",
     "husky": "8.0.0",
-    "jest": "28.1.0",
+    "jest": "28.1.3",
     "jest-extended": "2.0.0",
     "jsdoc": "3.6.10",
     "license-checker": "25.0.1",
