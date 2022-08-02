@@ -42,7 +42,7 @@
   "devDependencies": {
     "cloc": "2.10.0",
     "concurrently": "7.3.0",
-    "husky": "8.0.0",
+    "husky": "8.0.1",
     "jest": "28.1.3",
     "jest-extended": "3.0.1",
     "jsdoc": "3.6.11",
