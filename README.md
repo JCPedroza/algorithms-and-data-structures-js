@@ -76,7 +76,7 @@ You can find similar repositories for other languages in the following links:
 
 ---
 
-[![total lines][51]][52] [![code size][53]][54] [![repo size][55]][56]
+[![code size][53]][54] [![repo size][55]][56]
 
 [1]: https://img.shields.io/github/license/jcpedroza/algorithms-and-data-structures-js
 [2]: https://en.wikipedia.org/wiki/MIT_License
@@ -102,8 +102,6 @@ You can find similar repositories for other languages in the following links:
 [35]: https://img.shields.io/github/issues-pr-closed-raw/JCPedroza/algorithms-and-data-structures-js
 [36]: https://github.com/JCPedroza/algorithms-and-data-structures-js/pulls
 
-[51]: https://img.shields.io/tokei/lines/github/jcpedroza/algorithms-and-data-structures-js
-[52]: https://img.shields.io/tokei/lines/github/jcpedroza/algorithms-and-data-structures-js
 [53]: https://img.shields.io/github/languages/code-size/jcpedroza/algorithms-and-data-structures-js
 [54]: https://img.shields.io/github/languages/code-size/jcpedroza/algorithms-and-data-structures-js
 [55]: https://img.shields.io/github/repo-size/jcpedroza/algorithms-and-data-structures-js
