@@ -13,9 +13,9 @@
     "test-unit-ci": "jest . --ci",
     "test-unit-changed": "npm test",
     "test-style": "standard .",
-    "test-all": "concurrently --raw \"npm run test-style\" \"npm run test-unit\"",
+    "test-all": "concurrently \"npm run test-style\" \"npm run test-unit\"",
     "test-pre-push": "npm run test-all",
-    "test-node-workflow": "concurrently --raw \"npm run test-style\" \"npm run test-unit-ci\"",
+    "test-node-workflow": "concurrently \"npm run test-style\" \"npm run test-unit-ci\"",
     "build-jsdoc": "./node_modules/.bin/jsdoc --readme ./README.md --configure ./jsdoc.json --destination ./docs --recurse .",
     "prepare": "husky install"
   },
