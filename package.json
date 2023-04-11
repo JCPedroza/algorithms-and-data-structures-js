@@ -35,11 +35,11 @@
   },
   "homepage": "https://github.com/JCPedroza/algorithms-and-data-structures-js#readme",
   "devDependencies": {
-    "concurrently": "7.3.0",
-    "husky": "8.0.1",
-    "jest": "29.0.1",
-    "jest-extended": "3.1.0",
-    "jsdoc": "3.6.11",
+    "concurrently": "8.0.1",
+    "husky": "8.0.3",
+    "jest": "29.5.0",
+    "jest-extended": "3.2.4",
+    "jsdoc": "4.0.2",
     "standard": "17.0.0"
   },
   "standard": {
