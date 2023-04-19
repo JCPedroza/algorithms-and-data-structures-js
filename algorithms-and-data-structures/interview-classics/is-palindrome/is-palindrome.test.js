@@ -32,7 +32,7 @@ algorithms.forEach(({ fun, id }) => {
       )
 
       assert.equal(
-       fun( '123123'),
+        fun('123123'),
         false
       )
     })
