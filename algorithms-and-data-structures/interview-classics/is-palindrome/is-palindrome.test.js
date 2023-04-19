@@ -1,19 +1,40 @@
-const testSubjects = [
-  require('./is-palindrome')
-]
+const assert = require('node:assert/strict')
+const { describe, it } = require('node:test')
+
+const algorithms = require('./is-palindrome.repo')
 
 const palindrome = `Anita! LAva :
     la?; tina.`
 
-testSubjects.forEach(({ algorithm, id }) => {
+algorithms.forEach(({ fun, id }) => {
   describe(`Palindrome test algorithm "${id}"`, () => {
-    it('identifies palindrome strings', () => {
-      expect(algorithm(palindrome)).toBe(true)
-      expect(algorithm('')).toBe(true)
-      expect(algorithm('123321')).toBe(true)
+    it('identifies strings that are palindromes', () => {
+      assert.equal(
+        fun(palindrome),
+        true
+      )
 
-      expect(algorithm('Not a palindrome :(')).toBe(false)
-      expect(algorithm('123123')).toBe(false)
+      assert.equal(
+        fun(''),
+        true
+      )
+
+      assert.equal(
+        fun('123321'),
+        true
+      )
+    })
+
+    it('identifies strings that are not palindromes', () => {
+      assert.equal(
+        fun('This is not a palindrome'),
+        false
+      )
+
+      assert.equal(
+       fun( '123123'),
+        false
+      )
     })
   })
 })
