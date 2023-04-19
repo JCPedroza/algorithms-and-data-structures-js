@@ -1,18 +1,35 @@
-const testSubjects = [
-  require('./even-fibo-tail'),
-  require('./even-fibo-while-noif'),
-  require('./even-fibo-while'),
-  require('./even-fibo-generator')
-]
+const solutions = require('./even-fibo.repo')
 
-testSubjects.forEach(({ solution, id }) => {
+const assert = require('node:assert/strict')
+const { describe, it } = require('node:test')
+
+solutions.forEach(({ fun, id }) => {
   describe(`Even fibonacci algorithm "${id}"`, () => {
     it('sums even fibo numbers up to the given limit', () => {
-      expect(solution(-1)).toBe(0)
-      expect(solution(0)).toBe(0)
-      expect(solution(2)).toBe(2)
-      expect(solution(10)).toBe(10)
-      expect(solution(60)).toBe(44)
+      assert.equal(
+        fun(-1),
+        0
+      )
+
+      assert.equal(
+        fun(0),
+        0
+      )
+
+      assert.equal(
+        fun(2),
+        2
+      )
+
+      assert.equal(
+        fun(10),
+        10
+      )
+
+      assert.equal(
+        fun(60),
+        44
+      )
     })
   })
 })
