@@ -1,0 +1,14 @@
+{
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": true,
+  "editor.rulers": [
+    80
+  ],
+  "editor.tabSize": 2,
+  "editor.trimAutoWhitespace": true,
+  "files.exclude": {
+      "**/node_modules": true,
+      "**/coverage": true
+    },
+    "files.trimTrailingWhitespace": true,
+}
