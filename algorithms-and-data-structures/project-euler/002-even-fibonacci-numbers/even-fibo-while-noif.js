@@ -25,6 +25,6 @@ const fiboEvenSum = (limit) => {
 }
 
 module.exports = {
-  solution: fiboEvenSum,
+  fun: fiboEvenSum,
   id: 'while loop no if'
 }

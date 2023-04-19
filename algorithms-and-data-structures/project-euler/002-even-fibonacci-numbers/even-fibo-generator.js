@@ -38,6 +38,6 @@ const fiboEvenSum = (limit) => {
 }
 
 module.exports = {
-  solution: fiboEvenSum,
+  fun: fiboEvenSum,
   id: 'generator and for of with accumulator'
 }

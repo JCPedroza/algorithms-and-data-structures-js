@@ -17,6 +17,6 @@ const fiboEvenSum = (limit) => {
 }
 
 module.exports = {
-  solution: fiboEvenSum,
+  fun: fiboEvenSum,
   id: 'tail recursion with analytic optimization'
 }
