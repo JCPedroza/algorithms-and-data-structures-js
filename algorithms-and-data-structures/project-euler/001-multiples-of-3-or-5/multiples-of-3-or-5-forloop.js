@@ -20,6 +20,6 @@ const multiplesOf3Or5 = (limit) => {
 }
 
 module.exports = {
-  solution: multiplesOf3Or5,
+  fun: multiplesOf3Or5,
   id: 'for-loop accumulator'
 }

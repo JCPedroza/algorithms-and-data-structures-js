@@ -13,6 +13,6 @@ const multiplesOf3Or5 = (limit) =>
     .reduce((sum, num) => sum + num, 0)
 
 module.exports = {
-  solution: multiplesOf3Or5,
+  fun: multiplesOf3Or5,
   id: 'filter reduce'
 }
