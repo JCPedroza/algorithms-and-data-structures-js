@@ -24,6 +24,6 @@ const largestPrimeFactor = (num) => {
 }
 
 module.exports = {
-  solution: largestPrimeFactor,
+  fun: largestPrimeFactor,
   id: 'simple'
 }
