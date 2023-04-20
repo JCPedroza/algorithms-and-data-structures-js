@@ -1,7 +1,7 @@
-const solutions = require('./even-fibo.repo')
-
 const assert = require('node:assert/strict')
 const { describe, it } = require('node:test')
+
+const solutions = require('./even-fibo.repo')
 
 solutions.forEach(({ fun, id }) => {
   describe(`Even fibonacci algorithm "${id}"`, () => {
