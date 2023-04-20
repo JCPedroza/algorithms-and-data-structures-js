@@ -1,14 +1,25 @@
-const testSubjects = [
-  require('./largest-prime-factor-optimized'),
-  require('./largest-prime-factor')
-]
+const assert = require('node:assert/strict')
+const { describe, it } = require('node:test')
 
-testSubjects.forEach(({ solution, id }) => {
+const solutions = require("./largest-prime-factor.repo")
+
+solutions.forEach(({ fun, id }) => {
   describe(`Largest prime factor algorithm "${id}"`, () => {
     it('finds the largest prime factor of a number', () => {
-      expect(solution(2)).toBe(2)
-      expect(solution(7)).toBe(7)
-      expect(solution(154)).toBe(11)
+      assert.equal(
+        fun(2),
+        2
+      )
+
+      assert.equal(
+        fun(7),
+        7
+      )
+
+      assert.equal(
+        fun(154),
+        11
+      )
     })
   })
 })
