@@ -1,14 +1,25 @@
-const testSubjects = [
-  require('./smallest-multiple-naive'),
-  require('./smallest-multiple-optimized')
-]
+const assert = require('node:assert/strict')
+const { describe, it } = require('node:test')
 
-testSubjects.forEach(({ solution, id }) => {
+const solutions = require("./smallest-multiple.repo")
+
+solutions.forEach(({ fun, id }) => {
   describe(`Smallest multiple algorithm "${id}"`, () => {
     it('finds the smallest number divisible by all from 1 to n', () => {
-      expect(solution(1)).toBe(1)
-      expect(solution(2)).toBe(2)
-      expect(solution(5)).toBe(60)
+      assert.equal(
+        fun(1),
+        1
+      )
+
+      assert.equal(
+        fun(2),
+        2
+      )
+
+      assert.equal(
+        fun(5),
+        60
+      )
     })
   })
 })
