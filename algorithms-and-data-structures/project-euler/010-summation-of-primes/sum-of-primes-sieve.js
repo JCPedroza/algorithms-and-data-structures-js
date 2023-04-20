@@ -59,6 +59,6 @@ const sumOfPrimesBelow = (num) => {
 }
 
 module.exports = {
-  solution: sumOfPrimesBelow,
+  fun: sumOfPrimesBelow,
   id: 'sieve of eratosthenes'
 }
