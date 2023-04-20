@@ -1,22 +1,49 @@
-const testSubjects = [
-  require('./prime-trial-division'),
-  require('./prime-sieve')
-]
+const assert = require('node:assert/strict')
+const { describe, it } = require('node:test')
 
-testSubjects.forEach(({ solution, id }) => {
+const solutions = require("./prime.repo")
+
+solutions.forEach(({ fun, id }) => {
   describe(`Prime number solution "${id}"`, () => {
     it('computes the nth prime number', () => {
-      expect(solution(1)).toBe(2)
-      expect(solution(2)).toBe(3)
-      expect(solution(3)).toBe(5)
-      expect(solution(4)).toBe(7)
-      expect(solution(5)).toBe(11)
+      assert.equal(
+        fun(1),
+        2
+      )
+
+      assert.equal(
+        fun(2),
+        3
+      )
+
+      assert.equal(
+        fun(3),
+        5
+      )
+
+      assert.equal(
+        fun(4),
+        7
+      )
+
+      assert.equal(
+        fun(5),
+        11
+      )
     })
 
     it('throws error for invalid indexes', () => {
-      expect(() => solution(0)).toThrow('Invalid index')
-      expect(() => solution(-1)).toThrow('Invalid index')
-      expect(() => solution()).toThrow('Invalid index')
+      assert.throws(
+        () => fun(0)
+      )
+
+      assert.throws(
+        () => fun(-1)
+      )
+
+      assert.throws(
+        () => fun()
+      )
     })
   })
 })
