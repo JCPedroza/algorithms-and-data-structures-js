@@ -37,6 +37,6 @@ const prime = (index) => {
 }
 
 module.exports = {
-  solution: prime,
+  fun: prime,
   id: 'sieve of eratosthenes'
 }

@@ -44,6 +44,6 @@ const prime = (index) => {
 }
 
 module.exports = {
-  solution: prime,
+  fun: prime,
   id: 'trial division'
 }
