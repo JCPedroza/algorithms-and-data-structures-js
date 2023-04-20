@@ -14,6 +14,6 @@ const sumSquareDifference = (limit) => {
 }
 
 module.exports = {
-  solution: sumSquareDifference,
+  fun: sumSquareDifference,
   id: 'analytic'
 }
