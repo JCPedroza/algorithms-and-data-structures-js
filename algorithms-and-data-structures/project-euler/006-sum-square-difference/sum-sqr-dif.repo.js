@@ -1,4 +1,4 @@
-const solutions= [
+const solutions = [
   require('./sum-sqr-dif-floop'),
   require('./sum-sqr-dif-analytic')
 ]

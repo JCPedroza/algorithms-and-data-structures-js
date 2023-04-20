@@ -1,7 +1,7 @@
 const assert = require('node:assert/strict')
 const { describe, it } = require('node:test')
 
-const solutions = require("./largest-palindrome-product.repo")
+const solutions = require('./largest-palindrome-product.repo')
 
 solutions.forEach(({ fun, id }) => {
   describe(`Largest palindrome product algorithm "${id}"`, () => {

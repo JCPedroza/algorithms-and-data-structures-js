@@ -1,7 +1,7 @@
 const assert = require('node:assert/strict')
 const { describe, it } = require('node:test')
 
-const solutions = require("./largest-prime-factor.repo")
+const solutions = require('./largest-prime-factor.repo')
 
 solutions.forEach(({ fun, id }) => {
   describe(`Largest prime factor algorithm "${id}"`, () => {

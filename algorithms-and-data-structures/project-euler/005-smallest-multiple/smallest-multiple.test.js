@@ -1,7 +1,7 @@
 const assert = require('node:assert/strict')
 const { describe, it } = require('node:test')
 
-const solutions = require("./smallest-multiple.repo")
+const solutions = require('./smallest-multiple.repo')
 
 solutions.forEach(({ fun, id }) => {
   describe(`Smallest multiple algorithm "${id}"`, () => {
