@@ -1,7 +1,7 @@
 const assert = require('node:assert/strict')
 const { describe, it } = require('node:test')
 
-const solutions = require("./special-pythagorean-triplet.repo")
+const solutions = require('./special-pythagorean-triplet.repo')
 
 for (const { fun, id } of solutions) {
   describe(`Project euler solution "${id}"`, () => {

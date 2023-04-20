@@ -1,7 +1,7 @@
 const assert = require('node:assert/strict')
 const { describe, it } = require('node:test')
 
-const solutions = require("./prime.repo")
+const solutions = require('./prime.repo')
 
 solutions.forEach(({ fun, id }) => {
   describe(`Prime number solution "${id}"`, () => {

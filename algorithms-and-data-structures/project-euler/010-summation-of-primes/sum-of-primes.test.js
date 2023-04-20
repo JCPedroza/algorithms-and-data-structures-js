@@ -1,7 +1,7 @@
 const assert = require('node:assert/strict')
 const { describe, it } = require('node:test')
 
-const solutions = require("./sum-of-primes.repo")
+const solutions = require('./sum-of-primes.repo')
 
 solutions.forEach(({ fun, id }) => {
   describe(`Project euler solution "${id}"`, () => {
@@ -27,7 +27,7 @@ solutions.forEach(({ fun, id }) => {
       )
 
       assert.equal(
-        fun(29),100
+        fun(29), 100
       )
     })
 

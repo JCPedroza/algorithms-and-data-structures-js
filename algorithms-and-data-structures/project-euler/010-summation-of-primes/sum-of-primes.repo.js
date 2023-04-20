@@ -3,4 +3,3 @@ const solutions = [
 ]
 
 module.exports = solutions
-
