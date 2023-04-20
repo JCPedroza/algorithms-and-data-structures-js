@@ -43,6 +43,6 @@ const seriesLargestProduct = (numTxtPath, scopeSize) => {
 }
 
 module.exports = {
-  solution: seriesLargestProduct,
+  fun: seriesLargestProduct,
   id: 'naive'
 }
