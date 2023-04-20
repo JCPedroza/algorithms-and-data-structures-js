@@ -47,6 +47,6 @@ const specialPythagoreanTriplet = (targetSum) => {
 }
 
 module.exports = {
-  solution: specialPythagoreanTriplet,
+  fun: specialPythagoreanTriplet,
   id: 'naive'
 }
