@@ -1,14 +1,25 @@
-const testSubjects = [
-  require('./sum-sqr-dif-floop'),
-  require('./sum-sqr-dif-analytic')
-]
+const assert = require('node:assert/strict')
+const { describe, it } = require('node:test')
 
-testSubjects.forEach(({ solution, id }) => {
+const solutions = require('./sum-sqr-dif.repo')
+
+solutions.forEach(({ fun, id }) => {
   describe(`Sum square diffrerence solution "${id}"`, () => {
     it('calculates the difference of the sums', () => {
-      expect(solution(0)).toBe(0)
-      expect(solution(1)).toBe(0)
-      expect(solution(10)).toBe(2_640)
+      assert.equal(
+        fun(0),
+        0
+      )
+
+      assert.equal(
+        fun(1),
+        0
+      )
+
+      assert.equal(
+        fun(10),
+        2_640
+      )
     })
   })
 })
