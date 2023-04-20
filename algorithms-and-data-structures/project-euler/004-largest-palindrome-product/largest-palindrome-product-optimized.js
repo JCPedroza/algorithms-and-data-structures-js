@@ -32,6 +32,6 @@ const largestPalindromeProduct = (digits) => {
 }
 
 module.exports = {
-  solution: largestPalindromeProduct,
+  fun: largestPalindromeProduct,
   id: 'optimized'
 }
