@@ -32,6 +32,6 @@ const smallestMult = (limit) => {
 }
 
 module.exports = {
-  solution: smallestMult,
+  fun: smallestMult,
   id: 'naive brute force'
 }

@@ -35,6 +35,6 @@ const smallestMult = (limit) => {
 }
 
 module.exports = {
-  solution: smallestMult,
+  fun: smallestMult,
   id: 'optimized'
 }
