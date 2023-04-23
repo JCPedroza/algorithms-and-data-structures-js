@@ -77,6 +77,6 @@ class PriorityQueue {
 }
 
 module.exports = {
-  Structure: PriorityQueue,
+  Struct: PriorityQueue,
   id: 'slow'
 }
