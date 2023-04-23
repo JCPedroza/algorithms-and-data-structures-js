@@ -1,34 +1,40 @@
-const testSubjects = [
-  require('./priority-queue-slow')
-]
+const assert = require('node:assert/strict')
+const { describe, it } = require('node:test')
+
+const structures = require('./priority-queue.repo')
 
 const validateState = (pqueue, length, isEmpty, peek) => {
-  expect(pqueue.length).toBe(length)
-  expect(pqueue.isEmpty()).toBe(isEmpty)
+  assert.equal(pqueue.length, length)
+  assert.equal(pqueue.isEmpty(), isEmpty)
 
-  if (peek) expect(pqueue.peek()).toBe(peek)
-  else expect(() => pqueue.peek()).toThrow(Error)
+  if (peek) {
+    assert.equal(pqueue.peek(), peek)
+  } else {
+    assert.throws(() => pqueue.peek(), Error)
+  }
 }
 
-for (const { Structure, id } of testSubjects) {
-  test(`"${id}" performs basic priority queue operations`, () => {
-    const pqueue = new Structure()
-    validateState(pqueue, 0, true)
+for (const { Struct, id } of structures) {
+  describe(`Priority queue implementation "${id}"`, () => {
+    it('performs basic priority queue operations', () => {
+      const pqueue = new Struct()
+      validateState(pqueue, 0, true)
 
-    expect(pqueue.enqueue(-10)).toBe(pqueue)
-    validateState(pqueue, 1, false, -10)
+      assert.equal(pqueue.enqueue(-10), pqueue)
+      validateState(pqueue, 1, false, -10)
 
-    pqueue.enqueue(10).enqueue(-20).enqueue(20)
-    validateState(pqueue, 4, false, -20)
+      pqueue.enqueue(10).enqueue(-20).enqueue(20)
+      validateState(pqueue, 4, false, -20)
 
-    expect(pqueue.dequeue()).toBe(-20)
-    validateState(pqueue, 3, false, -10)
+      assert.equal(pqueue.dequeue(), -20)
+      validateState(pqueue, 3, false, -10)
 
-    expect(pqueue.dequeue()).toBe(-10)
-    expect(pqueue.dequeue()).toBe(10)
-    expect(pqueue.dequeue()).toBe(20)
-    validateState(pqueue, 0, true)
+      assert.equal(pqueue.dequeue(), -10)
+      assert.equal(pqueue.dequeue(), 10)
+      assert.equal(pqueue.dequeue(), 20)
+      validateState(pqueue, 0, true)
 
-    expect(() => pqueue.dequeue()).toThrow(Error)
+      assert.throws(() => pqueue.dequeue(), Error)
+    })
   })
 }
