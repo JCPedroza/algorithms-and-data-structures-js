@@ -221,6 +221,6 @@ class LinkedList extends List {
 }
 
 module.exports = {
-  Structure: LinkedList,
+  Struct: LinkedList,
   id: 'doubly linked list'
 }
