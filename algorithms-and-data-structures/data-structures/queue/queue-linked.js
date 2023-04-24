@@ -72,6 +72,6 @@ class Queue {
 }
 
 module.exports = {
-  Structure: Queue,
+  Struct: Queue,
   id: 'linked-list-based'
 }

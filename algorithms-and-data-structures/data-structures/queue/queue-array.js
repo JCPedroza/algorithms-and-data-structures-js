@@ -66,6 +66,6 @@ class Queue {
 }
 
 module.exports = {
-  Structure: Queue,
+  Struct: Queue,
   id: 'array-based'
 }
