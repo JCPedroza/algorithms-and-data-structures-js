@@ -1,39 +1,42 @@
-const testSubjects = [
-  require('./queue-array'),
-  require('./queue-linked')
-]
+const assert = require('node:assert/strict')
+const { describe, it } = require('node:test')
+
+const structures = require('./queue.repo')
 
 const validateState = (queue, length, isEmpty, peek) => {
-  expect(queue.length).toBe(length)
-  expect(queue.isEmpty()).toBe(isEmpty)
+  assert.equal(queue.length, length)
+  assert.equal(queue.isEmpty(), isEmpty)
 
-  if (peek) expect(queue.peek()).toBe(peek)
-  else expect(() => queue.peek()).toThrow(Error)
+  if (peek) {
+    assert.equal(queue.peek(), peek)
+  } else {
+    assert.throws(() => queue.peek(), Error)
+  }
 }
 
-testSubjects.forEach(({ Structure, id }) => {
+structures.forEach(({ Structure, id }) => {
   describe(`Queue data structure "${id}"`, () => {
     it('performs basic queue operations', () => {
       const queue = new Structure()
       validateState(queue, 0, true)
 
-      expect(queue.enqueue('a')).toBe(queue)
+      assert.equal(queue.enqueue('a'), queue)
       validateState(queue, 1, false, 'a')
 
       queue.enqueue('b').enqueue('c').enqueue('d')
       validateState(queue, 4, false, 'a')
 
-      expect(queue.dequeue()).toBe('a')
+      assert.equal(queue.dequeue(), 'a')
       validateState(queue, 3, false, 'b')
 
-      expect(queue.dequeue()).toBe('b')
-      expect(queue.dequeue()).toBe('c')
-      expect(queue.dequeue()).toBe('d')
+      assert.equal(queue.dequeue(), 'b')
+      assert.equal(queue.dequeue(), 'c')
+      assert.equal(queue.dequeue(), 'd')
       validateState(queue, 0, true)
 
-      expect(() => queue.peek()).toThrow(Error)
-      expect(() => queue.dequeue()).toThrow(Error)
-      expect(() => { queue.length = 5 }).toThrow(Error)
+      assert.throws(() => queue.peek(), Error)
+      assert.throws(() => queue.dequeue(), Error)
+      assert.throws(() => { queue.length = 5 }, Error)
     })
   })
 })
