@@ -14,10 +14,10 @@ const validateState = (queue, length, isEmpty, peek) => {
   }
 }
 
-structures.forEach(({ Structure, id }) => {
+structures.forEach(({ Struct, id }) => {
   describe(`Queue data structure "${id}"`, () => {
     it('performs basic queue operations', () => {
-      const queue = new Structure()
+      const queue = new Struct()
       validateState(queue, 0, true)
 
       assert.equal(queue.enqueue('a'), queue)
