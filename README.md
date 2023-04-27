@@ -3,38 +3,7 @@
 [![license MIT][1]][2] [![code stile: standard][3]][4] [![build status][9]][10]
 [![codacy code quality][5]][6] [![codefactor code quality][7]][8]
 
-This repository is dedicated to the study of algorithms, data structures,
-JavaScript, and to our love for programming and software engineering!
-
-## Scripts
-
-The following scripts are provided through npm:
-
-```bash
-npm test                   # Run unit tests only for changed files
-npm run test-unit          # Run all unit tests
-npm run test-unit-changed  # Run unit tests only for changed files
-npm run test-style         # Run style tests
-npm run test-all           # Run style tests and all unit tests
-npm run test-pre-commit    # Run tests that are ran before git commit
-npm run test-pre-push      # Run tests that are ran before git push
-npm run test-node-workflow # Run tests that are ran during ci
-
-npm run license-info-summary  # Show summary of used licenses
-npm run license-info-complete # Show complete info of used licenses
-
-npm run loc-stats-summary  # Show summary of line of code stats
-npm run loc-stats-complete # Show complete lines of code stats
-
-npm run build-jsdoc # Build the jsdoc documentation (docs directory)
-```
-
-You can see a list of all available npm scripts by running `npm run`.
-
-## Documentation
-
-You can find the documentation in the Github Pages of this repository over [here][102].
-You can also generate the documentation locally by running `npm run build-jsdoc`.
+Implement, test, and profile algorithms and data structures.
 
 ## Contributing
 
@@ -48,22 +17,9 @@ Code reviews, pull requests, issues, and discussions are always welcome!
 - Package manager
   - [npm][80]
 - Unit testing
-  - [jest][81]
+  - [node test runner][81]
 - Style and linting
   - [standard][82]
-
-## Node Version Manager
-
-We prefer the latest idioms, syntax, and API, as this effort is first and
-foremost a practice tool. Because of this, you'll most likely need the latest
-node version to be able to run everything.
-
-For version managing node, try:
-
-- [nvm][83]
-
-So you can easily install the latest node versions and/or easily switch between
-node versions if you need to.
 
 ## Similar Resources
 
@@ -106,12 +62,10 @@ You can find similar repositories for other languages in the following links:
 [56]: https://img.shields.io/github/repo-size/jcpedroza/algorithms-and-data-structures-js
 
 [80]: https://www.npmjs.com/
-[81]: https://jestjs.io/
+[81]: https://nodejs.org/api/test.html
 [82]: https://standardjs.com/
-[83]: https://github.com/nvm-sh/nvm
 
 [100]: https://github.com/JCPedroza/algorithms-and-data-structures
 [101]: https://github.com/JCPedroza/algorithms-and-data-structures-py
-[102]: https://jcpedroza.github.io/algorithms-and-data-structures-js
 [103]: https://github.com/JCPedroza/algorithms-and-data-structures-ocaml
 [104]: https://github.com/JCPedroza/algorithms-and-data-structures-hs
