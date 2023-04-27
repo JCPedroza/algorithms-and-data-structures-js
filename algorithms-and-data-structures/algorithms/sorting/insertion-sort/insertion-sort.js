@@ -20,6 +20,6 @@ const insertionSort = (nums) => {
 }
 
 module.exports = {
-  algorithm: insertionSort,
+  fun: insertionSort,
   id: 'simple'
 }

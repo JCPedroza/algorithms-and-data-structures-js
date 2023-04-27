@@ -1,7 +1,4 @@
-const { runSharedUnitTests } = require('../sorting-unit-tests')
+const { testSorters } = require('../sorting-unit-tests')
+const algorithms = require('./merge-sort.repo')
 
-const testSubjects = [
-  require('./merge-sort')
-]
-
-runSharedUnitTests(testSubjects, expect, 'merge sort')
+testSorters(algorithms, 'Merge sort')

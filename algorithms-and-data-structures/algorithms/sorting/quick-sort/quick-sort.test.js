@@ -1,7 +1,4 @@
-const { runSharedUnitTests } = require('../sorting-unit-tests')
+const { testSorters } = require('../sorting-unit-tests')
+const algorithms = require('./quick-sort.repo')
 
-const testSubjects = [
-  require('./quick-sort-stable')
-]
-
-runSharedUnitTests(testSubjects, expect, 'quick sort')
+testSorters(algorithms, 'Quick sort')

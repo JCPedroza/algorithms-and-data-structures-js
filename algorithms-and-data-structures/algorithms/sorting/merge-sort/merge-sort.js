@@ -32,6 +32,6 @@ const mergeSort = (nums) => {
 }
 
 module.exports = {
-  algorithm: mergeSort,
+  fun: mergeSort,
   id: 'simple'
 }

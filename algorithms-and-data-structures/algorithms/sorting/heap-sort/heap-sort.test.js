@@ -1,7 +1,4 @@
-const { runSharedUnitTests } = require('../sorting-unit-tests')
+const { testSorters } = require('../sorting-unit-tests')
+const algorithms = require('./heap-sort.repo')
 
-const testSubjects = [
-  require('./heap-sort')
-]
-
-runSharedUnitTests(testSubjects, expect, 'Heap sort')
+testSorters(algorithms, 'Heap sort')

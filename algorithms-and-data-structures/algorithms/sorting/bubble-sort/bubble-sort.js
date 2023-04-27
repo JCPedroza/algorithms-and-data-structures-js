@@ -18,6 +18,6 @@ const bubbleSort = (nums) => {
 }
 
 module.exports = {
-  algorithm: bubbleSort,
+  fun: bubbleSort,
   id: 'simple'
 }

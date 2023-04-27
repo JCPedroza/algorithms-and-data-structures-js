@@ -47,6 +47,6 @@ const heapSort = (nums) => {
 }
 
 module.exports = {
-  algorithm: heapSort,
+  fun: heapSort,
   id: 'heap sort'
 }

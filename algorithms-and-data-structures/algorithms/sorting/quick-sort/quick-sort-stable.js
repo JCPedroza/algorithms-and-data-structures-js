@@ -22,6 +22,6 @@ const quickSort = (nums) => {
 }
 
 module.exports = {
-  algorithm: quickSort,
+  fun: quickSort,
   id: 'stable, not-in-place, recursive'
 }

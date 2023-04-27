@@ -1,7 +1,4 @@
-const { runSharedUnitTests } = require('../sorting-unit-tests')
+const { testSorters } = require('../sorting-unit-tests')
+const algorithms = require('./insertion-sort.repo')
 
-const testSubjects = [
-  require('./insertion-sort')
-]
-
-runSharedUnitTests(testSubjects, expect, 'insertion sort')
+testSorters(algorithms, 'Insertion sort')
