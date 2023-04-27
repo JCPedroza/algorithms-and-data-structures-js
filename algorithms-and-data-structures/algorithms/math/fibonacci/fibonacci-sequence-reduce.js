@@ -16,6 +16,6 @@ const fibonacciSequence = (length) => {
 }
 
 module.exports = {
-  algorithm: fibonacciSequence,
+  fun: fibonacciSequence,
   id: 'reduce'
 }

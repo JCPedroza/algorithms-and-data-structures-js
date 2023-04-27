@@ -1,23 +1,20 @@
-const testSubjects = [
-  require('./ops-assign-proxy'),
-  require('./ops-entries-filter-map'),
-  require('./ops-filter-reduce'),
-  require('./ops-for-each'),
-  require('./ops-reduce')
-]
+const assert = require('node:assert/strict')
+const { describe, it } = require('node:test')
 
-testSubjects.forEach(({ algorithm, id }) => {
-  describe(`Object sanitization algorithm "${id}"`, () => {
+const algorithms = require('./ops.repo')
+
+algorithms.forEach(({ fun, id }) => {
+  describe(`Object sanitization fun "${id}"`, () => {
     it('sanitizes object properties according to a whitelist', () => {
       const movie = { title: 'One', year: 1954, director: 'Tom' }
       const movieWhitelist = ['title', 'year']
 
-      expect(algorithm(movie, movieWhitelist)).toEqual({ title: 'One', year: 1954 })
-      expect(algorithm({}, movieWhitelist)).toEqual({})
-      expect(algorithm(movie, [])).toEqual({})
+      assert.deepEqual(fun(movie, movieWhitelist), { title: 'One', year: 1954 })
+      assert.deepEqual(fun({}, movieWhitelist), {})
+      assert.deepEqual(fun(movie, []), {})
 
       // Original object must not be modified
-      expect(movie).toEqual({ title: 'One', year: 1954, director: 'Tom' })
+      assert.deepEqual(movie, { title: 'One', year: 1954, director: 'Tom' })
     })
   })
 })

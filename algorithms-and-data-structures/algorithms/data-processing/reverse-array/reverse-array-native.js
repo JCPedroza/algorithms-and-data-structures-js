@@ -8,6 +8,6 @@
 const reverseArray = (array) => array.reverse()
 
 module.exports = {
-  algorithm: reverseArray,
+  fun: reverseArray,
   id: 'native'
 }

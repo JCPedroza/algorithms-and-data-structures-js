@@ -6,6 +6,6 @@
 const vsum = (nums) => nums.reduce((sum, num) => sum + num, 0)
 
 module.exports = {
-  algorithm: vsum,
+  fun: vsum,
   id: 'reduce'
 }

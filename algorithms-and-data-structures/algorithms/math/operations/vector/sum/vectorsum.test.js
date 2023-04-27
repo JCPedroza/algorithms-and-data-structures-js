@@ -1,15 +1,14 @@
-const testSubjects = [
-  require('./vectorsum-forloop'),
-  require('./vectorsum-reduce'),
-  require('./vectorsum-recursive'),
-  require('./vectorsum-tail')
-]
+const assert = require('node:assert/strict')
+const { describe, it } = require('node:test')
 
-testSubjects.forEach(({ algorithm, id }) => {
+const algorithms = require('./vectorsum.repo')
+
+algorithms.forEach(({ fun, id }) => {
   describe(`Vectorsum algorithm "${id}"`, () => {
     it('computes the sum of all the numbers in an array', () => {
-      expect(algorithm([])).toBe(0)
-      expect(algorithm([3.7, 2.9, -4.72, 10.97, -21.72])).toBeCloseTo(-8.87)
+      assert.equal(fun([]), 0)
+      assert.equal(fun([5]), 5)
+      assert.equal(fun([1, 2, -4, 10, -21]), -12)
     })
   })
 })

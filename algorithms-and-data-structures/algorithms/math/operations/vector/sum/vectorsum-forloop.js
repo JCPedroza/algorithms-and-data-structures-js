@@ -10,6 +10,6 @@ const vsum = (nums) => {
 }
 
 module.exports = {
-  algorithm: vsum,
+  fun: vsum,
   id: 'for loop'
 }

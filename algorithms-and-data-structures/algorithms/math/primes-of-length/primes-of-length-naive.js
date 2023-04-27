@@ -33,6 +33,6 @@ const primesOfLength = (length) => {
 }
 
 module.exports = {
-  algorithm: primesOfLength,
+  fun: primesOfLength,
   id: 'naive brute force'
 }

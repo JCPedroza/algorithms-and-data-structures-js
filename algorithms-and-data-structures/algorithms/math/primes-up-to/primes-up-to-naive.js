@@ -34,6 +34,6 @@ const primesUpTo = (num) => {
 }
 
 module.exports = {
-  algorithm: primesUpTo,
+  fun: primesUpTo,
   id: 'naive brute force'
 }

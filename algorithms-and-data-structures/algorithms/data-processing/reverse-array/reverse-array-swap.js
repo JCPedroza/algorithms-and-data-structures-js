@@ -17,6 +17,6 @@ const reverseArray = (array) => {
 }
 
 module.exports = {
-  algorithm: reverseArray,
+  fun: reverseArray,
   id: 'swap'
 }

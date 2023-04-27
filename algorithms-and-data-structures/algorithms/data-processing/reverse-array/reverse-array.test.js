@@ -1,17 +1,21 @@
-const testSubjects = [
-  require('./reverse-array-swap'),
-  require('./reverse-array-native')
-]
+const assert = require('node:assert/strict')
+const { describe, it } = require('node:test')
 
-testSubjects.forEach(({ algorithm, id }) => {
-  describe(`Reverse array algorithm "${id}"`, () => {
+const algorithms = require('./reverse-array.repo')
+
+algorithms.forEach(({ fun, id }) => {
+  describe(`Reverse array algorithms "${id}"`, () => {
     it('reverses order of array items', () => {
-      expect(algorithm([])).toEqual([])
-      expect(algorithm([1])).toEqual([1])
-      expect(algorithm([1, 2, 3])).toEqual([3, 2, 1])
-      expect(algorithm(['a', 'b', 'c', 'd'])).toEqual(['d', 'c', 'b', 'a'])
+      assert.deepEqual(fun([]), [])
+      assert.deepEqual(fun([1]), [1])
+      assert.deepEqual(fun([1, 2, 3]), [3, 2, 1])
 
-      expect(() => algorithm()).toThrow()
+      assert.deepEqual(
+        fun(['a', 'b', 'c', 'd']),
+        ['d', 'c', 'b', 'a']
+      )
+
+      assert.throws(() => fun())
     })
   })
 })

@@ -12,6 +12,6 @@ const vsum = (nums) => {
 }
 
 module.exports = {
-  algorithm: vsum,
+  fun: vsum,
   id: 'recursive'
 }

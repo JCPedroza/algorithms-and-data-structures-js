@@ -8,6 +8,6 @@ const sanitizeObjectProperties = (object, properties) =>
   Object.assign({}, new Proxy(object, { ownKeys: () => properties }))
 
 module.exports = {
-  algorithm: sanitizeObjectProperties,
+  fun: sanitizeObjectProperties,
   id: 'Object.assign Proxy'
 }

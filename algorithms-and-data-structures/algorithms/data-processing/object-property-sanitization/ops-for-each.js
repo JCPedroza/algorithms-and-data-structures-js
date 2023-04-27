@@ -15,6 +15,6 @@ const sanitizeObjectProperties = (object, properties) => {
 }
 
 module.exports = {
-  algorithm: sanitizeObjectProperties,
+  fun: sanitizeObjectProperties,
   id: 'for each'
 }
