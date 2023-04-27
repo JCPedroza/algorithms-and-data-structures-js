@@ -22,6 +22,6 @@ const binarySearch = (array, target) => {
 }
 
 module.exports = {
-  algorithm: binarySearch,
+  fun: binarySearch,
   id: 'recursive'
 }

@@ -29,6 +29,6 @@ const binarySearch = (array, searchValue) => {
 }
 
 module.exports = {
-  algorithm: binarySearch,
+  fun: binarySearch,
   id: 'simple'
 }
