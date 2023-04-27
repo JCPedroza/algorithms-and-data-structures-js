@@ -30,6 +30,6 @@ const selectionSort = (nums) => {
 }
 
 module.exports = {
-  algorithm: selectionSort,
+  fun: selectionSort,
   id: 'kind of optimized'
 }

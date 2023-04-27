@@ -1,8 +1,4 @@
-const { runSharedUnitTests } = require('../sorting-unit-tests')
+const { testSorters } = require('../sorting-unit-tests')
+const algorithms = require('./selection-sort.repo')
 
-const testSubjects = [
-  require('./selection-sort'),
-  require('./selection-sort-kindof-optimized')
-]
-
-runSharedUnitTests(testSubjects, expect, 'selection sort')
+testSorters(algorithms, 'Selection sort')
