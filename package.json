@@ -7,14 +7,9 @@
   },
   "description": "Algorithms and data structures implemented in JavaScript",
   "scripts": {
-    "test": "jest --onlyChanged",
-    "test-unit": "jest .",
-    "test-unit-ci": "jest . --ci",
-    "test-unit-changed": "npm test",
-    "test-style": "standard .",
-    "test-all": "concurrently \"npm run test-style\" \"npm run test-unit\"",
-    "test-pre-push": "npm run test-all",
-    "test-node-workflow": "concurrently \"npm run test-style\" \"npm run test-unit-ci\"",
+    "test":  "concurrently \"standard .\" \"node --test\"",
+    "unit-test": "node --test",
+    "lint-test": "standard .",
     "build-jsdoc": "./node_modules/.bin/jsdoc --readme ./README.md --configure ./jsdoc.json --destination ./docs --recurse .",
     "prepare": "husky install"
   },
