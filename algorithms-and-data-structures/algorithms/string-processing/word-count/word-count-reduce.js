@@ -12,6 +12,6 @@ const countWords = (str) =>
     .reduce((count, word) => word ? ++count : count, 0)
 
 module.exports = {
-  algorithm: countWords,
+  fun: countWords,
   id: 'reduce'
 }

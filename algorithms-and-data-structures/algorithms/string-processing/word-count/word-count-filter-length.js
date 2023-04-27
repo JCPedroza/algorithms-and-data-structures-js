@@ -13,6 +13,6 @@ const countWords = (str) =>
     .length
 
 module.exports = {
-  algorithm: countWords,
+  fun: countWords,
   id: 'filter length'
 }

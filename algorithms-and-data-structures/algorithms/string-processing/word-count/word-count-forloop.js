@@ -18,6 +18,6 @@ const countWords = (str) => {
 }
 
 module.exports = {
-  algorithm: countWords,
+  fun: countWords,
   id: 'for of loop accumulator'
 }
