@@ -6,15 +6,14 @@ algorithms.forEach(({ fun, id }) => {
   describe(`Object sanitization algorithm "${id}"`, () => {
     it('creates object containing whitelisted properties only', () => {
       const movie = { title: 'One', year: 1954, director: 'Tom' }
-      const whitelist = ['title', 'year']
 
       assert.deepEqual(
-        fun(movie, whitelist),
+        fun(movie, ['title', 'year']),
         { title: 'One', year: 1954 }
       )
 
       assert.deepEqual(
-        fun({}, whitelist),
+        fun({}, ['shape', 'color']),
         {}
       )
 
