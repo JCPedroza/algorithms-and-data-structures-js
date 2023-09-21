@@ -1,6 +1,6 @@
 const assert = require('node:assert/strict')
 const { describe, it } = require('node:test')
-const algorithms = require('./ops.repo')
+const algorithms = require('./os.repo')
 
 algorithms.forEach(({ fun, id }) => {
   describe(`Object sanitization algorithm "${id}"`, () => {
