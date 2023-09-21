@@ -1,20 +1,20 @@
 /**
  * Creates a copy of an object, but that only contains specific properties.
  * @param {object} object Object to sanitize.
- * @param {string[]} properties Properties to include.
+ * @param {string[]} whitelist Properties to include.
  * @returns Copy of object that only contains the specified properties.
  */
-const sanitizeObjectProperties = (object, properties) => {
-  const accumulator = {}
+const sanitizeObject = (object, whitelist) => {
+  const copy = {}
 
-  properties.forEach(property => {
-    if (property in object) accumulator[property] = object[property]
+  whitelist.forEach(prop => {
+    if (prop in object) copy[prop] = object[prop]
   })
 
-  return accumulator
+  return copy
 }
 
 module.exports = {
-  fun: sanitizeObjectProperties,
+  fun: sanitizeObject,
   id: 'for each'
 }
