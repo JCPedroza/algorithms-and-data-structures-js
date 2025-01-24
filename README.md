@@ -3,7 +3,7 @@
 [![license MIT][1]][2] [![code stile: standard][3]][4] [![build status][9]][10]
 [![codacy code quality][5]][6] [![codefactor code quality][7]][8]
 
-Implement, test, and profile algorithms and data structures written in
+Implement, test, and profile algorithms and data structures using
 JavaScript.
 
 ## Toolchain
