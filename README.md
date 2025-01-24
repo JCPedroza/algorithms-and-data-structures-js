@@ -6,8 +6,6 @@
 Implement, test, and profile algorithms and data structures using
 JavaScript.
 
-## Toolchain
-
 - Package manager
   - [npm][80]
 - Unit testing
