@@ -2,8 +2,8 @@
   "name": "algorithms-and-data-structures-js",
   "version": "0.0.1",
   "engines": {
-    "node": ">=20.7.0",
-    "npm": ">=10.1.0"
+    "node": ">=22.13.0",
+    "npm": ">=11.0.0"
   },
   "description": "Algorithms and data structures implemented in JavaScript",
   "scripts": {
@@ -29,10 +29,10 @@
   },
   "homepage": "https://github.com/JCPedroza/algorithms-and-data-structures-js",
   "devDependencies": {
-    "concurrently": "8.2.1",
-    "husky": "8.0.3",
-    "jsdoc": "4.0.2",
-    "standard": "17.1.0"
+    "concurrently": "9.1.2",
+    "husky": "9.1.7",
+    "jsdoc": "4.0.4",
+    "standard": "17.1.2"
   },
   "standard": {
     "ignore": [
