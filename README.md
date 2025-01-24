@@ -5,34 +5,19 @@
 
 Implement, test, and profile algorithms and data structures.
 
-## Contributing
-
-[![contributors][25]][26] [![commit activity][27]][28] [![issues][29]][30]
-[![issues closed][31]][32] [![issues pr][33]][34] [![issues pr closed][35]][36]
-
-Code reviews, pull requests, issues, and discussions are always welcome!
-
-## Main Toolchain
+## Toolchain
 
 - Package manager
   - [npm][80]
 - Unit testing
   - [node test runner][81]
-- Style and linting
+- Code style and linting
   - [standard][82]
 
-## Similar Resources
+## Contributing
 
-You can find similar repositories for other languages in the following links:
-
-- [Haskell][104]
-- [Python][101]
-- [OCaml][103]
-- [List of all languages][100]
-
----
-
-[![repo size][55]][56]
+[![contributors][25]][26] [![commit activity][27]][28] [![issues][29]][30]
+[![issues closed][31]][32] [![issues pr][33]][34] [![issues pr closed][35]][36]
 
 [1]: https://img.shields.io/github/license/jcpedroza/algorithms-and-data-structures-js
 [2]: https://en.wikipedia.org/wiki/MIT_License
@@ -58,14 +43,6 @@ You can find similar repositories for other languages in the following links:
 [35]: https://img.shields.io/github/issues-pr-closed-raw/JCPedroza/algorithms-and-data-structures-js
 [36]: https://github.com/JCPedroza/algorithms-and-data-structures-js/pulls
 
-[55]: https://img.shields.io/github/repo-size/jcpedroza/algorithms-and-data-structures-js
-[56]: https://img.shields.io/github/repo-size/jcpedroza/algorithms-and-data-structures-js
-
 [80]: https://www.npmjs.com/
 [81]: https://nodejs.org/api/test.html
 [82]: https://standardjs.com/
-
-[100]: https://github.com/JCPedroza/algorithms-and-data-structures
-[101]: https://github.com/JCPedroza/algorithms-and-data-structures-py
-[103]: https://github.com/JCPedroza/algorithms-and-data-structures-ocaml
-[104]: https://github.com/JCPedroza/algorithms-and-data-structures-hs
