@@ -32,6 +32,12 @@ node --test --test-reporter dot # Minimal verbosity
 npx standard .
 ```
 
+### See Available `npn run` Scripts
+
+```bash
+npm run
+```
+
 ## Contributing
 
 [![contributors][25]][26] [![commit activity][27]][28] [![issues][29]][30]
