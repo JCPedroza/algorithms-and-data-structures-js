@@ -6,12 +6,31 @@
 Implement, test, and profile algorithms and data structures using
 JavaScript.
 
-- Package manager
-  - [npm][80]
-- Unit testing
-  - [node test runner][81]
-- Code style and linting
-  - [standard][82]
+## Installation
+
+First use https://nodejs.org/en/download or https://github.com/nvm-sh/nvm to
+install `node` and `npm`. Then:
+
+```bash
+git clone https://github.com/JCPedroza/algorithms-and-data-structures-js.git
+cd algorithms-and-data-structures-js
+npm install
+```
+
+## Usage
+
+### Run Unit Tests
+
+```bash
+node --test # Verbose, human readable
+node --test --test-reporter dot # Minimal verbosity
+```
+
+### Run Linter
+
+```bash
+npx standard .
+```
 
 ## Contributing
 
@@ -41,7 +60,3 @@ JavaScript.
 [34]: https://github.com/JCPedroza/algorithms-and-data-structures-js/pulls
 [35]: https://img.shields.io/github/issues-pr-closed-raw/JCPedroza/algorithms-and-data-structures-js
 [36]: https://github.com/JCPedroza/algorithms-and-data-structures-js/pulls
-
-[80]: https://www.npmjs.com/
-[81]: https://nodejs.org/api/test.html
-[82]: https://standardjs.com/
