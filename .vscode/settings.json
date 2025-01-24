@@ -10,5 +10,5 @@
       "**/node_modules": true,
       "**/coverage": true
     },
-    "files.trimTrailingWhitespace": true,
+  "files.trimTrailingWhitespace": true,
 }
