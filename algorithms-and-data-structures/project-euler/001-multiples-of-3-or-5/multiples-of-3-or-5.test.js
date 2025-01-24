@@ -7,8 +7,13 @@ solutions.forEach(({ fun, id }) => {
   describe(`Multiples of 3 or 5 solution "${id}"`, () => {
     it('sums the multiples of 3 or 5 below the given input', () => {
       assert.equal(
-        fun(-1),
+        fun(-10),
         0
+      )
+
+      assert.equal(
+        fun(10.9),
+        23
       )
 
       assert.equal(
@@ -17,13 +22,14 @@ solutions.forEach(({ fun, id }) => {
       )
 
       assert.equal(
-        fun(50),
-        543
+        fun(10),
+        23
       )
 
       assert.equal(
         fun(100),
-        2_318)
+        2_318
+      )
     })
   })
 })
