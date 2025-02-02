@@ -3,19 +3,9 @@ const { describe, it } = require('node:test')
 
 const solutions = require('./multiples-of-3-or-5.repo')
 
-solutions.forEach(({ fun, id }) => {
-  describe(`Multiples of 3 or 5 solution "${id}"`, () => {
-    it('sums the multiples of 3 or 5 below the given input', () => {
-      assert.equal(
-        fun(-10),
-        0
-      )
-
-      assert.equal(
-        fun(10.9),
-        23
-      )
-
+for (const {fun, id} of solutions) {
+  describe(`Project Euler "Multiples of 3 or 5" solution "${id}"`, () => {
+    it('sums multiples of 3 or 5 that are smaller than the input', () => {
       assert.equal(
         fun(0),
         0
@@ -31,5 +21,19 @@ solutions.forEach(({ fun, id }) => {
         2_318
       )
     })
+
+    it('returns 0 for negative input', () => {
+      assert.equal(
+        fun(-10),
+        0
+      )
+    })
+
+    it('converts numerical input to integer', () => {
+      assert.equal(
+        fun(15.9),
+        fun(15)
+      )
+    })
   })
-})
+}
