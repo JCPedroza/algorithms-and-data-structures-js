@@ -3,7 +3,7 @@ const { describe, it } = require('node:test')
 
 const solutions = require('./multiples-of-3-or-5.repo')
 
-for (const {fun, id} of solutions) {
+for (const { fun, id } of solutions) {
   describe(`Project Euler "Multiples of 3 or 5" solution "${id}"`, () => {
     it('sums multiples of 3 or 5 that are smaller than the input', () => {
       assert.equal(
