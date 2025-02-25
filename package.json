@@ -5,6 +5,7 @@
     "node": ">=22.13.0",
     "npm": ">=11.0.0"
   },
+  "type": "commonjs",
   "description": "Algorithms and data structures implemented in JavaScript",
   "scripts": {
     "test": "node --test --test-reporter dot",
