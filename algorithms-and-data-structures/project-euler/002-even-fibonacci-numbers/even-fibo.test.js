@@ -3,7 +3,7 @@ const { describe, it } = require('node:test')
 
 const solutions = require('./even-fibo.repo')
 
-solutions.forEach(({ fun, id }) => {
+for (const { fun, id } of solutions) {
   describe(`Even fibonacci algorithm "${id}"`, () => {
     it('sums even fibo numbers up to the given limit', () => {
       assert.equal(
@@ -32,4 +32,4 @@ solutions.forEach(({ fun, id }) => {
       )
     })
   })
-})
+}
