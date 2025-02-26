@@ -35,7 +35,11 @@ npm run full-test # Run unit tests and linter
 ```
 
 ```bash
-node <path to time.js file> # Run execution time measurement for one project
+# Run execution time measurement for one project
+node <path to time.js file>
+
+# Example
+node src/project-euler/001-multiples-of-3-or-5/mults-of-3-or-5.time.js
 ```
 
 ## Installation
