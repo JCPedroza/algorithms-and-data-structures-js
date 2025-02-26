@@ -6,10 +6,10 @@
 
 This is a living notebook, created to:
   * Practice:
-    * JS
+    * JavaScript
     * Algorithms & data structures
     * Unit testing
-    * Static type check (with `jsdoc` and `tsc`)
+    * JS Static type check (with `jsdoc` and `tsc`)
     * Git
   * Solve programming challenges.
   * Compare the running time of different implementations.
