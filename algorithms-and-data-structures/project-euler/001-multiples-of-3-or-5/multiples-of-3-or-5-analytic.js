@@ -33,8 +33,8 @@ const multiplesOf3Or5 = (limit) => {
 
   // multiples of 3 + multiples of 5 - multiples of both
   return sumDivisibleBy(limit, 3) +
-  sumDivisibleBy(limit, 5) -
-  sumDivisibleBy(limit, 15)
+    sumDivisibleBy(limit, 5) -
+    sumDivisibleBy(limit, 15)
 }
 
 module.exports = {
