@@ -5,7 +5,12 @@
 [![license MIT][1]][2] [![build status][9]][10]
 
 This is a living notebook, created to:
-  * Practice JavaScript, algorithms & data structures, unit testing, git, etc.
+  * Practice:
+    * JS
+    * Algorithms & data structures
+    * Unit testing
+    * Static type check (with `jsdoc` and `tsc`)
+    * Git
   * Solve programming challenges.
   * Compare the running time of different implementations.
   * Contain general notes about the solutions (explanations, very simple
@@ -90,8 +95,8 @@ npm run
 
 ## Contributing
 
-Have a new interesting solution? Found a bug or a mistake in the notes? Pull
-requests are always welcome!
+Have a new interesting solution? Found a bug, mistake, typo, or similar? Pull
+requests are very welcome!
 
 [![contributors][25]][26] [![commit activity][27]][28] [![issues][29]][30]
 [![issues closed][31]][32] [![issues pr][33]][34] [![issues pr closed][35]][36]
