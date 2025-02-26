@@ -25,6 +25,10 @@ npm test <path to test.js file> # Run unit tests for one project
 ```
 
 ```bash
+npm run full-test # Run unit tests and linter
+```
+
+```bash
 node <path to time.js file> # Run execution time measurement for one project
 ```
 
