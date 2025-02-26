@@ -1,5 +1,7 @@
 /**
  * Generates even fibonacci numbers.
+ *
+ * @private
  * @param {number} limit Max value of the fibonacci sequence.
  * @returns A generator function.
  */
@@ -20,9 +22,11 @@ const nxtEvenFibo = (limit) =>
 
 /**
  * Calculates the sum of the even fibonacci numbers, up to the given limit.
- * Uses generator function and for of with accumulator.
+ * Uses generator function and for-of with accumulator.
+ *
  * Time complexity: O(n)
  * Space complexity: O(1)
+ *
  * @param {number} limit Max value of the fibonacci numbers (inclusive).
  * @returns {number} Sum of the even fibonacci numbers that do not exceed the
  * limit.
@@ -39,5 +43,5 @@ const fiboEvenSum = (limit) => {
 
 module.exports = {
   fun: fiboEvenSum,
-  id: 'generator and for of with accumulator'
+  id: 'generator and for-of accumulator'
 }
