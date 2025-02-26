@@ -1,5 +1,7 @@
 /**
- * Sum of natural numbers divisible by 'divisor' and below 'limit'.
+ * Sum of natural numbers divisible by 'divisor' and below 'limit'. Uses
+ * arithmetic series to avoid double-counting multiples of 15 (multiples of
+ * both 3 and 5).
  *
  * Time complexity: O(1)
  * Space complexity: O(1)
@@ -20,7 +22,7 @@ const sumDivisibleBy = (limit, divisor) => {
 /**
  * Sum of multiples of 3 or 5 below 'limit'. Uses an analytic approach to avoid
  * iteration. Uses the inclusion-exclusion principle to avoid double-counting
- * multiples of 15 (multiples of both).
+ * multiples of 15 (multiples of both 3 and 5).
  *
  * Time complexity: O(1)
  * Space complexity: O(1)
