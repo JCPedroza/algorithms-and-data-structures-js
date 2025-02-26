@@ -14,6 +14,7 @@
     "unit-test-dot": "node --test --test-reporter dot",
     "unit-test-tap": "node --test --test-reporter tap",
     "lint-test": "standard .",
+    "type-test": "tsc",
     "build-jsdoc": "./node_modules/.bin/jsdoc --readme ./README.md --configure ./jsdoc.json --destination ./docs --recurse .",
     "prepare": "husky install"
   },
@@ -33,10 +34,12 @@
   },
   "homepage": "https://github.com/JCPedroza/algorithms-and-data-structures-js",
   "devDependencies": {
+    "@types/node": "22.13.5",
     "concurrently": "9.1.2",
     "husky": "9.1.7",
     "jsdoc": "4.0.4",
-    "standard": "17.1.2"
+    "standard": "17.1.2",
+    "typescript": "5.7.3"
   },
   "standard": {
     "ignore": [
