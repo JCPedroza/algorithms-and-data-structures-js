@@ -1,18 +1,20 @@
 /**
- * Sum of natural numbers multiples of 3 or 5 and below the limit.
- * Uses the for-loop accumulator pattern.
+ * Sum of multiples of 3 or 5 below 'limit'. Uses the for-loop accumulator
+ * pattern and trial division. Iterates through natural numbers one by one.
+ *
  * Time complexity: O(n)
  * Space complexity: O(1), the 64-bits IEEE 754 standard
- * @param {number} limit Limit of the series.
- * @returns {number} Sum of natural numbers divisible by n and
- * below the limit.
+ *
+ * @param {number} limit Exclusive upper limit of the series.
+ * @returns {number} Sum of multiples of 3 or 5 below 'limit'.
  */
 const multiplesOf3Or5 = (limit) => {
   let sum = 0
+  const limitFloor = Math.floor(limit)
 
-  for (let num = 1; num < parseInt(limit); num++) {
-    if (num % 3 === 0 || num % 5 === 0) {
-      sum += num
+  for (let natNum = 1; natNum < limitFloor; natNum++) {
+    if (natNum % 3 === 0 || natNum % 5 === 0) {
+      sum += natNum
     }
   }
 
@@ -21,5 +23,5 @@ const multiplesOf3Or5 = (limit) => {
 
 module.exports = {
   fun: multiplesOf3Or5,
-  id: 'for loop accumulator'
+  id: 'for-loop one-by-one'
 }
