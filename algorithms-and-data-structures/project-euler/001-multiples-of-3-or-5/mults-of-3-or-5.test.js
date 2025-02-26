@@ -1,7 +1,7 @@
 const assert = require('node:assert/strict')
 const { describe, it } = require('node:test')
 
-const solutions = require('./multiples-of-3-or-5.repo')
+const solutions = require('./mults-of-3-or-5.repo')
 
 for (const { fun, id } of solutions) {
   describe(`Project Euler "Multiples of 3 or 5" solution "${id}"`, () => {

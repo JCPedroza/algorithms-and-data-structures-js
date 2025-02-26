@@ -1,4 +1,4 @@
-const solutions = require('./multiples-of-3-or-5.repo')
+const solutions = require('./mults-of-3-or-5.repo')
 const { timeAndReport } = require('../../../lib/time')
 
 const args = [10_000]
