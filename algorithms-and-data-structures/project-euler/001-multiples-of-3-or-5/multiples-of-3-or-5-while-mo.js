@@ -14,6 +14,7 @@ const sumMultsOf3Or5 = (limit) => {
   let mult5 = 5
   let sum = 0
 
+  // Sum multiples of 3 and multiples of 5 that are not multiples of 3.
   while (mult5 < limitFloor) {
     sum += mult3
     if (mult5 % 3 !== 0) sum += mult5 // Avoid counting multiples of both twice
@@ -22,6 +23,7 @@ const sumMultsOf3Or5 = (limit) => {
     mult5 += 5
   }
 
+  // Sum remaining multiples of 3.
   while (mult3 < limitFloor) {
     sum += mult3
     mult3 += 3
