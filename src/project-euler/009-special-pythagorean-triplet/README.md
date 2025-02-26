@@ -23,11 +23,3 @@ The function signature is
 ```typescript
 function specialPythagoreanTriplet(targetSum: number): number
 ```
-
-## Resources
-
-- [Project Euler Problem 009][1]
-- [Project Euler Problem 009 at freeCodeCamp][2]
-
-[1]: https://projecteuler.net/problem=9
-[2]: https://www.freecodecamp.org/learn/coding-interview-prep/project-euler/problem-9-special-pythagorean-triplet
