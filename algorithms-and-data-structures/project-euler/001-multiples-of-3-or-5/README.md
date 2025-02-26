@@ -34,3 +34,23 @@ Out: 45
 In: 15
 Out: 45
 ```
+
+## Optimizations
+
+### Iterative Solutions
+
+Instead of iterating through all natural numbers one-by-one, iterate only
+through multiples of 3 or 5.
+
+### Analytic Solutions
+
+Using arithmetic progression we can avoid iteration alltogether, and
+analytically calculate the sum of multiples of `n`.
+
+Sum the multiples of 3 and the multiples of 5, then subtract the sum of the
+multiples of 15, which are multiples of both 3 and 5 that need to be removed
+to avoid counting them twice.
+
+```
+multiples of 3 + multiples of 5 - multiples of 15
+```
