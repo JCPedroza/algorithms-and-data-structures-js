@@ -3,7 +3,7 @@
  * Time complexity: O(n)
  * Space complexity: O(n)
  * @param {number} length Length of the Fibonacci sequence.
- * @returns {number[]} Fibonacci sequence of the specified length.
+ * @returns {bigint[]} Fibonacci sequence of the specified length.
  */
 const fibonacciSequence = (length) => {
   if (length === 0) return []
@@ -12,7 +12,9 @@ const fibonacciSequence = (length) => {
   const sequence = [0n, 1n]
 
   for (let index = 2; index < length; index++) {
-    sequence.push(sequence.at(-1) + sequence.at(-2))
+    const idxMinOne = sequence.at(-1) ?? 0n
+    const idxMinTwo = sequence.at(-2) ?? 0n
+    sequence.push(idxMinOne + idxMinTwo)
   }
 
   return sequence

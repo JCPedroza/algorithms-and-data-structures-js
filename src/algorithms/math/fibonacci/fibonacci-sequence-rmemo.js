@@ -3,7 +3,7 @@
  * Time complexity: O(n)
  * Space complexity: O(n)
  * @param {number} length Length of the Fibonacci sequence.
- * @returns {number[]} Fibonacci sequence of the specified length.
+ * @returns {bigint[]} Fibonacci sequence of the specified length.
  */
 const fibonacciSequence = (length) => {
   if (length === 0) return []
@@ -11,6 +11,7 @@ const fibonacciSequence = (length) => {
 
   const sequence = [0n, 1n]
 
+  /** @param {number} n */
   const fibo = (n) => {
     if (typeof sequence[n] !== 'undefined') return sequence[n]
     sequence[n] = fibo(n - 1) + fibo(n - 2)
