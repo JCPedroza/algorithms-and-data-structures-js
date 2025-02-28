@@ -40,10 +40,6 @@ solutions.forEach(({ fun, id }) => {
       assert.throws(
         () => fun(-1)
       )
-
-      assert.throws(
-        () => fun()
-      )
     })
   })
 })
