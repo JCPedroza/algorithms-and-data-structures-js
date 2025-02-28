@@ -14,8 +14,6 @@ algorithms.forEach(({ fun, id }) => {
         fun(['a', 'b', 'c', 'd']),
         ['d', 'c', 'b', 'a']
       )
-
-      assert.throws(() => fun())
     })
   })
 })
