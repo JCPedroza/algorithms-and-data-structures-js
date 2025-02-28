@@ -15,10 +15,6 @@ const { floor, sqrt } = Math
  * @returns {number} Sum of the primes below the given number.
  */
 const sumOfPrimesBelow = (num) => {
-  if (typeof num !== 'number') {
-    throw new Error(`Argument must be a number: ${num}`)
-  }
-
   // Optimization 1: When the outer loop reaches this index, all nonprimes
   // in the sieve are already marked
   const limit = floor(sqrt(num)) // Optimization 1
@@ -50,8 +46,10 @@ const sumOfPrimesBelow = (num) => {
     }
   }
 
+  const lastPrime = primes.at(-1) ?? 0
+
   // Collect primes not collected in the sieve generation loop
-  for (let index = primes.at(-1) + 1; index < sieve.length; index++) {
+  for (let index = lastPrime + 1; index < sieve.length; index++) {
     if (sieve[index]) primes.push(index)
   }
 
