@@ -3,7 +3,15 @@ const { describe, it } = require('node:test')
 
 const structures = require('./priority-queue.repo')
 
-const validateState = (pqueue, length, isEmpty, peek) => {
+/**
+ * Validate de state of a priority queue.
+ *
+ * @param {*} pqueue Priority queue to validate.
+ * @param {number} length Expected length.
+ * @param {boolean} isEmpty Expected emptyness.
+ * @param {number?} peek Expected peek value.
+ */
+const validateState = (pqueue, length, isEmpty, peek = null) => {
   assert.equal(pqueue.length, length)
   assert.equal(pqueue.isEmpty(), isEmpty)
 

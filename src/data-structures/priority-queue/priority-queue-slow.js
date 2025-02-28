@@ -1,6 +1,9 @@
 class PriorityQueue {
   constructor () {
+    /** @type {number[]} */
     this._nums = []
+
+    /** @type {number?} */
     this._minIndex = null
   }
 
