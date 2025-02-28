@@ -1,12 +1,21 @@
 /**
  * Generates a sequence of fizz-buzz strings.
+ *
  * Time complexity: O(n).
  * Space complexity: O(n).
+ *
  * @param {number} from Start of the sequence.
  * @param {number} to End of the sequence (inclusive).
  * @returns {string[]} Sequence of fizz-buzz strings.
  */
 const fizzBuzzRange = (from, to) => {
+  /**
+   * Helper recursive function.
+   *
+   * @param {number} current Current number to process.
+   * @param {string[]} range Array of fizz-buzz strings.
+   * @returns {string[]} Sequence of fizz-buzz strings.
+   */
   const fbrange = (current, range) => {
     if (current > to) return range
 
