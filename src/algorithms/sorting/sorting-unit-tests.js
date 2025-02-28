@@ -1,6 +1,20 @@
 const assert = require('node:assert/strict')
 const { describe, it } = require('node:test')
 
+/**
+ * Interface for sorting algorithms.
+ *
+ * @typedef SortingAlgorithm
+ * @property {string} id Name of the algorithm.
+ * @property {(nums: number[]) => number[]} fun Sorting function.
+ */
+
+/**
+ * Create unit tests for a sorting algorithm.
+ *
+ * @param {SortingAlgorithm[]} algorithms Array with sorting algorithms.
+ * @param {string} sortName Name of the sorting algorithms.
+ */
 const testSorters = (algorithms, sortName) => {
   algorithms.forEach(({ fun, id }) => {
     describe(`${sortName} algorithm "${id}"`, () => {
