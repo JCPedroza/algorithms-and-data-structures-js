@@ -3,7 +3,21 @@ const { describe, it } = require('node:test')
 
 const structures = require('./queue.repo')
 
-const validateState = (queue, length, isEmpty, peek) => {
+/**
+ * @typedef Queue
+ * @property {number} length
+ * @property {() => boolean} isEmpty
+ * @property {() => any} peek
+ * @property {(data: any) => Queue} enqueue
+ */
+
+/**
+ * @param {Queue} queue
+ * @param {number} length
+ * @param {boolean} isEmpty
+ * @param {any} peek
+ */
+const validateState = (queue, length, isEmpty, peek = null) => {
   assert.equal(queue.length, length)
   assert.equal(queue.isEmpty(), isEmpty)
 

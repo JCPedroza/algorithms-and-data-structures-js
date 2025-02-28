@@ -3,6 +3,7 @@
  */
 class Queue {
   constructor () {
+    /** @type {any[]} */
     this._dataArray = []
   }
 
@@ -44,8 +45,8 @@ class Queue {
   /**
    * Add data to the back of the queue.
    * Time complexity: O(1) from push().
-   * @param {*} data Data to be added.
-   * @returns {Object} This queue.
+   * @param {any} data Data to be added.
+   * @returns {Queue} This queue.
    */
   enqueue (data) {
     this._dataArray.push(data)
