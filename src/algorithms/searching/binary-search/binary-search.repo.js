@@ -1,5 +1,5 @@
 const algorithms = [
-  require('./binary-search'),
+  require('./binary-search-while'),
   require('./binary-search-recursive')
 ]
 

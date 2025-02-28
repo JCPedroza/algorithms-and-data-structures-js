@@ -1,13 +1,22 @@
 /**
  * Find the index of a value inside an array.
+ *
  * Time complexity: O(1) best O(log n) worst O(log n).
- * Space complexity: O(log n)? height of recursion tree?.
- * @param {array} array Sorted array containing the value to be found.
- * @param {*} target Value to find inside the array.
+ * Space complexity: O(log n)? height of recursion tree?
+ *
+ * @param {number[]} array Sorted array containing the value to be found.
+ * @param {number} target Value to find inside the array.
  * @returns {number} Index of the value in the array, or -1 if value is
  * not found.
  */
 const binarySearch = (array, target) => {
+  /**
+   * Helper recursive function.
+   *
+   * @param {number} start Index to start the search from.
+   * @param {number} end Index to stop the search at.
+   * @returns {number} Index of the value in the array.
+   */
   const search = (start, end) => {
     const mid = Math.trunc((start + end) / 2)
 
