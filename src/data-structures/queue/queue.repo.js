@@ -1,6 +1,5 @@
 const structures = [
-  require('./queue-array'),
-  require('./queue-linked')
+  require('./queue-array')
 ]
 
 module.exports = structures
