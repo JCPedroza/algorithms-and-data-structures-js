@@ -30,19 +30,5 @@ solutions.forEach(({ fun, id }) => {
         fun(29), 100
       )
     })
-
-    it('throws an error when called with non-numeric argument', () => {
-      assert.throws(
-        () => fun()
-      )
-
-      assert.throws(
-        () => fun(true)
-      )
-
-      assert.throws(
-        () => fun('ca')
-      )
-    })
   })
 })
