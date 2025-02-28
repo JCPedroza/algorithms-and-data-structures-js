@@ -9,7 +9,7 @@ This is a living notebook, created to:
     * JavaScript
     * Algorithms & data structures
     * Unit testing
-    * JS Static type check (with `jsdoc` and `tsc`)
+    * JS static type check (with `jsdoc` and `tsc`)
     * Git
   * Solve programming challenges.
   * Compare the running time of different implementations.
