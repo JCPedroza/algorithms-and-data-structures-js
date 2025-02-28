@@ -1,8 +1,9 @@
 /**
  * Creates a copy of an object, but that only contains specific properties.
+ *
  * @param {object} object Object to sanitize.
  * @param {string[]} whitelist Properties to include.
- * @returns Copy of object that only contains the specified properties.
+ * @returns {object} Copy of object that only contains the specified properties.
  */
 const sanitizeObject = (object, whitelist) =>
   Object.fromEntries(
@@ -13,5 +14,5 @@ const sanitizeObject = (object, whitelist) =>
 
 module.exports = {
   fun: sanitizeObject,
-  id: 'Object.fromEntries filter map'
+  id: 'Object.fromEntries filter-map'
 }
