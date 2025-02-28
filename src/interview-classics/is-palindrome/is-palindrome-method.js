@@ -1,12 +1,23 @@
 const tokensToRemove = /[.,:;?!\s]/g
 
-// Remove tokens and convert to lowercase.
+/**
+ * Remove tokens and convert to lowercase.
+ *
+ * @private
+ * @param {string} str String to normalize
+ * @returns {string} Normalized string.
+ */
 const normalize = (str) =>
   str
     .replace(tokensToRemove, '')
     .toLowerCase()
 
-// Reverse order of characters.
+/**
+ * Reverse the order of characters.
+ *
+ * @param {string} str String to reverse.
+ * @returns {string} Reversed string.
+ */
 const reverse = (str) =>
   [...str]
     .reverse()
