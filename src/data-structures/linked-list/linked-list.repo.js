@@ -1,6 +1,5 @@
 const structures = [
-  require('./linked-list-single'),
-  require('./linked-list-double')
+  require('./linked-list-single')
 ]
 
 module.exports = structures

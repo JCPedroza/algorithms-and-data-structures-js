@@ -1,68 +1,53 @@
 const assert = require('node:assert/strict')
 const { describe, it } = require('node:test')
 
-const structures = require('./linked-list.repo')
+const listMakers = require('./linked-list.repo')
 
-const validateState = (list, head, tail, length, isEmpty, arrayVersion) => {
-  if (head) {
-    assert.equal(list.head.data, head)
-  } else {
-    assert.equal(list.head, null)
-  }
+for (const { createList, id } of listMakers) {
+  describe(`Linked List implementation ${id}`, () => {
+    it('has length 0 when created', () => {
+      const list = createList()
+      assert.equal(list.length(), 0)
+    })
 
-  if (tail) {
-    assert.equal(list.tail.data, tail)
-  } else {
-    assert.equal(list.tail, null)
-  }
+    it('throws error if empty when first() is called', () => {
+      const list = createList()
+      assert.throws(() => list.first())
+    })
 
-  assert.equal(list.length, length)
-  assert.equal(list.isEmpty(), isEmpty)
-  assert.deepEqual(list.toArray(), arrayVersion)
-}
+    it('throws error if empty when at(0) is called', () => {
+      const list = createList()
+      assert.throws(() => list.at(0))
+    })
 
-structures.forEach(({ Struct, id }) => {
-  describe(`Linked list implementation "${id}"`, () => {
-    it('performs basic linked list operations', () => {
-      // List initialization
-      const list = new Struct()
-      validateState(list, null, null, 0, true, [])
+    it('can insert at start of list', () => {
+      const list = createList()
 
-      // Insert items using head and tail methods
-      list.insertAtHead('a')
-      list.insertAtTail('c')
-      validateState(list, 'a', 'c', 2, false, ['a', 'c'])
+      list.insertStart('a')
+      assert.equal(list.first(), 'a')
 
-      // Insert items using index method
-      list.insertAtIndex(1, 'b')
-      list.insertAtIndex(0, 'x')
-      validateState(list, 'x', 'c', 4, false, ['x', 'a', 'b', 'c'])
+      list.insertStart('b')
+      assert.equal(list.first(), 'b')
 
-      // Insert items using node methods
-      list.insertBeforeNode(list.getNodeAtIndex(0), 'z')
-      list.insertAfterNode(list.getNodeAtIndex(list.length - 1), 'o')
-      validateState(list, 'z', 'o', 6, false, ['z', 'x', 'a', 'b', 'c', 'o'])
+      list.insertStart('c')
+      assert.equal(list.first(), 'c')
 
-      // Access with .at() method
-      assert.equal(list.at(-1), 'o')
-      assert.equal(list.at(-2), 'c')
-      assert.equal(list.at(0), 'z')
-      assert.equal(list.at(1), 'x')
+      assert.equal(list.at(0), 'c')
+      assert.equal(list.at(1), 'b')
+      assert.equal(list.at(2), 'a')
+    })
 
-      // Throw exceptions with invalid indexes
-      assert.throws(() => list.getNodeAtIndex(-1), Error)
-      assert.throws(() => list.getNodeAtIndex(6), Error)
-      assert.throws(() => list.at(-7), Error)
-      assert.throws(() => list.at(6), Error)
+    it('computes its length when not empty', () => {
+      const list = createList()
 
-      // Remove nodes
-      list.deleteNode(list.getNodeAtIndex(3))
-      list.deleteNodeAtIndex(2)
-      validateState(list, 'z', 'o', 4, false, ['z', 'x', 'c', 'o'])
+      list.insertStart(true)
+      assert.equal(list.length(), 1)
 
-      // Destroy list
-      list.destroy()
-      validateState(list, null, null, 0, true, [])
+      list.insertStart(false)
+      assert.equal(list.length(), 2)
+
+      list.insertStart(true)
+      assert.equal(list.length(), 3)
     })
   })
-})
+}
