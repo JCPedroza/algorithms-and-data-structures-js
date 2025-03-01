@@ -9,12 +9,12 @@
   "description": "Algorithms and data structures implemented in JavaScript",
   "scripts": {
     "test": "node --test --test-reporter dot",
-    "full-test": "concurrently \"npm run lint-test\" \"npm run unit-test-dot\"",
+    "full-test": "concurrently \"npm run type-check\" \"npm test\" \"npm run lint-test\"",
     "unit-test-spec": "node --test --test-reporter spec",
     "unit-test-dot": "node --test --test-reporter dot",
     "unit-test-tap": "node --test --test-reporter tap",
     "lint-test": "standard .",
-    "type-test": "tsc",
+    "type-check": "tsc",
     "build-jsdoc": "./node_modules/.bin/jsdoc --readme ./README.md --configure ./jsdoc.json --destination ./docs --recurse .",
     "prepare": "husky install"
   },
