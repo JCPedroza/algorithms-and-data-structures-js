@@ -26,7 +26,7 @@ for (const { fun, id } of solutions) {
       )
     })
 
-    it('Solves for sume of the same values', () => {
+    it('Solves for sum of the same values', () => {
       assert.deepEqual(
         fun([4, 8, -7, 8, 3], 16),
         [1, 3]
