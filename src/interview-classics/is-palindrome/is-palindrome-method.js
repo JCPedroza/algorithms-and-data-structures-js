@@ -2,7 +2,7 @@
 const charsToRemove = /[.,:;?!\s]/g
 
 /**
- * Checks if a string is a palindrome.
+ * Checks if a string is a palindrome. Uses srtring and array methods.
  *
  * Time complexity: O(n)
  * Space complexity: O(n)
