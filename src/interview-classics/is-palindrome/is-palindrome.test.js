@@ -1,12 +1,17 @@
 const assert = require('node:assert/strict')
 const { describe, it } = require('node:test')
+const { join } = require('path')
+const { readFileSync } = require('fs')
 
-const algorithms = require('./is-palindrome.repo')
+const solutions = require('./is-palindrome.repo')
+
+const bigPalPath = join(__dirname, '/big-palindrome.txt')
+const bigPalindrome = readFileSync(bigPalPath, 'utf-8')
 
 const palindrome = `Anita! LAva :
     la?; tina.`
 
-algorithms.forEach(({ fun, id }) => {
+solutions.forEach(({ fun, id }) => {
   describe(`Palindrome test algorithm "${id}"`, () => {
     it('identifies palinfromes of length 0', () => {
       assert.equal(
@@ -39,6 +44,13 @@ algorithms.forEach(({ fun, id }) => {
     it('identifies palindromes with multiple whitespace', () => {
       assert.equal(
         fun(palindrome),
+        true
+      )
+    })
+
+    it('identifies a big palindrome', () => {
+      assert.equal(
+        fun(bigPalindrome),
         true
       )
     })
