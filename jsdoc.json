@@ -2,8 +2,7 @@
   "source": {
       "include": ["./algorithms-and-data-structures"],
       "exclude": [
-        "./node_modules",
-        "./algorithms-and-data-structures/algorithms/math/fibonacci"
+        "./node_modules"
       ]
   }
 }
