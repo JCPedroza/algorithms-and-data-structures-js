@@ -1,8 +1,12 @@
 # JavaScript Algorithms & Data Structures
 
+[![node][18]][19]
+[![npm][20]][21]
+
 [![Standard Style Guide][3]][4]
 
-[![license MIT][1]][2] [![build status][9]][10]
+[![license MIT][1]][2]
+[![build status][9]][10]
 
 This is a living notebook, created to:
   * Practice:
@@ -105,12 +109,17 @@ requests are very welcome!
 [![contributors][25]][26] [![commit activity][27]][28] [![issues][29]][30]
 [![issues closed][31]][32] [![issues pr][33]][34] [![issues pr closed][35]][36]
 
-[1]: https://img.shields.io/github/license/jcpedroza/algorithms-and-data-structures-js
-[2]: https://en.wikipedia.org/wiki/MIT_License
+[1]: https://badgen.net/github/license/JCPedroza/algorithms-and-data-structures-ts
+[2]: https://opensource.org/licenses/MIT
 [3]: https://cdn.rawgit.com/standard/standard/master/badge.svg
 [4]: https://github.com/standard/standard
 [9]: https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fjcpedroza%2Falgorithms-and-data-structures-js%2Fbadge%3Fref%3Dmain&style=flat
 [10]: https://actions-badge.atrox.dev/jcpedroza/algorithms-and-data-structures-js/goto?ref=main
+
+[18]: https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white
+[19]: https://github.com/nodejs/node
+[20]: https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white
+[21]: https://github.com/npm/cli
 
 [25]: https://img.shields.io/github/contributors/JCPedroza/algorithms-and-data-structures-js
 [26]: https://github.com/JCPedroza/algorithms-and-data-structures-js/graphs/contributors
