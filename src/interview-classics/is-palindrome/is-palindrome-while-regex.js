@@ -2,7 +2,8 @@
 const charsToIgnore = /[-.,:;?!'"\s()]/
 
 /**
- * Checks if a string is a palindrome. Uses a while loop.
+ * Checks if a string is a palindrome. Uses a while loop and a regular
+ * expression.
  *
  * Time complexity: O(n)
  * Space complexity: O(1)
@@ -40,5 +41,5 @@ const isPalindrome = (str) => {
 
 module.exports = {
   fun: isPalindrome,
-  id: 'while-loop'
+  id: 'while-loop regex'
 }
