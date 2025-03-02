@@ -1,38 +1,25 @@
-const tokensToRemove = /[.,:;?!\s]/g
-
-/**
- * Remove tokens and convert to lowercase.
- *
- * @private
- * @param {string} str String to normalize
- * @returns {string} Normalized string.
- */
-const normalize = (str) =>
-  str
-    .replace(tokensToRemove, '')
-    .toLowerCase()
-
-/**
- * Reverse the order of characters.
- *
- * @param {string} str String to reverse.
- * @returns {string} Reversed string.
- */
-const reverse = (str) =>
-  [...str]
-    .reverse()
-    .join('')
+// Characters to remove from string in order to normalize it
+const charsToRemove = /[.,:;?!\s]/g
 
 /**
  * Checks if a string is a palindrome.
- * Complexity: time O(n) because normalize and reverse always happen,
- * space O(n).
+ *
+ * Time complexity: O(n)
+ * Space complexity: O(n)
+ *
  * @param {string} str String to be checked.
- * @returns {boolean} True if the string is a palindrome, false otherwise.
+ * @returns {boolean} Whether the string is a palindrome.
  */
 const isPalindrome = (str) => {
-  const normalStr = normalize(str)
-  return normalStr === reverse(normalStr)
+  const normalStr = str
+    .replace(charsToRemove, '')
+    .toLowerCase()
+
+  const reverseNormalStr = [...normalStr]
+    .reverse()
+    .join('')
+
+  return normalStr === reverseNormalStr
 }
 
 module.exports = {
