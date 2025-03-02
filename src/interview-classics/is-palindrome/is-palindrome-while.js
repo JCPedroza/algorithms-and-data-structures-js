@@ -1,5 +1,5 @@
 // Characters to remove from string in order to normalize it
-const charsToIgnore = /[.,:;?!\s]/
+const charsToIgnore = /[-.,:;?!'"\s()]/
 
 /**
  * Checks if a string is a palindrome. Uses a while loop.

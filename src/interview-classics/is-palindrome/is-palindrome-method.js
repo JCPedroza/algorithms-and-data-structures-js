@@ -1,5 +1,5 @@
 // Characters to remove from string in order to normalize it
-const charsToRemove = /[.,:;?!\s]/g
+const charsToRemove = /[-.,:;?!'"\s()]/g
 
 /**
  * Checks if a string is a palindrome. Uses srtring and array methods.
