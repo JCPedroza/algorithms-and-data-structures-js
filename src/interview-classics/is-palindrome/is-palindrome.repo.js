@@ -1,6 +1,6 @@
-const algorithms = [
+const solutions = [
   require('./is-palindrome-method'),
   require('./is-palindrome-while')
 ]
 
-module.exports = algorithms
+module.exports = solutions
