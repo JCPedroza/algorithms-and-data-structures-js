@@ -1,5 +1,5 @@
 // Using exclusive regular expresion
-const charsToRemove = /[^a-z0-9]/g
+const charsToRemove = /[^a-zA-Z0-9]/g
 
 /**
  * Checks if a string is a palindrome. Uses srtring and array methods, and an
