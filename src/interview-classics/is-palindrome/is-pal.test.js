@@ -3,12 +3,12 @@ const { describe, it } = require('node:test')
 const { join } = require('path')
 const { readFileSync } = require('fs')
 
-const solutions = require('./is-palindrome.repo')
+const solutions = require('./is-pal.repo')
 
 const bigPalPath = join(__dirname, '/big-palindrome.txt')
 const bigPalindrome = readFileSync(bigPalPath, 'utf-8')
 
-const palindrome = `Anita! LAva :
+const smallPalindrome = `Anita! LAva :
     la?; tina.`
 
 solutions.forEach(({ fun, id }) => {
@@ -41,14 +41,14 @@ solutions.forEach(({ fun, id }) => {
       )
     })
 
-    it('identifies palindromes with multiple whitespace', () => {
+    it('identifies small palindrome with punctuation', () => {
       assert.equal(
-        fun(palindrome),
+        fun(smallPalindrome),
         true
       )
     })
 
-    it('identifies a big palindrome', () => {
+    it('identifies a big palindrome with punctuation', () => {
       assert.equal(
         fun(bigPalindrome),
         true

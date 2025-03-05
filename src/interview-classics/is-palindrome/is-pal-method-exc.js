@@ -1,8 +1,9 @@
-// Characters to remove from string in order to normalize it
-const charsToRemove = /[-.,:;?!'"\s()]/g
+// Using exclusive regular expresion
+const charsToRemove = /[^a-z0-9]/g
 
 /**
- * Checks if a string is a palindrome. Uses srtring and array methods.
+ * Checks if a string is a palindrome. Uses srtring and array methods, and an
+ * inclusive regular expression.
  *
  * Time complexity: O(n)
  * Space complexity: O(n)
@@ -24,5 +25,5 @@ const isPalindrome = (str) => {
 
 module.exports = {
   fun: isPalindrome,
-  id: 'string and array methods'
+  id: 'method exclusive-regex'
 }
