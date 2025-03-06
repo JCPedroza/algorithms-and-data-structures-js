@@ -1,3 +1,4 @@
+/** Holds the open-close character relationship between parentheses. */
 const parens = new Map([
   ['(', ')'],
   ['[', ']'],
@@ -11,10 +12,7 @@ const parens = new Map([
  * @returns {string} Unboxed string.
  */
 const unboxOption = (str) => {
-  if (str === undefined) {
-    throw new Error('string is undefined')
-  }
-
+  if (str === undefined) throw new Error('string is undefined')
   return str
 }
 
