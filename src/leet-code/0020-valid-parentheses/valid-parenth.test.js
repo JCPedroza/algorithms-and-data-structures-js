@@ -33,9 +33,33 @@ for (const { fun, id } of solutions) {
 
     it('identifies valid string of length 4', () => {
       assert.equal(fun('(())'), true)
-      assert.equal(fun('({})'), true)
+      assert.equal(fun('[[]]'), true)
+      assert.equal(fun('{{}}'), true)
+      assert.equal(fun('([])'), true)
+      assert.equal(fun('[][]'), true)
       assert.equal(fun('()[]'), true)
-      assert.equal(fun('()()'), true)
+      assert.equal(fun('{}()'), true)
+    })
+
+    it('identifies invalid string of length 4', () => {
+      assert.equal(fun('(((('), false)
+      assert.equal(fun('))))'), false)
+      assert.equal(fun('{{})'), false)
+      assert.equal(fun('())('), false)
+      assert.equal(fun('][[]'), false)
+    })
+
+    it('identifies valid string of length 6', () => {
+      assert.equal(fun('((()))'), true)
+      assert.equal(fun('[[[]]]'), true)
+      assert.equal(fun('{{{}}}'), true)
+    })
+
+    it('identifies valid large string', () => {
+      assert.equal(
+        fun('({()}[{}]([]))[{{}}]{}((()))'),
+        true
+      )
     })
   })
 }
