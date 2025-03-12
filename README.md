@@ -2,11 +2,8 @@
 
 [![node][18]][19]
 [![npm][20]][21]
-
-[![Standard Style Guide][3]][4]
-
-[![license MIT][1]][2]
 [![build status][9]][10]
+[![license MIT][1]][2]
 
 This is a living notebook, created to:
   * Practice:
@@ -111,8 +108,6 @@ requests are very welcome!
 
 [1]: https://badgen.net/github/license/JCPedroza/algorithms-and-data-structures-ts
 [2]: https://opensource.org/licenses/MIT
-[3]: https://cdn.rawgit.com/standard/standard/master/badge.svg
-[4]: https://github.com/standard/standard
 [9]: https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fjcpedroza%2Falgorithms-and-data-structures-js%2Fbadge%3Fref%3Dmain&style=flat
 [10]: https://actions-badge.atrox.dev/jcpedroza/algorithms-and-data-structures-js/goto?ref=main
 
