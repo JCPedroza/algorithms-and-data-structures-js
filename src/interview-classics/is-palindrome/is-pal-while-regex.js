@@ -41,5 +41,5 @@ const isPalindrome = (str) => {
 
 module.exports = {
   fun: isPalindrome,
-  id: 'while-loop regex'
+  id: 'while-loop inclusive-regex'
 }

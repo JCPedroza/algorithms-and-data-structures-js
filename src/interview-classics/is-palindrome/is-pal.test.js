@@ -5,11 +5,11 @@ const { readFileSync } = require('fs')
 
 const solutions = require('./is-pal.repo')
 
-const bigPalPath = join(__dirname, '/big-palindrome.txt')
-const bigPalindrome = readFileSync(bigPalPath, 'utf-8')
+const smallPalPath = join(__dirname, '/palindrome-small.txt')
+const bigPalPath = join(__dirname, '/palindrome-big.txt')
 
-const smallPalindrome = `Anita! LAva :
-    la?; tina.`
+const smallPalindrome = readFileSync(smallPalPath, 'utf-8')
+const bigPalindrome = readFileSync(bigPalPath, 'utf-8')
 
 solutions.forEach(({ fun, id }) => {
   describe(`Palindrome test algorithm "${id}"`, () => {

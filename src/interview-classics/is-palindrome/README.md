@@ -17,7 +17,7 @@ consider the followihg whitespace characters for this exercise
  * `tab`
  * `new line`
 
-## Function Signagure
+## Function Signature
 
 ```typescript
 function isPalindrome(str: string): boolean
@@ -46,3 +46,8 @@ Out: true
 ```
 
 ## Optimizations
+
+Instead of creating a reversed and normalized string, you can use a loop to
+compare the first character to the last character, then the second character to
+the next-to-last character, and so on. This lowers the space complexity from
+linear to constant.
