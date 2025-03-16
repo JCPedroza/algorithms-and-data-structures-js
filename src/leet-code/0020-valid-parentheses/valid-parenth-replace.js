@@ -1,3 +1,4 @@
+// Regex matching adjacent open-close pairs (), {}, and [].
 const adjacentParens = /\(\)|\{\}|\[\]/g
 
 /**
@@ -12,10 +13,10 @@ const adjacentParens = /\(\)|\{\}|\[\]/g
  */
 const hasValidParentheses = (str) => {
   if (str.length === 0) return true
-  else if (str.length % 2 !== 0) return false
+  if (str.length % 2 !== 0) return false
 
   let currentStr = str
-  let prevLength
+  let prevLength = 0
 
   // Remove adjacent pairs until there are none (until string size doesn't
   // change)
@@ -29,5 +30,5 @@ const hasValidParentheses = (str) => {
 
 module.exports = {
   fun: hasValidParentheses,
-  id: 'string-remove'
+  id: 'string-replace'
 }
