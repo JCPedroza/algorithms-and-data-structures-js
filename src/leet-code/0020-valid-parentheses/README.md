@@ -1,7 +1,7 @@
 # Valid Parentheses
 
-Given a string `str` containing just the characters `'('`, `')'`, `'['`, `']'`,
-`'{'`, `'}'`, determine if the string is valid.
+Given a string `str` consisting of the following characters: `'('`, `')'`,
+`'['`, `']'`, `'{'`, `'}'`, determine if `str` is valid.
 
 * Open brackets must be closed by the same type of brackets.
 * Open brackets must be closed in the correct order.
@@ -38,3 +38,11 @@ Out: true
 In: '([)'
 Out: false
 ```
+
+## Optimizations
+
+By iteratively removing adjacent open-close pairs, you can achieve cuadratic
+time complexity.
+
+A better approach is to iterate through the string only once, using a stack
+to manage the state, achieving linear time complexity.
