@@ -1,7 +1,8 @@
 # Two Sum
 
-Given an array of integers `nums` and an integer `target`, return the two
-indexes of the numbers that add up to `target`.
+Write a function `twoSum`, that takes an array of integers `nums` and an
+integer `target` as inputs, and returns the two indexes of the numbers that
+add up to `target`.
 
 * Assume that `nums` contains at most one solution.
 * Can't use the same element twice.
