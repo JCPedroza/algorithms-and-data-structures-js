@@ -1,4 +1,4 @@
-/** Holds the open-close character relationship between parentheses. */
+// Holds the open-close character relationship between parentheses.
 const parens = new Map([
   ['(', ')'],
   ['[', ']'],
@@ -22,12 +22,9 @@ const hasValidParentheses = (str) => {
   const stack = []
 
   for (const char of str) {
-    if (parens.has(char)) {
-      const parChar = parens.get(char)
-      if (parChar !== undefined) stack.push(parChar)
-    } else if (stack.pop() !== char) {
-      return false
-    }
+    const closeParen = parens.get(char)
+    if (closeParen !== undefined) stack.push(closeParen)
+    else if (stack.pop() !== char) return false
   }
 
   // If the stack is empty, all parentheses have been closed.
