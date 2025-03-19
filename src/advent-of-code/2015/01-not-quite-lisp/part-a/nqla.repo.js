@@ -1,4 +1,4 @@
-const nqlaForLoop = require('./nqla-for-loop')
+const nqlaForLoop = require('./nqla-loop-for')
 const nqlaReduce = require('./nqla-reduce')
 const nqlaRecursive = require('./nqla-recursive')
 const nqlaTail = require('./nqla-recursive-tail')

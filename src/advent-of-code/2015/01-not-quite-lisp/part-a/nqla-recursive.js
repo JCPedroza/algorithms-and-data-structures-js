@@ -2,7 +2,7 @@
  * Finds the floor where santa needs to deliver presents. Uses recursion.
  *
  * Time complexity: O(n)
- * Space complexity: O(n)
+ * Space complexity: O(n^2) (string copy in each call stack)
  *
  * @param {string} dir Floor directions.
  * @returns {number} Floor number.
