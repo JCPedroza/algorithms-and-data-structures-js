@@ -10,7 +10,7 @@ const bigInputPath = join(__dirname, '../input-big.txt')
 const bigInput = readFileSync(bigInputPath, 'utf-8')
 
 for (const { fun, id } of solutions) {
-  describe(`Advent of Code 'No Time for a Taxicab' solution '${id}'`, () => {
+  describe(`Advent of Code 'No Time for a Taxicab p1' solution '${id}'`, () => {
     it('solves for empty directions', () => {
       assert.equal(fun(''), 0)
     })
